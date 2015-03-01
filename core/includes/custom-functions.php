@@ -50,6 +50,29 @@ function tally_layout($atter = array() ){
 }
 
 
+
+function tally_site_header(){
+	tally_file_dri('structure/header.php');
+}
+
+
+function tally_site_subheader(){
+	tally_file_dri('structure/subheader.php');
+}
+
+
+function tally_site_footer_widgets(){
+	tally_file_dri('structure/footer-widgets.php');	
+}
+
+function tally_site_footer(){
+	tally_file_dri('structure/footer.php');
+}
+
+
+function tally_site_content($name){
+	tally_file_dri('contents/'.$name.'.php');
+}
 /* Resize image
 -------------------------------------------------*/
 if(!function_exists('tally_image_size')):
@@ -309,49 +332,9 @@ function tally_footer_widget_layout_option(){
 		$widget_layout  = $custom_field ? $custom_field : $widget_layout;
 	}
 	
-	if(TALLY_LAYOUT_FOOTER_WIDGETS_REMOVE == true){ $widget_layout  = 'none'; }
-	
 	return apply_filters('tally_footer_widget_layout_option', $widget_layout);
 }
 
-
-/* Footer Widget Columns Option
--------------------------------------------------*/
-function tally_footer_widget_columns_option($widget_number){
-	global $wp_query;
-	
-	$footer_widget_layout = tally_footer_widget_layout_option();
-	$footer_widget_meta_layout = get_post_meta( get_the_ID(), 'tally_footer_widget_layout', true );
-	$widget_column = '24';
-						
-	if( $footer_widget_layout == '4' ){ $widget_column = '6'; }
-	elseif( $footer_widget_layout == '3' ){ $widget_column = '8'; }
-	elseif( $footer_widget_layout == '2' ){ $widget_column = '12'; }
-	elseif( $footer_widget_layout == '1' ){ $widget_column = '24'; }
-	elseif( $footer_widget_layout == '5' ){ $widget_column = 'one_5'; }
-	elseif( $footer_widget_layout == '6' ){ $widget_column = '4'; }
-	
-	if( (tally_option('footer_widget_'.$widget_number.'_column_width')!='0') && (tally_option('footer_widget_custom_width')=='on') ){ 
-		$widget_column = tally_option('footer_widget_'.$widget_number.'_column_width'); 
-	}
-	
-	if(tally_option( 'footer_widget_layout') !== $footer_widget_meta_layout){
-		if( $footer_widget_meta_layout == '4' ){ $widget_column = '6'; }
-		elseif( $footer_widget_meta_layout == '3' ){ $widget_column = '8'; }
-		elseif( $footer_widget_meta_layout == '2' ){ $widget_column = '12'; }
-		elseif( $footer_widget_meta_layout == '1' ){ $widget_column = '24'; }
-		elseif( $footer_widget_meta_layout == '5' ){ $widget_column = 'one_5'; }
-		elseif( $footer_widget_meta_layout == '6' ){ $widget_column = '4'; }
-	}
-	
-	if(!is_404() && get_post()){
-		if((get_post_meta( get_the_ID(), 'tally_footer_widget_'.$widget_number.'_column_width', true )!='0') && (get_post_meta( get_the_ID(),'tally_footer_widget_custom_width',true)=='on') ){
-			$widget_column = get_post_meta( get_the_ID(), 'tally_footer_widget_'.$widget_number.'_column_width', true ); 
-		}
-	}
-	
-	return apply_filters('tally_footer_widget_columns_option', $widget_column);
-}
 
 
 function tally_is_preloader(){
@@ -372,8 +355,6 @@ function tally_is_footer(){
 		$footer_layout  = $custom_field ? $custom_field : $footer_layout;
 	}
 	
-	if(TALLY_LAYOUT_FOOTER_REMOVE == true){ $footer_layout  = 'none'; }
-	
 	return $footer_layout;
 	return apply_filters('tally_is_footer', $footer_layout);
 }
@@ -389,8 +370,6 @@ function tally_is_topbar(){
 		$custom_field = get_post_meta( get_the_ID(), 'tally_is_topbar', true );
 		$topbar  = $custom_field ? $custom_field : $topbar;
 	}
-	
-	if(TALLY_LAYOUT_TOPBAR_REMOVE == true){ $topbar  = 'no'; }
 	
 	return apply_filters('tally_is_topbar', $topbar);
 }
@@ -1057,4 +1036,109 @@ function tally_creat_config_array(){
 	}
 	
 	return $output;
+}
+
+
+
+function tally_st_header_menu($class = ''){
+	?>
+	<nav id="navigation" class="<?php echo $class; ?>" role="navigation">
+		<?php wp_nav_menu( array('theme_location'=>'main_menu') ); ?>
+	</nav><!-- #site-navigation -->
+	<?php
+}
+
+function tally_st_header_menu_alt($class = ''){
+	?>
+	<div class="nav_alt-area <?php echo $class; ?>">
+		<nav id="nav_alt" role="navigation">
+			<?php wp_nav_menu( array('theme_location'=>'alt_menu') ); ?>
+		</nav><!-- #site-navigation -->
+	</div>
+	<?php
+}
+
+function tally_st_header_info($class = ''){
+	if(tally_option('header_info_text') != ''){
+		?>
+		<div class="header-info <?php echo $class; ?>">
+			<div class="header-info-inner">
+				<?php echo tally_option('header_info_text'); ?>
+			</div>
+		</div>
+		<?php
+	}
+}
+
+function tally_st_header_phone($class = '', $icon = '<i class="fa fa-phone"></i>'){
+	if(tally_option('header_phone_number') != ''){
+		?>
+		<div class="header-phone <?php echo $class; ?>">
+			<div class="header-phone-inner">
+				<?php echo $icon; ?>
+			 <a href="tel:<?php tally_option('header_phone_number'); ?>"><?php echo tally_option('header_phone_number'); ?></a>
+			</div>
+		</div>
+		<?php
+	}
+}
+
+function tally_st_header_email($class = '', $icon = '<i class="fa fa-envelope"></i>'){
+	if(tally_option('header_email_address') != ''){
+		?>
+		<div class="header-email <?php echo $class; ?>">
+			<div class="header-email-inner">
+				<?php echo $icon; ?>
+				<a href="mailto:<?php tally_option('header_email_address'); ?>"><?php echo tally_option('header_email_address'); ?></a>
+			</div>
+		</div>
+		<?php
+	}
+}
+
+function tally_st_header_logo($class = ''){
+	?>
+    <div class="logo_area <?php echo $class; ?>"><?php tallyfn_logo(tally_option('site_logo')); ?></div>
+    <?php
+}
+
+function tally_st_header_social_icons($class = ''){
+	if(tally_option('header_social_icons') == 'on'){
+		tally_social_icons($class);
+	}
+}
+
+function tally_st_header_woocommerce_cart($class = ''){
+	if(tally_option('header_woocommerce_cart') == 'on'){
+		tally_woocommerce_cart($class);
+	}
+}
+
+function tally_st_header_wpml_menu($class = ''){
+	if(tally_option('header_wpml_menu') == 'on'){
+		tally_wpml_language_switcher( $class);
+	}
+}
+
+function tally_st_header_advertisment($class = ''){
+	if(tally_option('header_advertisment_code') != ''){
+		echo tally_option('header_advertisment_code');
+	}
+}
+
+function tally_st_header_serch($class = ''){
+	if(tally_option('header_search_bar') == 'on'){
+		tally_icon_search_bar($class);
+	}
+}
+
+function tally_st_header_login($class = '', $login = '<i class="fa fa-lock"></i> Login', $register = '<i class="fa fa-plus-square"></i> Register'){
+	?>
+    <div class="header-logins-area <?php echo $class; ?>">
+    	<div class="header-logins-inner">
+        	<?php if($login != ''){ ?><a class="header-login" href="<?php echo tally_option('header_login_url'); ?>"><?php echo $login; ?></a> <?php } ?>
+        	<?php if($register != ''){ ?><a class="header-register" href="<?php echo tally_option('header_register_url'); ?>"><?php echo $register; ?></a> <?php } ?>
+        </div>
+    </div>
+    <?php
 }

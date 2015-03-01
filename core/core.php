@@ -92,14 +92,6 @@ class tally_loader{
 		if(!defined('TALLY_THEME_SUPPORT_URL')){ define('TALLY_THEME_SUPPORT_URL', ''); }
 		if(!defined('TALLY_THEME_MORE_URL')){ define('TALLY_THEME_MORE_URL', ''); }
 		if(!defined('TALLY_THEME_NAME')){ define('TALLY_THEME_NAME', ''); }
-		
-		/*  Constant for remove or active 
-			some part of the theme
-		----------------------------------*/
-		define('TALLY_LAYOUT_TOPBAR_REMOVE', apply_filters('tally_layout_topbar_remove', false));
-		define('TALLY_LAYOUT_SUBHEADER_REMOVE', apply_filters('tally_layout_subheader_remove', false));
-		define('TALLY_LAYOUT_FOOTER_WIDGETS_REMOVE', apply_filters('tally_layout_footer_widgets_remove', false));
-		define('TALLY_LAYOUT_FOOTER_REMOVE', apply_filters('tally_layout_footer_remove', false));
 	}
 	
 	
@@ -207,24 +199,6 @@ class tally_loader{
 			'before_title' => '<h4 class="heading">',
 			'after_title' => '</h4>',
 		));
-		register_sidebar( array(
-			'name' => __('Footer Widget #5', 'tally_taxdomain'),
-			'id' => 'footer_widget_5',
-			'description' => __('Footer Widget #5', 'tally_taxdomain'),
-			'before_widget' => '<div id="%1$s" class="widget %2$s">',
-			'after_widget' => "</div>",
-			'before_title' => '<h4 class="heading">',
-			'after_title' => '</h4>',
-		));
-		register_sidebar( array(
-			'name' => __('Footer Widget #6', 'tally_taxdomain'),
-			'id' => 'footer_widget_6',
-			'description' => __('Footer Widget #6', 'tally_taxdomain'),
-			'before_widget' => '<div id="%1$s" class="widget %2$s">',
-			'after_widget' => "</div>",
-			'before_title' => '<h4 class="heading">',
-			'after_title' => '</h4>',
-		));
 	}
 	
 	
@@ -284,10 +258,8 @@ class tally_loader{
 		/* Loading the Metaboxes
 		----------------------------------*/
 		if(function_exists('ot_register_meta_box')){
-			tally_file_dri('metaboxs/_m_post-formats.php');
 			tally_file_dri('metaboxs/_m_blog-template.php');
 			tally_file_dri('metaboxs/_m_pages.php');
-			tally_file_dri('metaboxs/_m_action.php');
 		}
 		
 		
@@ -304,24 +276,6 @@ class tally_loader{
 		tally_file_dri('options/_o_integration.php');
 		tally_file_dri('options/_o_action.php');
 		tally_file_dri('options/_o_advance.php');
-		
-		
-		/* Loading Structure
-		----------------------------------*/		
-		tally_file_dri('structure/_st_topbar.php');
-		tally_file_dri('structure/_st_header.php');
-		tally_file_dri('structure/subheader/_st_subheader.php');
-		tally_file_dri('structure/_st_footer-widgets.php');
-		tally_file_dri('structure/_st_footer.php');
-		tally_file_dri('structure/_st_sidebar.php');
-		tally_file_dri('structure/_st_layout.php');
-		
-		tally_file_dri('structure/_st_comments.php');
-		
-		tally_file_dri('structure/_st_post.php');
-		tally_file_dri('structure/_st_contents.php');
-		
-		tally_file_dri('structure/_st_preloader.php');
 	}
 	
 	
