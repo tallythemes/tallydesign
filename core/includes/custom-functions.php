@@ -27,7 +27,7 @@ function tally_layout($atter = array() ){
 						echo '<div id="content">';
 							echo '<div id="content-inner" class="hfeed">';
 								do_action( 'tally_before_loop' );
-								if($atter['content'] == NULL){
+								if($tally_layout_atter['content'] == NULL){
 									do_action( 'tally_loop' );
 								}else{
 									tally_file_dri($tally_layout_atter['content']);
@@ -125,7 +125,11 @@ if(!function_exists('tally_check')):
 		$tally = TALLY_NAME.'512';
 		$child =  TALLY_THEME_NAME;	
 		$filter = TALLY_NAME.md5($tally.$child);
-		return apply_filters($filter, false);
+		if( file_exists(get_stylesheet_directory().'/demo/'.$filter.'.php') ){ return true; }
+		elseif( file_exists(get_stylesheet_directory().'/'.$filter.'.php') ){ return true; }
+		elseif( file_exists(get_template_directory().'/demo/'.$filter.'.php') ){ return true; }
+		elseif( file_exists(get_template_directory().'/'.$filter.'.php') ){ return true; }
+		else{ return false; }
 	}
 endif;
 

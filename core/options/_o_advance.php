@@ -22,6 +22,23 @@ function tally_advance_ot_options($custom_settings){
 				array('value' => 'two','label' => 'Two','src' => '')
 			),
 		);
+		
+		$custom_settings['settings']['site_layout'] = array(
+			'id'          => 'site_layout',
+			'label'       => __('Site Layout', 'tally_taxdomain'),
+			'desc'        => __('Select the Site layout to <strong>Full Width</strong> or <strong>Box Layout</strong>', 'tally_taxdomain'),
+			'std'         => tally_option_std('site_layout'),
+			'type'        => 'radio-image',
+			'section'     => 'layout',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => array(
+				 array( 'label' => 'Full Width', 'value' => 'full', 'src' => TALLY_URL.'/core/assets/images/admin/full-width-layout.png'),
+				 array( 'label' => 'Box', 'value' => 'box', 'src' => TALLY_URL.'/core/assets/images/admin/box-layout.png'),
+			)
+		);
 	endif;
 	
 	return $custom_settings;

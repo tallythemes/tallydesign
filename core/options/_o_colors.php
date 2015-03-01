@@ -405,7 +405,6 @@ function tally_color_ot_options($custom_settings){
 			'choices'     => ''
 		);
 		/*-- Topbar Color --*/
-		if(TALLY_LAYOUT_TOPBAR_REMOVE == false):
 		$custom_settings['settings']['color_block_topbar'] = array(
 			'id'          => 'color_block_topbar',
 			'label'       => '',
@@ -449,7 +448,6 @@ function tally_color_ot_options($custom_settings){
 			'class'       => '',
 			'choices'     => ''
 		);
-		endif;
 		
 		
 		/*-- Header Color --*/
@@ -498,7 +496,6 @@ function tally_color_ot_options($custom_settings){
 		);
 		
 		/*-- Sub Header Color --*/
-		if(TALLY_LAYOUT_SUBHEADER_REMOVE == false):
 		$custom_settings['settings']['color_block_subheader'] = array(
 			'id'          => 'color_block_subheader',
 			'label'       => '',
@@ -542,7 +539,6 @@ function tally_color_ot_options($custom_settings){
 			'class'       => '',
 			'choices'     => ''
 		);
-		endif;
 		
 		
 		/*-- Main Content area Color --*/
@@ -592,7 +588,6 @@ function tally_color_ot_options($custom_settings){
 		
 		
 		/*-- Footer Widgets area Color --*/
-		if(TALLY_LAYOUT_FOOTER_WIDGETS_REMOVE == false):
 		$custom_settings['settings']['color_block_fwidget'] = array(
 			'id'          => 'color_block_fwidget',
 			'label'       => '',
@@ -636,10 +631,8 @@ function tally_color_ot_options($custom_settings){
 			'class'       => '',
 			'choices'     => ''
 		);
-		endif;
 		
 		/*-- Footer area Color --*/
-		if(TALLY_LAYOUT_FOOTER_REMOVE == false):
 		$custom_settings['settings']['color_block_footer'] = array(
 			'id'          => 'color_block_footer',
 			'label'       => '',
@@ -684,7 +677,6 @@ function tally_color_ot_options($custom_settings){
 			'class'       => '',
 			'choices'     => ''
 		);
-		endif;
 		
 		/*-- Navigation Color --*/
 		$custom_settings['settings']['color_tab_6'] = array(
