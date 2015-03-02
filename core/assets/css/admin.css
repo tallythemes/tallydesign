@@ -44,6 +44,7 @@ body .ot-theme-option-tabs.ui-tabs .ot-theme-option-nav.ui-tabs-nav li.ui-state-
 	padding: 10px 15px 11px 15px !important; 
 	font-size: 13px;
 	color: #000000 !important; 
+	border-bottom:0;
 }
 .ot-theme-option-tabs.ui-tabs .ot-theme-option-panels{ margin-top:0 !important; border:solid 1px #2EA2CC !important; border-top:0 !important; }
 .ot-theme-option-tabs.ui-tabs .ot-theme-option-panels .ui-tabs-panel{ padding:20px; }
