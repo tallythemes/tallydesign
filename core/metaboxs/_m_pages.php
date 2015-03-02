@@ -115,37 +115,6 @@ function tally_page_metabox_register() {
 			'post_type'   => '',
 			'taxonomy'    => '',
 			'class'       => '',
-		);
-		
-		$settings[] = array(
-			'id'          => 'tally_page_tab2',
-			'label'       => __('Comment', 'tally_taxdomain'),
-			'desc'        => '',
-			'std'         => '',
-			'type'        => 'tab',
-			'section'     => '',
-			'rows'        => '',
-			'post_type'   => '',
-			'taxonomy'    => '',
-			'class'       => '',
-		);
-		
-		$settings[] = array(
-			'id'          => 'tally_is_comment',
-			'label'       => __('Enable Comment Area', 'tally_taxdomain'),
-			'desc'        => __('Enable or Disable comment on this page / post.', 'tally_taxdomain'),
-			'std'         => '',
-			'type'        => 'select',
-			'section'     => 'branding',
-			'rows'        => '',
-			'post_type'   => '',
-			'taxonomy'    => '',
-			'class'       => '',
-			'choices'     => array(
-				 array( 'label' => '', 'value' => '' ),
-				 array( 'label' => 'Yes', 'value' => 'yes' ),
-				 array( 'label' => 'No', 'value' => 'no'),
-			)
 		);		
 		$settings[] = array(
 			'id'          => 'tally_page_tab4',
