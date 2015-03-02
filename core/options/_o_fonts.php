@@ -5,22 +5,29 @@ function tally_typography_ot_options($custom_settings){
 	if(tally_check() == true):
 		$custom_settings['sections'][] = array( 'id' => 'typography','title' => 'Typography');
 		
-		$custom_settings['settings']['enable_google_fonts'] = array(
-			'id'          => 'enable_google_fonts',
-			'label'       => __('Enable Google Fonts', 'tally_taxdomain'),
-			'desc'        => __('By selection NO the theme will use default fonts.', 'tally_taxdomain'),
-			'std'         => tally_option_std('enable_google_fonts'),
-			'type'        => 'select',
+		$custom_settings['settings']['typography_tab1'] = array(
+			'id'          => 'typography_tab1',
+			'label'       => __('Google Fonts', 'tally_taxdomain'),
+			'desc'        => 'ssss',
+			'std'         => '',
+			'type'        => 'tab',
 			'section'     => 'typography',
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
 			'class'       => '',
-			'choices'     => array( 
-				array('value' => '','label' => '--','src' => ''),
-				array('value' => 'yes','label' => 'Yes','src' => ''),
-				array('value' => 'no','label' => 'No','src' => '')
-			),
+		);
+		$custom_settings['settings']['enable_google_fonts'] = array(
+			'id'          => 'enable_google_fonts',
+			'label'       => __('Enable Google Fonts', 'tally_taxdomain'),
+			'desc'        => __('By selection NO the theme will use default fonts.', 'tally_taxdomain'),
+			'std'         => tally_option_std('enable_google_fonts'),
+			'type'        => 'on_off',
+			'section'     => 'typography',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
 		);
 		$custom_settings['settings']['headings_google_font_link'] = array(
 			'id'          => 'headings_google_font_link',
@@ -34,6 +41,7 @@ function tally_typography_ot_options($custom_settings){
 			'taxonomy'    => '',
 			'class'       => '',
 			'choices'     => '',
+			'condition'   => 'enable_google_fonts:is(on)',
 		);
 		$custom_settings['settings']['headings_google_font_family'] = array(
 			'id'          => 'headings_google_font_family',
@@ -47,6 +55,7 @@ function tally_typography_ot_options($custom_settings){
 			'taxonomy'    => '',
 			'class'       => '',
 			'choices'     => '',
+			'condition'   => 'enable_google_fonts:is(on)',
 		);
 		$custom_settings['settings']['body_google_font_link'] = array(
 			'id'          => 'body_google_font_link',
@@ -60,6 +69,7 @@ function tally_typography_ot_options($custom_settings){
 			'taxonomy'    => '',
 			'class'       => '',
 			'choices'     => '',
+			'condition'   => 'enable_google_fonts:is(on)',
 		);
 		$custom_settings['settings']['body_google_font_family'] = array(
 			'id'          => 'body_google_font_family',
@@ -73,6 +83,20 @@ function tally_typography_ot_options($custom_settings){
 			'taxonomy'    => '',
 			'class'       => '',
 			'choices'     => '',
+			'condition'   => 'enable_google_fonts:is(on)',
+		);
+		
+		$custom_settings['settings']['typography_tab2'] = array(
+			'id'          => 'typography_tab2',
+			'label'       => __('Font Size', 'tally_taxdomain'),
+			'desc'        => '',
+			'std'         => '',
+			'type'        => 'tab',
+			'section'     => 'typography',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
 		);
 		$custom_settings['settings']['h1_font_size'] = array(
 			'id'          => 'h1_font_size',

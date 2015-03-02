@@ -216,6 +216,7 @@ class tally_loader{
 		add_filter( 'ot_show_pages', '__return_false' );
 		add_filter( 'ot_override_forced_textarea_simple', '__return_true' );
 		add_filter( 'ot_header_version_text', '__return_false' );
+		add_filter( 'ot_post_formats', '__return_true' );
 	}
 	
 	
@@ -267,8 +268,9 @@ class tally_loader{
 		----------------------------------*/
 		tally_file_dri('options/config-option-tree.php');
 		tally_file_dri('options/_o_branding.php');
-		tally_file_dri('options/_o_layout.php');
+		
 		tally_file_dri('options/_o_header.php');
+		tally_file_dri('options/_o_subheader.php');
 		tally_file_dri('options/_o_colors.php');
 		tally_file_dri('options/_o_fonts.php');
 		tally_file_dri('options/_o_social-icons.php');

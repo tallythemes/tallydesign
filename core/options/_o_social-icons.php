@@ -8,17 +8,12 @@ function tally_social_icons_ot_options($custom_settings){
         'label'       => __('Enable Social Icons', 'tally_taxdomain'),
         'desc'        => '',
         'std'         => tally_option_std('enable_social_icons'),
-        'type'        => 'select',
+        'type'        => 'on_off',
         'section'     => 'social_icons',
         'rows'        => '',
         'post_type'   => '',
         'taxonomy'    => '',
         'class'       => '',
-        'choices'     => array( 
-			array('value' => '','label' => '--','src' => ''),
-			array('value' => 'yes','label' => 'Yes','src' => ''),
-			array('value' => 'no','label' => 'No','src' => '')
-        ),
 	);
 	
 	$custom_settings['settings']['social_icons'] = array(
@@ -32,6 +27,7 @@ function tally_social_icons_ot_options($custom_settings){
         'post_type'   => '',
         'taxonomy'    => '',
         'class'       => '',
+		'condition'   => 'enable_social_icons:is(on)',
         'settings'    => array(
 			array(
 				'id'          => 'link',

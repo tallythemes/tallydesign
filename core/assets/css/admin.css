@@ -118,3 +118,25 @@ body .wrap.settings-wrap .ui-tabs-nav{
 
 
 .ot-theme-option-tabs.ui-tabs .ot-theme-option-panels{ margin-top:20px !important; }
+
+
+
+/*--- Tab style ---*/
+body .ot-theme-option-tabs.ui-tabs .ot-theme-option-nav.ui-tabs-nav{ height:39px !important; border-color: #2EA2CC; }
+body .ot-theme-option-tabs.ui-tabs .ot-theme-option-nav.ui-tabs-nav li:first-child{ margin-left:20px; }
+body .ot-theme-option-tabs.ui-tabs .ot-theme-option-nav.ui-tabs-nav li.ui-state-default{ background:#2EA2CC; border-color: #2EA2CC; }
+body .ot-theme-option-tabs.ui-tabs .ot-theme-option-nav.ui-tabs-nav li a{ 
+	padding: 10px 15px 10px 15px !important; 
+	font-weight: bold; 
+	font-size: 13px; 
+	color: #FFFFFF !important; 
+}
+body .ot-theme-option-tabs.ui-tabs .ot-theme-option-nav.ui-tabs-nav li.ui-state-active{ background:#FFFFFF; border-color: #2EA2CC; }
+body .ot-theme-option-tabs.ui-tabs .ot-theme-option-nav.ui-tabs-nav li.ui-state-active a{ 
+	border-color: #2EA2CC;  
+	padding: 10px 15px 11px 15px !important; 
+	font-size: 13px;
+	color: #000000 !important; 
+}
+.ot-theme-option-tabs.ui-tabs .ot-theme-option-panels{ margin-top:0 !important; border:solid 1px #2EA2CC !important; border-top:0 !important; }
+.ot-theme-option-tabs.ui-tabs .ot-theme-option-panels .ui-tabs-panel{ padding:20px; }
