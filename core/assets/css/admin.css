@@ -1,3 +1,8 @@
+#option-tree-logo{ display:none !important; }
+body #option-tree-header-wrap{ display:none; }
+body #option-tree-sub-header{ border: 1px solid #222; background:#222; -webkit-box-shadow: inset 0 1px 0 rgba(0,0,0,0), 0 1px 3px rgba(0,0,0,0); -moz-box-shadow: inset 0 1px 0 rgba(0,0,0,0), 0 1px 3px rgba(0,0,0,0); box-shadow: inset 0 1px 0 rgba(0,0,0,0), 0 1px 3px rgba(0,0,0,0); }
+
+
 body #option-tree-settings-api > .ui-tabs{  
 -webkit-box-shadow: inset 205px 0 0 #f1f1f1, inset 206px 0 0 #ccc, 0 1px 3px rgba(0,0,0,0.05);
 -moz-box-shadow: inset 205px 0 0 #f1f1f1, inset 206px 0 0 #ccc, 0 1px 3px rgba(0,0,0,0.05);
@@ -27,8 +32,13 @@ body .format-setting .format-setting-inner{ float:none; width:auto; }
 body #option-tree-settings-api .format-setting-label .label, 
 body #poststuff .format-setting-label .label{ font-weight:bold; font-size:16px; }
 
+body .list-sub-setting .format-settings{ margin-bottom:10px !important; }
+body .list-sub-setting .format-settings .format-setting-label,
+body .list-sub-setting .format-settings .format-setting{ width:96%; margin-left:2% !important; }
+
 
 /*--- Tab style ---*/
+body .ot-theme-option-tabs{ margin-top:20px; }
 body .ot-theme-option-tabs.ui-tabs .ot-theme-option-nav.ui-tabs-nav{ height:39px !important; border-color: #2EA2CC; }
 body .ot-theme-option-tabs.ui-tabs .ot-theme-option-nav.ui-tabs-nav li:first-child{ margin-left:20px; }
 body .ot-theme-option-tabs.ui-tabs .ot-theme-option-nav.ui-tabs-nav li.ui-state-default{ background:#2EA2CC; border-color: #2EA2CC; }

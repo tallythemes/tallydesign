@@ -39,7 +39,7 @@ function tally_register_required_plugins_list() {
         'is_automatic' => false,                   // Automatically activate plugins after installation or not.
         'message'      => '',                      // Message to output right before the plugins table.
         'strings'      => array(
-            'page_title'                      => __( 'Install Required Plugins', 'tally_child_textdomain' ),
+            'page_title'                      => __( 'Install Required Plugins', 'tally_textdomain' ),
             'menu_title'                      => __( 'Install Plugins', 'tally_child_textdomain' ),
             'installing'                      => __( 'Installing Plugin: %s', 'tally_child_textdomain' ), // %s = plugin name.
             'oops'                            => __( 'Something went wrong with the plugin API.', 'tally_child_textdomain' ),

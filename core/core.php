@@ -217,6 +217,8 @@ class tally_loader{
 		add_filter( 'ot_override_forced_textarea_simple', '__return_true' );
 		add_filter( 'ot_header_version_text', '__return_false' );
 		add_filter( 'ot_post_formats', '__return_true' );
+		add_filter( 'ot_show_new_layout', '__return_false' );
+		add_filter( 'ot_meta_boxes', '__return_true' );
 	}
 	
 	
@@ -259,7 +261,6 @@ class tally_loader{
 		/* Loading the Metaboxes
 		----------------------------------*/
 		if(function_exists('ot_register_meta_box')){
-			tally_file_dri('metaboxs/_m_blog-template.php');
 			tally_file_dri('metaboxs/_m_pages.php');
 		}
 		
@@ -268,13 +269,14 @@ class tally_loader{
 		----------------------------------*/
 		tally_file_dri('options/config-option-tree.php');
 		tally_file_dri('options/_o_branding.php');
-		
 		tally_file_dri('options/_o_header.php');
 		tally_file_dri('options/_o_subheader.php');
 		tally_file_dri('options/_o_colors.php');
 		tally_file_dri('options/_o_fonts.php');
 		tally_file_dri('options/_o_social-icons.php');
 		tally_file_dri('options/_o_footer.php');
+		tally_file_dri('options/_o_blog-page.php');
+		tally_file_dri('options/_o_contact-page.php');
 		tally_file_dri('options/_o_404-page.php');
 		tally_file_dri('options/_o_integration.php');
 		tally_file_dri('options/_o_action.php');

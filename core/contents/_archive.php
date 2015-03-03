@@ -1,2 +1,2 @@
 <?php
-do_action('tally_deafult_post_content');
+tally_site_content('archive/archive-simple');
