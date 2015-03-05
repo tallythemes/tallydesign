@@ -1,5 +1,5 @@
 <?php 
-	$footer_widget_layout = tally_footer_widget_layout_option(); 
+	$footer_widget_layout = tally_option( 'footer_widget_layout', 3); 
 	$footer_widget_layout_class = array(3,3,3,3);
 	if( $footer_widget_layout == '1' ){ $footer_widget_layout_class = array(4,4,4,0); }
 	elseif( $footer_widget_layout == '2' ){ $footer_widget_layout_class = array(8,4,0,0); }
