@@ -88,6 +88,47 @@ function tally_header_element_socialIcons($args = array()){
 
 
 
+/* Header Element Advertisment
+-------------------------------------------------*/
+function tally_header_element_advertisment($args = array()){
+	$default = array(			
+		'before' => '<div class="tally-header-ads"><div class="tally-header-ads-inner">',
+		'after' => '</div></div>',
+	);
+	$args = array_merge($default, $args);
+	tally_file_dri('structure/header/__advertisment.php', $args);
+}
+
+
+
+/* Header Element Info Text
+-------------------------------------------------*/
+function tally_header_element_loginBox($args = array()){
+	$default = array(			
+		'before' => '<div class="tally-header-loginBox"><div class="tally-header-loginBox-inner">',
+		'after' => '</div></div>',
+	);
+	$args = array_merge($default, $args);
+	tally_file_dri('structure/header/__login-box.php', $args);
+}
+
+
+
+
+/* Header Element Info Text
+-------------------------------------------------*/
+function tally_header_element_infoText($args = array()){
+	$default = array(			
+		'before' => '<div class="tally-header-infoText"><div class="tally-header-infoText-inner">',
+		'after' => '</div></div>',
+	);
+	$args = array_merge($default, $args);
+	tally_file_dri('structure/header/__info-text.php', $args);
+}
+
+
+
+
 /* Resize image
 -------------------------------------------------*/
 if(!function_exists('tally_image_size')):

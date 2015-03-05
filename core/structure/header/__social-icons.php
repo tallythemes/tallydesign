@@ -8,4 +8,4 @@
                 <?php endforeach; ?>
             </div>
         <?php endif; ?>
-<?php endif; echo tally_option('header_social_icons'); ?>
+<?php endif; ?>

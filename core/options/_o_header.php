@@ -129,6 +129,20 @@ function tally_header_ot_options($custom_settings){
 			'choices'     => '',
 		);
 		
+		$custom_settings['settings']['header_loginbox'] = array(
+			'id'          => 'header_loginbox',
+			'label'       => __('Enable Login Box', 'tally_taxdomain'),
+			'desc'        => __('include the full URL including <code>http://</code>', 'tally_taxdomain'),
+			'std'         => tally_option_std('header_loginbox'),
+			'type'        => 'on_off',
+			'section'     => 'header',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => '',
+		);
+		
 		$custom_settings['settings']['header_register_url'] = array(
 			'id'          => 'header_register_url',
 			'label'       => __('Register Page URL', 'tally_taxdomain'),
@@ -136,12 +150,12 @@ function tally_header_ot_options($custom_settings){
 			'std'         => tally_option_std('header_register_url'),
 			'type'        => 'text',
 			'section'     => 'header',
-
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
 			'class'       => '',
 			'choices'     => '',
+			'condition'   => 'header_loginbox:is(on)',
 		);
 		
 		$custom_settings['settings']['header_login_url'] = array(
@@ -156,6 +170,7 @@ function tally_header_ot_options($custom_settings){
 			'taxonomy'    => '',
 			'class'       => '',
 			'choices'     => '',
+			'condition'   => 'header_loginbox:is(on)',
 		);
 		
 		$custom_settings['settings']['header_logout_url'] = array(
@@ -170,6 +185,7 @@ function tally_header_ot_options($custom_settings){
 			'taxonomy'    => '',
 			'class'       => '',
 			'choices'     => '',
+			'condition'   => 'header_loginbox:is(on)',
 		);
 		
 		$custom_settings['settings']['header_profile_url'] = array(
@@ -184,6 +200,7 @@ function tally_header_ot_options($custom_settings){
 			'taxonomy'    => '',
 			'class'       => '',
 			'choices'     => '',
+			'condition'   => 'header_loginbox:is(on)',
 		);
 		
 		
