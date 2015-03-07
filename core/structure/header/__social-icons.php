@@ -2,7 +2,7 @@
         <?php if(is_array(tally_option('social_icons'))): ?>
             <div class="tally-social-icons <?php echo $data['class']; ?>">
                 <?php foreach(tally_option('social_icons') as $social_icon): ?>
-                    <a href="<?php echo $social_icon['link']; ?>" class="<?php echo $social_icon['icon']; ?>" title="<?php echo $social_icon['title']; ?>" rel="nofollow" target="_blank">
+                    <a href="<?php echo $social_icon['link']; ?>" class="social-<?php echo $social_icon['icon']; ?>" title="<?php echo $social_icon['title']; ?>" rel="nofollow" target="_blank">
                         <i class="fa <?php echo $social_icon['icon']; ?>"></i>
                     </a>
                 <?php endforeach; ?>

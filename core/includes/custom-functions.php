@@ -105,8 +105,9 @@ function tally_header_element_advertisment($args = array()){
 -------------------------------------------------*/
 function tally_header_element_loginBox($args = array()){
 	$default = array(			
-		'before' => '<div class="tally-header-loginBox"><div class="tally-header-loginBox-inner">',
-		'after' => '</div></div>',
+		'before' => '',
+		'after' => '',
+		'class' => '',
 	);
 	$args = array_merge($default, $args);
 	tally_file_dri('structure/header/__login-box.php', $args);
@@ -124,6 +125,49 @@ function tally_header_element_infoText($args = array()){
 	);
 	$args = array_merge($default, $args);
 	tally_file_dri('structure/header/__info-text.php', $args);
+}
+
+
+
+
+/* Header Element Logo
+-------------------------------------------------*/
+function tally_header_element_logo($args = array()){
+	$default = array(			
+		'before' => '',
+		'after' => '',
+		'class' => '',
+	);
+	$args = array_merge($default, $args);
+	tally_file_dri('structure/header/__logo.php', $args);
+}
+
+
+
+/* Header Element Menu Primary
+-------------------------------------------------*/
+function tally_header_element_MenuPrimary($args = array()){
+	$default = array(			
+		'before' => '',
+		'after' => '',
+		'class' => '',
+	);
+	$args = array_merge($default, $args);
+	tally_file_dri('structure/header/__primary-menu.php', $args);
+}
+
+
+
+/* Header Element Search
+-------------------------------------------------*/
+function tally_header_element_search($args = array()){
+	$default = array(			
+		'before' => '',
+		'after' => '',
+		'class' => '',
+	);
+	$args = array_merge($default, $args);
+	tally_file_dri('structure/header/__search.php', $args);
 }
 
 

@@ -73,6 +73,17 @@
 		overflow-x: auto;
 	}
 	
+	#lean_overlay {
+		position: fixed;
+		z-index:100;
+		top: 0px;
+		left: 0px;
+		height:100%;
+		width:100%;
+		background: #000;
+		display: none;
+	}
+	
 	
 	
 	
@@ -359,9 +370,9 @@
 	
 	
 	
-/* wordpress require
+/* wordpress Widgets
 ================================================== */
-.widget_meta ul,
+	.widget_meta ul,
 	.widget_pages ul,
 	.widget_nav_menu ul,
 	.widget_recent_entries ul,
@@ -674,3 +685,148 @@
 		-webkit-transform: scale(1.0);
 	  }
 	}
+	
+	
+	
+	
+	
+/* Header Elements
+================================================== */
+
+	/*	Logo
+	----------------------------------------------*/
+	#logo h1{ font-size: 26px; line-height: 26px; margin-bottom: 3px; font-weight: bold; }
+	
+	
+	/*	Email
+	----------------------------------------------*/
+	
+	
+	
+	/*	Phone
+	----------------------------------------------*/
+	
+	
+	
+	/*	Social Icons
+	----------------------------------------------*/
+	.tally-social-icons.he-skin1 a{ display:inline-block; border-left:1px solid; height:36px; width:36px; text-align:center; line-height:36px; margin-bottom: -1px; margin-right: -4px; font-size:18px; }
+	.tally-social-icons.he-skin1 a:last-child{ border-right:1px solid; }
+	
+	
+	
+	/*	Login Box
+	----------------------------------------------*/
+	.tally-header-loginBox.he-skin1{  }
+	.tally-header-loginBox.he-skin1 .tally-header-loginBox-inner{  }
+	
+	.tally-header-loginBox.he-skin1 a:hover{ text-decoration:none; }
+	
+	.tally-header-loginBox.he-skin1 .tally-login,
+	.tally-header-loginBox.he-skin1 .tally-logout{ border: 2px solid; border-radius: 5px; padding: 8px 20px; display: inline-block;  }
+	.tally-header-loginBox.he-skin1 .tally-profile,
+	.tally-header-loginBox.he-skin1 .tally-register{ margin-right:5px; display:inline-block; font-weight:bold; }
+	
+	
+	
+	/*	Search
+	----------------------------------------------*/
+	#tally-header-search.he-skin1 .the_search_icon{ display: inline-block; height: 40px; width: 40px; text-align: center; line-height: 40px;  }
+	#tally-header-search.he-skin1 #tally-header-searchform{ display:none; max-width:500px; width:90%; position:relative; }
+	#tally-header-search.he-skin1 #tally-header-searchform input[type="text"]{
+		background: rgba(255, 255, 255, 0.10);
+		padding: 0 20px;
+		padding-right:60px;
+		border: solid 3px rgba(255, 255, 255, 0.23);
+		border-radius: 5px;
+		display: inline-block;
+		float: left; 
+		width:100%;
+		height:60px;
+		color:#FFF;
+	}
+	#tally-header-search.he-skin1 #tally-header-searchform i.fa{ 
+		width: 60px;
+		height: 60px;
+		position: absolute;
+		color: #fff;
+		z-index: 1;
+		font-size: 22px;
+		line-height: 60px;
+		top: 0;
+		right: 0;
+		text-align: center;
+	}
+	#tally-header-search.he-skin1 #tally-header-searchform input[type="submit"]{
+		background: none;
+		font-size: 0;
+		cursor: pointer;
+		margin: 0;
+		padding: 0;
+		width: 60px;
+		height: 60px;
+		position: absolute;
+		z-index: 2;
+		right: 0;
+	}
+	
+	
+	/*	Primary Menu
+	----------------------------------------------*/
+	#primary-menu.he-skin1{  }
+	#primary-menu.he-skin1 ul{ margin:0; padding:0; list-style-type:none; }
+	#primary-menu.he-skin1 ul li{ margin:0; padding:0; float:left; display:block; position:relative; }
+	#primary-menu.he-skin1 ul li a{ display:block; padding:10px 14px; text-decoration:none; font-size:14px; margin-left:10px; }
+	#primary-menu.he-skin1 ul li.menu-item-has-children > a:after{ content:"\f107"; font-family: 'FontAwesome'; margin-left:3px; }
+	#primary-menu.he-skin1 > ul > li:first-child a{ padding-left:3px; }
+		
+	/*1st level dropdown an all level dropdown style*/
+	#primary-menu.he-skin1 ul li ul{ position:absolute; left:10px; z-index:99; display:none; width:180px; background-color: #fff; padding-top:6px; border:solid 1px; }
+	#primary-menu.he-skin1 ul li ul li{ float:none; }
+	#primary-menu.he-skin1 ul li ul li a{ 
+		display:block;
+		border:none;
+		padding:8px 15px;
+		text-decoration:none;
+		font-size:12px;
+		font-weight:400;
+		text-transform:capitalize;
+		margin-left:0;
+		border-radius: 0px;
+		border-bottom:solid 1px;
+	}
+	
+	#primary-menu.he-skin1 div ul li ul li a:hover{ text-decoration:none; }
+	#primary-menu.he-skin1 div ul li ul li ul{ position:absolute; left:180px; top:-1px; }
+	
+	#primary-menu.he-skin1 div ul > li:hover > ul{display:block;}
+	
+	
+	
+	/*	Advertisment
+	----------------------------------------------*/
+	
+	
+	
+	/*	Info Text
+	----------------------------------------------*/
+	
+	
+	
+	
+/* Header Layout
+================================================== */
+
+	/*	Layout 1
+	----------------------------------------------*/
+	#tally-header-1{  }
+	#tally-header-1 #topbar{ border-bottom:solid 1px; }
+	#tally-header-1 #topbar .tally-header-phone{ float:left; display:inline-block; margin-top:9px; }
+	#tally-header-1 #topbar .tally-header-email{ float:left; display:inline-block; margin-top:9px; margin-left:10px; }
+	#tally-header-1 #topbar .tally-social-icons { float:right; display:inline-block; }
+	
+	#tally-header-1 #header{ border-bottom:solid 2px; height:100px; }
+	#tally-header-1 #header #logo{ float:left; display:inline-block; margin-top:24px; }
+	#tally-header-1 #header #primary-menu{ float:right; display:inline-block; margin-top:29px; }
+	#tally-header-1 #header #tally-header-search{ float:right; display:inline-block; margin-top:30px; }
+	#tally-header-1 #header .tally-header-loginBox{ float:right; display:inline-block; margin-top:30px; }

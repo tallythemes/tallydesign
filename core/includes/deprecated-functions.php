@@ -336,7 +336,7 @@ function tallyfn_logo($logo = '', $des = true){
 	?>
     <div id="logo">
 		<?php if($logo != 'none'): ?>
-			<a href="<?php echo home_url(); ?>"><img src="<?php echo $logo; ?>" alt="<?php bloginfo('name'); ?>"></a>
+			<a href="<?php echo home_url(); ?>"><img src="<?php echo tally_option('site_logo'); ?>" alt="<?php bloginfo('name'); ?>"></a>
 		<?php else: ?>
 			<h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
 			<?php if($des == true){ ?><span><?php bloginfo( 'description' ); ?></span><?php } ?>
