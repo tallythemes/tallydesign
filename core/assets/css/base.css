@@ -721,6 +721,7 @@
 		margin-bottom: -1px; 
 		margin-right: -4px; 
 		font-size:18px; 
+		color:inherit !important;
 	}
 	.tally-social-icons.he-skin1 a:last-child{ border-right:1px solid; }
 	
@@ -792,7 +793,7 @@
 	#primary-menu.he-skin1 > ul > li:first-child a{ padding-left:3px; }
 		
 	/*1st level dropdown an all level dropdown style*/
-	#primary-menu.he-skin1 ul li ul{ position:absolute; left:10px; z-index:99; display:none; width:180px; background-color: #fff; padding-top:6px; border:solid 1px; }
+	#primary-menu.he-skin1 ul li ul{ position:absolute; left:10px; z-index:99; display:none; width:180px; background-color: #fff; border:solid 1px; }
 	#primary-menu.he-skin1 ul li ul li{ float:none; }
 	#primary-menu.he-skin1 ul li ul li a{ 
 		display:block;
@@ -831,6 +832,7 @@
 	
 	/*	Copyright
 	----------------------------------------------*/
+	
 	
 	/*	Menu
 	----------------------------------------------*/

@@ -790,3 +790,61 @@ function tally_creat_config_array(){
 	
 	return $output;
 }
+
+
+
+/*
+	Theme Color Output function
+---------------------------------------------------*/
+function tally_option_color($option_name, $rgba = '', $echo = true){
+	
+	$get_color = tally_option($option_name);
+	
+	if($rgba != ''){ $get_color = 'rgba('.tally_hex2rgb($get_color).','.$rgba.')'; }
+	
+	if($echo == true){ echo $get_color; }else{ return $get_color; }
+}
+
+
+
+
+/*
+	Theme Option Background 
+---------------------------------------------------*/
+function tally_option_background($option_name, $echo = true){
+	
+	$option = tally_option($option_name);
+	$bg = '';
+	
+	if(is_array($option)){
+		if(isset($option['background-color']) && !empty($option['background-color'])){ $bg .= 'background-color:'.$option['background-color'].';'; }
+		if(isset($option['background-repeat']) && !empty($option['background-repeat'])){ $bg .= 'background-repeat:'.$option['background-repeat'].';'; }
+		if(isset($option['background-attachment']) && !empty($option['background-attachment'])){ $bg .= 'background-attachment:'.$option['background-attachment'].';'; }
+		if(isset($option['background-position']) && !empty($option['background-position'])){ $bg .= 'background-position:'.$option['background-position'].';'; }
+		if(isset($option['background-size']) && !empty($option['background-size'])){ $bg .= 'background-size:'.$option['background-size'].';'; }
+		if(isset($option['background-image']) && !empty($option['background-image'])){ $bg .= 'background-image:url('.$option['background-image'].');'; }
+	}
+	
+	if($echo == true){ echo $bg; }else{ return $bg; }
+}
+
+
+
+/*
+	Theme Option Background 
+---------------------------------------------------*/
+function tally_option_link($option_name, $selector, $property='color', $echo = true){
+	
+	$option = tally_option($option_name);
+	$link = '';
+	
+	if(is_array($option)){
+		if(isset($option['link']) && !empty($option['link'])){ $link .= $selector. '{ '.$property.':'.$option['link'].';}' ."\n"; }
+		if(isset($option['hover']) && !empty($option['hover'])){ $link .= $selector. ':hover{ '.$property.':'.$option['hover'].';}' ."\n"; }
+		if(isset($option['active']) && !empty($option['active'])){ $link .= $selector. ':active{ '.$property.':'.$option['active'].';}' ."\n"; }
+		if(isset($option['visited']) && !empty($option['visited'])){ $link .= $selector. ':visited{ '.$property.':'.$option['visited'].';}' ."\n"; }
+		if(isset($option['focus']) && !empty($option['focus'])){ $link .= $selector. ':focus{ '.$property.':'.$option['focus'].';}' ."\n"; }
+	}
+	
+	if($echo == true){ echo $link; }else{ return $link; }
+}
