@@ -19,6 +19,7 @@ get_header(); ?>
                     <?php tally_site_content('_page'); ?>
                 </div>
             </div>
+            <div class="clear"></div>
         </div>
     </div>
     

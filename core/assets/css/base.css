@@ -36,7 +36,7 @@
 		#subheader{  }
 			#subheader #subheader-inner{  }
 	
-	#site-main{  }
+	#site-main{ padding-top:50px; padding-bottom:30px; }
 	#site-main-inner{  }
 		#page-content{  }
 			#page-content-inner{  }
@@ -84,6 +84,8 @@
 		display: none;
 	}
 	
+	.align-left{ display:inline-block; float:left; }
+	.align-right{ display:inline-block; float:right; }
 	
 	
 	
@@ -710,7 +712,16 @@
 	
 	/*	Social Icons
 	----------------------------------------------*/
-	.tally-social-icons.he-skin1 a{ display:inline-block; border-left:1px solid; height:36px; width:36px; text-align:center; line-height:36px; margin-bottom: -1px; margin-right: -4px; font-size:18px; }
+	.tally-social-icons.he-skin1 a{ 
+		display:inline-block; 
+		border-left:1px solid; 
+		height:36px; width:36px; 
+		text-align:center; 
+		line-height:36px; 
+		margin-bottom: -1px; 
+		margin-right: -4px; 
+		font-size:18px; 
+	}
 	.tally-social-icons.he-skin1 a:last-child{ border-right:1px solid; }
 	
 	
@@ -810,7 +821,23 @@
 	
 	/*	Info Text
 	----------------------------------------------*/
+
+
+
+
+
+/* Footer Elements
+================================================== */
 	
+	/*	Copyright
+	----------------------------------------------*/
+	
+	/*	Menu
+	----------------------------------------------*/
+	.footer_menu.fe-skin-1 ul{ margin:0; padding:0; list-style-type:none; }
+	.footer_menu.fe-skin-1 ul li{ margin:0; padding:0; list-style-type:none; float:left; margin-left:10px; margin-right:10px; }
+	.footer_menu.fe-skin-1 ul li a{  display:block; }
+	.footer_menu.fe-skin-1 ul ul{ display:none; }
 	
 	
 	
@@ -830,3 +857,34 @@
 	#tally-header-1 #header #primary-menu{ float:right; display:inline-block; margin-top:29px; }
 	#tally-header-1 #header #tally-header-search{ float:right; display:inline-block; margin-top:30px; }
 	#tally-header-1 #header .tally-header-loginBox{ float:right; display:inline-block; margin-top:30px; }
+	
+	
+	
+	
+/* Sub Header Layout
+================================================== */
+
+	/*	Layout 1
+	----------------------------------------------*/
+	.tally-subHeader-1{ border-bottom: solid 1px; padding: 40px 0; background: #f1f1f1; }
+	.tally-subHeader-1 .page_title{ font-size: 24px; font-weight: bold; margin-bottom:0; line-height: 30px; }
+	.tally-subHeader-1 .breadcrumbs{ margin-top: 5px; }
+	
+	
+	
+	
+/* Footer Widget Layouts
+================================================== */
+
+	/*	Layout 1
+	----------------------------------------------*/
+	.tally-footerWidgets-1{ background:#f9f9f9; padding-top:50px; padding-bottom:30px; }
+	
+	
+	
+/* Footer Layouts
+================================================== */
+
+	/*	Layout 1
+	----------------------------------------------*/
+	.tally-footer-1{ padding:20px 0 15px 0; background:#f1f1f1; border-top:solid 1px; }

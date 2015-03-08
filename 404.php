@@ -14,6 +14,7 @@
                     <?php tally_site_content('_404'); ?>
                 </div>
             </div>
+            <div class="clear"></div>
         </div>
     </div>
     

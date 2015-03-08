@@ -20,6 +20,7 @@ get_header(); ?>
                 </div>
             </div>
             <?php get_sidebar(); ?>
+            <div class="clear"></div>
         </div>
     </div>
     

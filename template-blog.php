@@ -21,6 +21,7 @@ get_header(); ?>
                 </div>
             </div>
             <?php if($blog_template_layout != 'no'){ get_sidebar(); } ?>
+            <div class="clear"></div>
         </div>
     </div>
     
