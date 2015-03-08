@@ -109,6 +109,19 @@ header("Content-type: text/css; charset: UTF-8");
 #site-main { <?php tally_option_background('color_content_bg'); ?> }
 body { <?php tally_option_background('site_background'); ?> }
 
+#site-main .widget_recent_entries a,
+#site-main .widget_categories a,
+#site-main .widget_archive a,
+#site-main .widget_recent_comments a{ color:<?php tally_option_color('color_text'); ?>; }
+
+#site-main .widget_recent_entries li:hover,
+#site-main .widget_categories li:hover,
+#site-main .widget_archive li:hover,
+#site-main .widget_recent_comments li:hover,
+#site-main .widget_recent_entries li:hover a,
+#site-main .widget_categories li:hover a,
+#site-main .widget_archive li:hover a,
+#site-main .widget_recent_comments li:hover a{ color:<?php tally_option_color('primary_color'); ?>; }
 
 
 
@@ -122,9 +135,31 @@ body { <?php tally_option_background('site_background'); ?> }
 
 /*	Footer Widgets
 ---------------------------------------------------------*/
-
+#fwidget{ color:<?php tally_option_color('footer_w_text_color'); ?>; }
+#fwidget h1,
+#fwidget h2,
+#fwidget h3,
+#fwidget h4,
+#fwidget h5,
+#fwidget h6{ color:<?php tally_option_color('footer_w_heading_color'); ?>; }
+<?php tally_option_link('footer_w_link_color', '#fwidget a'); ?>
+#fwidget { border-color:<?php tally_option_color('footer_w_border_color'); ?>; }
+#fwidget *{ border-color:<?php tally_option_color('footer_w_inner_border_color'); ?>; }
+#fwidget .innerbg{ background-color:<?php tally_option_color('footer_w_inner_bg_color'); ?>; }
+#fwidget { <?php tally_option_background('footer_w_bg'); ?> }
 
 
 
 /*	Footer
 ---------------------------------------------------------*/
+#footer{ color:<?php tally_option_color('footer_c_text_color'); ?>; }
+#footer h1,
+#footer h2,
+#footer h3,
+#footer h4,
+#footer h5,
+#footer h6{ color:<?php tally_option_color('footer_c_text_color'); ?>; }
+<?php tally_option_link('footer_c_link_color', '#footer a'); ?>
+#footer { border-color:<?php tally_option_color('footer_c_border_color'); ?>; }
+#footer *{ border-color:<?php tally_option_color('footer_c_inner_border_color'); ?>; }
+#footer { <?php tally_option_background('footer_c_bg'); ?> }
