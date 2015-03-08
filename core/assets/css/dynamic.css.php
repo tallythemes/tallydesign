@@ -27,7 +27,6 @@ header("Content-type: text/css; charset: UTF-8");
 
 
 
-
 /*	Menu
 ---------------------------------------------------------*/
 #primary-menu ul li a{ 
@@ -53,8 +52,6 @@ header("Content-type: text/css; charset: UTF-8");
 
 
 
-
-
 /*	Elements
 ---------------------------------------------------------*/
 
@@ -71,8 +68,14 @@ header("Content-type: text/css; charset: UTF-8");
 /*=================================================================================
 	Sub-Header
 ==================================================================================*/
-
-
+#subheader .page_title{ color:<?php tally_option_color('subheader_title_color'); ?>; }
+#subheader .page_subtitle{ color:<?php tally_option_color('subheader_subtitle_color'); ?>; }
+#subheader .breadcrumbs span a{ color:<?php tally_option_color('subheader_breadcrumbs_color'); ?>; }
+#subheader .breadcrumbs span.sep{ color:<?php tally_option_color('subheader_breadcrumbs_divider_color'); ?>; }
+#subheader .breadcrumbs span{ color:<?php tally_option_color('subheader_breadcrumbs_active_color'); ?>; }
+#subheader,
+#subheader *{ border-color:<?php tally_option_color('subheader_border_color'); ?> !important; }
+#subheader{ <?php tally_option_background('subheader_bg'); ?> }
 
 
 
@@ -84,8 +87,27 @@ header("Content-type: text/css; charset: UTF-8");
 /*=================================================================================
 	Site Main
 ==================================================================================*/
-
-
+#site-main{ color:<?php tally_option_color('color_text'); ?>; }
+#site-main .metatext{ color:<?php tally_option_color('color_meta'); ?>; }
+#site-main h1,
+#site-main h2,
+#site-main h3,
+#site-main h4,
+#site-main h5,
+#site-main h6{ color:<?php tally_option_color('color_headings'); ?>; }
+#site-main h1.subheadings,
+#site-main h2.subheadings,
+#site-main h3.subheadings,
+#site-main h4.subheadings,
+#site-main h5.subheadings,
+#site-main h6.subheadings{ color:<?php tally_option_color('color_subheadings'); ?>; }
+<?php tally_option_link('color_link', '#site-main a'); ?>
+#site-main,
+#site-main *{ border-color:<?php tally_option_color('color_border'); ?>; }
+#site-main .border-alt{ border-color:<?php tally_option_color('color_border2'); ?>; }
+#site-main .innerbg{ background-color:<?php tally_option_color('color_inner_bg'); ?>; }
+#site-main { <?php tally_option_background('color_content_bg'); ?> }
+body { <?php tally_option_background('site_background'); ?> }
 
 
 
@@ -100,6 +122,7 @@ header("Content-type: text/css; charset: UTF-8");
 
 /*	Footer Widgets
 ---------------------------------------------------------*/
+
 
 
 

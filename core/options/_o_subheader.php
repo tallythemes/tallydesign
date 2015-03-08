@@ -133,6 +133,32 @@ function tally_subheader_ot_options($custom_settings){
 			'class'       => '',
 			'choices'     => '',
 		);
+		$custom_settings['settings']['subheader_breadcrumbs_active_color'] = array(
+			'id'          => 'subheader_breadcrumbs_active_color',
+			'label'       => __('Breadcrumbs Active Color', 'tally_taxdomain'),
+			'desc'        => '',
+			'std'         => tally_option_std('subheader_breadcrumbs_active_color'),
+			'type'        => 'colorpicker',
+			'section'     => 'subheader',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => '',
+		);
+		$custom_settings['settings']['subheader_breadcrumbs_divider_color'] = array(
+			'id'          => 'subheader_breadcrumbs_divider_color',
+			'label'       => __('Breadcrumbs Divider Color', 'tally_taxdomain'),
+			'desc'        => '',
+			'std'         => tally_option_std('subheader_breadcrumbs_divider_color'),
+			'type'        => 'colorpicker',
+			'section'     => 'subheader',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => '',
+		);
 		$custom_settings['settings']['subheader_border_color'] = array(
 			'id'          => 'subheader_border_color',
 			'label'       => __('Border Color', 'tally_taxdomain'),

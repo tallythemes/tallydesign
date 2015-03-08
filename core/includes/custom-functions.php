@@ -840,10 +840,10 @@ function tally_option_link($option_name, $selector, $property='color', $echo = t
 	
 	if(is_array($option)){
 		if(isset($option['link']) && !empty($option['link'])){ $link .= $selector. '{ '.$property.':'.$option['link'].';}' ."\n"; }
-		if(isset($option['hover']) && !empty($option['hover'])){ $link .= $selector. ':hover{ '.$property.':'.$option['hover'].';}' ."\n"; }
 		if(isset($option['active']) && !empty($option['active'])){ $link .= $selector. ':active{ '.$property.':'.$option['active'].';}' ."\n"; }
 		if(isset($option['visited']) && !empty($option['visited'])){ $link .= $selector. ':visited{ '.$property.':'.$option['visited'].';}' ."\n"; }
 		if(isset($option['focus']) && !empty($option['focus'])){ $link .= $selector. ':focus{ '.$property.':'.$option['focus'].';}' ."\n"; }
+		if(isset($option['hover']) && !empty($option['hover'])){ $link .= $selector. ':hover{ '.$property.':'.$option['hover'].';}' ."\n"; }
 	}
 	
 	if($echo == true){ echo $link; }else{ return $link; }
