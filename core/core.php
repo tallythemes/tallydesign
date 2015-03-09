@@ -275,6 +275,7 @@ class tally_loader{
 		tally_file_dri('options/_o_fonts.php');
 		tally_file_dri('options/_o_social-icons.php');
 		tally_file_dri('options/_o_footer.php');
+		tally_file_dri('options/_o_home.php');
 		tally_file_dri('options/_o_blog-page.php');
 		tally_file_dri('options/_o_contact-page.php');
 		tally_file_dri('options/_o_404-page.php');
