@@ -37,12 +37,6 @@ $tally_hconfig = array(
 		'div_id' => '',
 	),
 	array(
-		'id' => 'slideshow',
-		'biz' => false,
-		'div_class' => '',
-		'div_id' => '',
-	),
-	array(
 		'id' => 'textBlock',
 		'biz' => false,
 		'div_class' => '',
