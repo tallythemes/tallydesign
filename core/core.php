@@ -244,8 +244,8 @@ class tally_loader{
 		include('includes/custom-functions.php');
 		include('includes/breadcrumb.php');
 		include('includes/scripts-loader.php');
-		include('includes/color-management.php');
 		include('includes/default-theme-options.php');
+		include('includes/masonry-html-class.php');
 		if(class_exists( 'TGM_Plugin_Activation')){ include('includes/recommended-plugin-list.php'); }
 		
 		

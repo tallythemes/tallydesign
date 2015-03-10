@@ -13,6 +13,20 @@ $custom_settings['settings'][] = array(
 	'class'       => '',
 );
 $custom_settings['settings'][] = array(
+	'id'          => $home_blogGrid_prefix.'enable',
+	'label'       => __('Enable BlogGrid Section', 'tally_taxdomain'),
+	'desc'        => '',
+	'std'         => tally_option_std($home_blogGrid_prefix.'enable'),
+	'type'        => 'on_off',
+	'section'     => 'home',
+	'rows'        => '5',
+	'post_type'   => '',
+	'taxonomy'    => '',
+	'class'       => '',
+	'choices'     => '',
+);
+
+$custom_settings['settings'][] = array(
 	'id'          => $home_blogGrid_prefix.'description',
 	'label'       => __('Blog Grid Description', 'tally_taxdomain'),
 	'desc'        => '',

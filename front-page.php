@@ -8,11 +8,9 @@
     
     <div id="site-main">
         <div id="site-main-inner">
-            <div id="page-content">
-                <div id="page-content-inner">
+           
                     <?php tally_site_content('_front-page'); ?>
-                </div>
-            </div>
+           
             <div class="clear"></div>
         </div>
     </div>

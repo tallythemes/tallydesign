@@ -840,11 +840,35 @@ function tally_option_link($option_name, $selector, $property='color', $echo = t
 	
 	if(is_array($option)){
 		if(isset($option['link']) && !empty($option['link'])){ $link .= $selector. '{ '.$property.':'.$option['link'].';}' ."\n"; }
-		if(isset($option['active']) && !empty($option['active'])){ $link .= $selector. ':active{ '.$property.':'.$option['active'].';}' ."\n"; }
-		if(isset($option['visited']) && !empty($option['visited'])){ $link .= $selector. ':visited{ '.$property.':'.$option['visited'].';}' ."\n"; }
-		if(isset($option['focus']) && !empty($option['focus'])){ $link .= $selector. ':focus{ '.$property.':'.$option['focus'].';}' ."\n"; }
+		//if(isset($option['active']) && !empty($option['active'])){ $link .= $selector. ':active{ '.$property.':'.$option['active'].';}' ."\n"; }
+		//if(isset($option['visited']) && !empty($option['visited'])){ $link .= $selector. ':visited{ '.$property.':'.$option['visited'].';}' ."\n"; }
+		//if(isset($option['focus']) && !empty($option['focus'])){ $link .= $selector. ':focus{ '.$property.':'.$option['focus'].';}' ."\n"; }
 		if(isset($option['hover']) && !empty($option['hover'])){ $link .= $selector. ':hover{ '.$property.':'.$option['hover'].';}' ."\n"; }
 	}
 	
 	if($echo == true){ echo $link; }else{ return $link; }
+}
+
+
+
+
+/*
+	Theme Option spacing 
+---------------------------------------------------*/
+function tally_option_spacing($option_name, $selector, $property='padding', $echo = true){
+	
+	$option = tally_option($option_name);
+	$output = '';
+	$unit = '';
+	
+	if(is_array($option)){
+		if(isset($option['unit']) && !empty($option['unit'])){ $unit = $option['unit']; }else{ $unit = 'px'; }
+		
+		if(isset($option['top']) && !empty($option['top'])){ $output .= $selector. '{ '.$property.'-top:'.$option['top'].$unit.';}' ."\n"; }
+		if(isset($option['right']) && !empty($option['right'])){ $output .= $selector. '{ '.$property.'-right:'.$option['right'].$unit.';}' ."\n"; }
+		if(isset($option['bottom']) && !empty($option['bottom'])){ $output .= $selector. '{ '.$property.'-bottom:'.$option['bottom'].$unit.';}' ."\n"; }
+		if(isset($option['left']) && !empty($option['left'])){ $output .= $selector. '{ '.$property.'-left:'.$option['left'].$unit.';}' ."\n"; }
+	}
+	
+	if($echo == true){ echo $output; }else{ return $output; }
 }

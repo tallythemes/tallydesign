@@ -163,3 +163,31 @@ body { <?php tally_option_background('site_background'); ?> }
 #footer { border-color:<?php tally_option_color('footer_c_border_color'); ?>; }
 #footer *{ border-color:<?php tally_option_color('footer_c_inner_border_color'); ?>; }
 #footer { <?php tally_option_background('footer_c_bg'); ?> }
+
+
+
+
+
+
+
+/*=================================================================================
+	Home:::: blogGrid
+==================================================================================*/
+.home-blogGrid{ 
+	<?php tally_option_background('home_blogGrid_bg'); ?>  
+    border-color:<?php tally_option_color('home_blogGrid_border_color'); ?>  !important;
+    color:<?php tally_option_color('home_blogGrid_text_color'); ?> !important;
+}
+.home-blogGrid h1,
+.home-blogGrid h2,
+.home-blogGrid h3,
+.home-blogGrid h4,
+.home-blogGrid h5,
+.home-blogGrid h6{ color:<?php tally_option_color('home_blogGrid_heading_color'); ?> !important; }
+<?php tally_option_spacing('home_blogGrid_padding', '.home-blogGrid', 'padding'); ?>
+.home-blogGrid *{ border-color:<?php tally_option_color('home_blogGrid_border_inner_color'); ?>  !important; }
+.home-blogGrid .post-title a{ color:<?php tally_option_color('home_blogGrid_heading_color'); ?> !important; }
+.home-blogGrid .home-blogGrid-item{ background-color:<?php tally_option_color('home_blogGrid__innerbg'); ?>; }
+.home-blogGrid .home-blogGrid-item .post-meta{ background-color:<?php tally_option_color('home_blogGrid_border_inner_color', '0.6'); ?>; }
+.home-blogGrid .home-blogGrid-item .post-meta a,
+.home-blogGrid .home-blogGrid-item .post-meta{  color:<?php tally_option_color('home_blogGrid_text_color', '0.8'); ?> !important; }

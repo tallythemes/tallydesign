@@ -14,7 +14,7 @@ function tally_script_loader(){
 	wp_enqueue_script('jquery-leanModal', tally_assets_file('js/jquery.leanModal.min.js'), array('jquery'), '');
 	
 	//Custom Script
-	wp_enqueue_script('theme', tally_assets_file('js/theme.js'), array('jquery'), '', true);
+	wp_enqueue_script('theme', tally_assets_file('js/theme.js'), array('jquery', 'masonry'), '', true);
 	wp_enqueue_script('jquery-wow', tally_assets_file('js/wow.js'), array('jquery'), '', true);
 	wp_enqueue_script('jquery-smoothscroll', tally_assets_file('js/smoothscroll.js'), array('jquery'), '', true);
 	
