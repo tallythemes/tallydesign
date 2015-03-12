@@ -715,12 +715,13 @@
 	.tally-social-icons.he-skin1 a{ 
 		display:inline-block; 
 		border-left:1px solid; 
-		height:36px; width:36px; 
+		height:44px; 
+		width:44px; 
 		text-align:center; 
-		line-height:36px; 
+		line-height:44px; 
 		margin-bottom: -1px; 
 		margin-right: -4px; 
-		font-size:18px; 
+		font-size:14px; 
 		color:inherit !important;
 	}
 	.tally-social-icons.he-skin1 a:last-child{ border-right:1px solid; }
@@ -857,8 +858,8 @@
 	----------------------------------------------*/
 	#tally-header-1{  }
 	#tally-header-1 #topbar{ border-bottom:solid 1px; }
-	#tally-header-1 #topbar .tally-header-phone{ float:left; display:inline-block; margin-top:9px; }
-	#tally-header-1 #topbar .tally-header-email{ float:left; display:inline-block; margin-top:9px; margin-left:10px; }
+	#tally-header-1 #topbar .tally-header-phone{ float:left; display:inline-block; margin-top:12px; }
+	#tally-header-1 #topbar .tally-header-email{ float:left; display:inline-block; margin-top:12px; margin-left:10px; }
 	#tally-header-1 #topbar .tally-social-icons { float:right; display:inline-block; }
 	
 	#tally-header-1 #header{ border-bottom:solid 2px; height:100px; }
@@ -947,7 +948,26 @@
 
 /* Home::: infoBox
 ================================================== */
-
+.home-infoBox.hpss1 .home-infobox-item{ text-align:center; padding: 20px 20px; border-radius: 6px; }
+.home-infoBox.hpss1 .home-infobox-item .hibi-icon{
+	border: 2px solid;
+	border-color: transparent;
+	border-color: rgba(0,0,0,.08);
+	border-radius: 50%;
+	line-height: 100px;
+	height: 100px;
+	width: 100px;
+	-webkit-transition: background-color .2s;
+	transition: background-color .2s;
+	text-align:center;
+	display:inline-block;
+	margin-bottom: 2em;
+}
+.home-infoBox.hpss1 .home-infobox-item .hibi-icon i.fa{ font-size: 48px;	vertical-align: middle; }
+.home-infoBox.hpss1 .home-infobox-item .hibi-description{ }
+.home-infoBox.hpss1 .home-infobox-item .hibi-description h4{  }
+.home-infoBox.hpss1 .home-infobox-item .hibi-description p{  }
+.home-infoBox.hpss1 .home-infobox-item a:hover{ text-decoration:none; }
 
 
 
@@ -980,7 +1000,7 @@
 .home-slideshow-caption.text-align-right{ width: 60%; right:10%; text-align:right;  }
 .home-slideshow-caption.text-align-center{ width: 60%; left:20%; text-align:center;  }
 .home-slideshow-caption-inner{  }
-.home-slideshow-caption h4{ font-size: 3em; line-height: 1.2em; margin-bottom: .5em; text-transform: capitalize; color:#FFF !important; }
+.home-slideshow-caption h4{ font-size: 3em; line-height: 1.2em; margin-bottom: .5em; text-transform: capitalize; color:#FFF !important;  }
 .home-slideshow-caption p{ font-size: 1.7em; line-height: 1.4em; margin-top: .6em; color:#FFF; }
 .home-slideshow-caption .readmore{
 	font-size: 14px;

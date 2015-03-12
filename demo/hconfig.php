@@ -7,6 +7,12 @@ $tally_hconfig = array(
 		'div_id' => '',
 	),
 	array(
+		'id' => 'infoBox',
+		'biz' => false,
+		'div_class' => '',
+		'div_id' => '',
+	),
+	array(
 		'id' => 'blogGrid',
 		'biz' => false,
 		'div_class' => '',
@@ -14,12 +20,6 @@ $tally_hconfig = array(
 	),
 	array(
 		'id' => 'contact',
-		'biz' => false,
-		'div_class' => '',
-		'div_id' => '',
-	),
-	array(
-		'id' => 'infoBox',
 		'biz' => false,
 		'div_class' => '',
 		'div_id' => '',
