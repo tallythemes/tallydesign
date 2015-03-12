@@ -235,6 +235,7 @@ class tally_loader{
 		/* Loading vandors files
 		----------------------------------*/
 		if(!function_exists('mr_image_resize')){ include('vandors/mr-image-resize.php'); }
+		if(!function_exists('aq_resize')){ include('vandors/aq_resizer.php'); }
 		if(!class_exists( 'TGM_Plugin_Activation')){ include('vandors/class-tgm-plugin-activation.php'); }
 		
 		
@@ -246,6 +247,7 @@ class tally_loader{
 		include('includes/scripts-loader.php');
 		include('includes/default-theme-options.php');
 		include('includes/masonry-html-class.php');
+		include('includes/flexslider-html-class.php');
 		if(class_exists( 'TGM_Plugin_Activation')){ include('includes/recommended-plugin-list.php'); }
 		
 		

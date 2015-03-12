@@ -191,3 +191,16 @@ body { <?php tally_option_background('site_background'); ?> }
 .home-blogGrid .home-blogGrid-item .post-meta{ background-color:<?php tally_option_color('home_blogGrid_border_inner_color', '0.6'); ?>; }
 .home-blogGrid .home-blogGrid-item .post-meta a,
 .home-blogGrid .home-blogGrid-item .post-meta{  color:<?php tally_option_color('home_blogGrid_text_color', '0.8'); ?> !important; }
+
+
+
+/*=================================================================================
+	Home:::: slideshow
+==================================================================================*/
+.home-slideshow-caption .readmore.button-color-accent{ 
+	border-color:<?php tally_option_color('primary_color'); ?> !important; 
+    background-color:<?php tally_option_color('primary_color'); ?>; 
+}
+.home-slideshow-caption .readmore.button-color-accent:hover{ background-color:<?php tally_option_color('primary_color', '0.24'); ?>;}
+.home-slideshow .wfs-control-nav li a:hover,
+.home-slideshow .wfs-control-nav li a.wfs-active{ background-color:<?php tally_option_color('primary_color'); ?>; }

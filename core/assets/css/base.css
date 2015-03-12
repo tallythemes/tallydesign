@@ -918,7 +918,7 @@
 /* Home:::
 ================================================== */
 .tally-front #site-main{ padding:0; }
-.tally-home-section{ width:100%; height:auto; position:relative; clear:both; }
+.tally-home-section{ width:100%; position:relative; clear:both; }
 .tally-home-section .tally-home-section-inner{ width:90%; max-width:1100px; margin:0 auto; }
 
 	
@@ -971,7 +971,82 @@
 
 /* Home::: slideshow
 ================================================== */
+.home-slideshow{ position:relative; }
+.home-slideshow-item{ width:100%; overflow:hidden; position:relative; }
 
+/*-- Caption --*/
+.home-slideshow-caption{ position: absolute; z-index: 10; top: 20%; }
+.home-slideshow-caption.text-align-left{ width: 60%; left:10%; text-align:left; }
+.home-slideshow-caption.text-align-right{ width: 60%; right:10%; text-align:right;  }
+.home-slideshow-caption.text-align-center{ width: 60%; left:20%; text-align:center;  }
+.home-slideshow-caption-inner{  }
+.home-slideshow-caption h4{ font-size: 3em; line-height: 1.2em; margin-bottom: .5em; text-transform: capitalize; color:#FFF !important; }
+.home-slideshow-caption p{ font-size: 1.7em; line-height: 1.4em; margin-top: .6em; color:#FFF; }
+.home-slideshow-caption .readmore{
+	font-size: 14px;
+	display: inline-block;
+	border-radius: 6px;
+	padding: 10px 25px;
+	font-weight: bold;
+	margin-top:5px;
+}
+.home-slideshow-caption .readmore:hover{ text-decoration:none; }
+.home-slideshow-caption .readmore.button-color-accent{ border: 3px solid #F00 !important; background-color:#F00; color: #FFF !important; }
+.home-slideshow-caption .readmore.button-color-accent:hover{ background-color:rgba(255, 0, 0, 0.24); color:#FFF !important;}
+.home-slideshow-caption .readmore.button-color-light{ border: 3px solid #fff !important; color: #fff !important; }
+.home-slideshow-caption .readmore.button-color-light:hover{ background:#FFF; color:#000 !important;  }
+.home-slideshow-caption .readmore.button-color-dark{ border: 3px solid #000 !important; color: #000 !important; }
+.home-slideshow-caption .readmore.button-color-dark:hover{ background:#000; color:#fff !important;  }
+
+/*-- Control Nav --*/
+.home-slideshow .wfs-control-nav{ position:absolute; text-align:center; width: 100%; bottom: 20px; }
+.home-slideshow .wfs-control-nav li{ display:inline-block; }
+.home-slideshow .wfs-control-nav li a{ 
+	background-color: transparent;
+	border: 3px solid rgba(0,0,0,.7) !important;
+	border-radius: 50%;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	height: 14px;
+	line-height: 0;
+	width: 14px; 
+	margin-left:2px; 
+	margin-right:2px
+}
+.home-slideshow .wfs-control-nav li a:hover,
+.home-slideshow .wfs-control-nav li a.wfs-active{ background-color:#F00; }
+
+/*-- Direction Nav --*/
+.home-slideshow .wfs-direction-nav li a{
+	background-color: #000;
+	display: block;
+	height: 50px;
+	margin-top: -25px;
+	text-align: center;
+	opacity: 0;
+	outline: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transition: opacity .2s;
+	transition: opacity .2s;
+	width: 50px;
+	z-index: 100;
+}
+.home-slideshow .wfs-direction-nav li a:after{
+	color: #fff;
+	content: '\f104';
+	display: inline-block;
+	font-family: 'FontAwesome';
+	font-size: 24px;
+	line-height: 50px;
+	position: relative;
+	vertical-align: middle;
+}
+.home-slideshow .wfs-direction-nav li a.wfs-next:after{ content: '\f105'; }
+.home-slideshow .wfs-direction-nav li a.wfs-next{ right:0; border-radius: 7px 0 0 7px; }
+.home-slideshow .wfs-direction-nav li a.wfs-prev{ left:0; border-radius: 0 7px 7px 0; }
+.home-slideshow:hover .wfs-direction-nav li a{ opacity: .7;	}
 
 
 

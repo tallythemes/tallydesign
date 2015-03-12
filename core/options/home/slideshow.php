@@ -155,13 +155,18 @@ $custom_settings['settings'][] = array(
 			'label'       => __('Button Color', 'tally_taxdomain'),
 			'desc'        => '',
 			'std'         => '',
-			'type'        => 'colorpicker',
+			'type'        => 'select',
 			'section'     => '',
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
 			'class'       => '',
 			'choices'     => '',
+			'choices'     => array( 
+				array('value' => 'accent','label' => 'accent','src' => ''),
+				array('value' => 'light','label' => 'light','src' => ''),
+				array('value' => 'dark','label' => 'dark','src' => '')
+			),
 		),
 		
 	)
@@ -181,35 +186,6 @@ $custom_settings['settings'][] = array(
 	'condition'   => $home_slideshow_prefix.'enable:is(on)',
 );
 
-
-$custom_settings['settings'][] = array(
-	'id'          => $home_slideshow_prefix.'height',
-	'label'       => __('Slider Height', 'tally_taxdomain'),
-	'desc'        => __('Heaight of the slideshow. Example <strong>400</strong>', 'tally_taxdomain'),
-	'std'         => tally_option_std($home_slideshow_prefix.'height'),
-	'type'        => 'text',
-	'section'     => 'home',
-	'rows'        => '5',
-	'post_type'   => '',
-	'taxonomy'    => '',
-	'class'       => '',
-	'choices'     => '',
-	'condition'   => $home_slideshow_prefix.'enable:is(on)',
-);
-$custom_settings['settings'][] = array(
-	'id'          => $home_slideshow_prefix.'content_width',
-	'label'       => __('Slideshow Content Width', 'tally_taxdomain'),
-	'desc'        => __('Content width of the slideshow, example <strong>960</strong>', 'tally_taxdomain'),
-	'std'         => tally_option_std($home_slideshow_prefix.'content_width'),
-	'type'        => 'text',
-	'section'     => 'home',
-	'rows'        => '5',
-	'post_type'   => '',
-	'taxonomy'    => '',
-	'class'       => '',
-	'choices'     => '',
-	'condition'   => $home_slideshow_prefix.'enable:is(on)',
-);
 $custom_settings['settings'][] = array(
 	'id'          => $home_slideshow_prefix.'control_nav',
 	'label'       => __('Control Nave', 'tally_taxdomain'),

@@ -201,6 +201,34 @@ endif;
 
 
 
+/* Resize image
+-------------------------------------------------*/
+if(!function_exists('tally_image_size2')):
+function tally_image_size2($url, $width = '', $height = '', $crop = true){
+	global $wpdb, $blog_id;
+	
+    $query = "SELECT ID FROM {$wpdb->posts} WHERE guid='$url'";
+    $id = $wpdb->get_var($query);
+	
+	if($url == NULL){ 
+		$url = 'http://placehold.it/'.$width.'x'.$height; 
+		return $url;
+	}
+	
+	if(function_exists('mr_image_resize')){
+		if($id == false){
+			return $url;
+		}else{
+			return aq_resize( $url, $width, $height, $crop);
+		}
+	}else{
+		return $url;
+	}
+}
+endif;
+
+
+
 
 /* Theme Check
 -------------------------------------------------*/
