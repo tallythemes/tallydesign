@@ -928,8 +928,8 @@
 
 /* Home::: blogGrid
 ================================================== */
-.home-blogGrid{  }
-.home-blogGrid-item{ background:#FFF; }
+.home-blogGrid{ border-top:1px solid; border-bottom:1px solid; }
+.home-blogGrid-item{ background:#FFF; border:solid 1px; }
 .home-blogGrid-item .post-title{ margin-top:20px; padding:0 20px; }
 .home-blogGrid-item .post-content{ padding:0 20px; }
 .home-blogGrid-item .post-meta{ padding:10px 20px;margin-top:20px; border-top:solid 1px; background:#f9f9f9; }

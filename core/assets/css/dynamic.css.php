@@ -185,10 +185,10 @@ body { <?php tally_option_background('site_background'); ?> }
 .home-blogGrid h5,
 .home-blogGrid h6{ color:<?php tally_option_color('home_blogGrid_heading_color'); ?> !important; }
 <?php tally_option_spacing('home_blogGrid_padding', '.home-blogGrid', 'padding'); ?>
-.home-blogGrid *{ border-color:<?php tally_option_color('home_blogGrid_border_inner_color'); ?>  !important; }
+.home-blogGrid *{ border-color:<?php tally_option_color('home_blogGrid_border_inner_color'); ?> !important; }
 .home-blogGrid .post-title a{ color:<?php tally_option_color('home_blogGrid_heading_color'); ?> !important; }
 .home-blogGrid .home-blogGrid-item{ background-color:<?php tally_option_color('home_blogGrid__innerbg'); ?>; }
-.home-blogGrid .home-blogGrid-item .post-meta{ background-color:<?php tally_option_color('home_blogGrid_border_inner_color', '0.6'); ?>; }
+.home-blogGrid .home-blogGrid-item .post-meta{ background-color:<?php tally_option_color('home_blogGrid_border_inner_color', '0.5'); ?>; }
 .home-blogGrid .home-blogGrid-item .post-meta a,
 .home-blogGrid .home-blogGrid-item .post-meta{  color:<?php tally_option_color('home_blogGrid_text_color', '0.8'); ?> !important; }
 
@@ -222,22 +222,20 @@ body { <?php tally_option_background('site_background'); ?> }
 .home-infoBox h5,
 .home-infoBox h6{ color:<?php tally_option_color('home_infoBox_heading_color'); ?> !important; }
 <?php tally_option_spacing('home_infoBox_padding', '.home-infoBox', 'padding'); ?>
-.home-blogGrid *{ border-color:<?php tally_option_color('home_infoBox_border_inner_color'); ?>  !important; }
+.home-infoBox *{ border-color:<?php tally_option_color('home_infoBox_border_inner_color'); ?>  !important; }
 
 /*	Skin 1
 ---------------------------------------------------------*/
 .home-infoBox.hpss1 .home-infobox-item a .hibi-description h4{ color:<?php tally_option_color('home_infoBox_heading_color'); ?> !important; }
 .home-infoBox.hpss1 .home-infobox-item a .hibi-description p{ color:<?php tally_option_color('home_infoBox_text_color'); ?>; }
 .home-infoBox.hpss1 .home-infobox-item{  background-color:<?php tally_option_color('home_infoBox__innerbg'); ?>; }
-<?php
-$infoBox_items = tally_option('home_infoBox_items');
-$infoBox_item_count = 1;
-if(is_array($info_items)):
-	 foreach($infoBox_items as $infoBox_item):
-	 	?>
-        
-        <?php
-	 	$infoBox_item_count++;
-	 endforeach;
-endif;
-?>
+.home-infoBox.hpss1 .home-infobox-item .hibi-icon{ 
+	background-color:<?php tally_option_color('home_infoBox_icon_bg_color'); ?>; 
+    border-color:<?php tally_option_color('home_infoBox_icon_border_color'); ?> !important;
+}
+.home-infoBox.hpss1 .home-infobox-item .hibi-icon i.fa{ color:<?php tally_option_color('home_infoBox_icon_color'); ?>; }
+.home-infoBox.hpss1 .home-infobox-item:hover .hibi-icon{ 
+	background-color:<?php tally_option_color('home_infoBox_icon_bg_hover_color'); ?>; 
+    border-color:<?php tally_option_color('home_infoBox_icon_border_hover_color'); ?> !important;
+}
+.home-infoBox.hpss1 .home-infobox-item:hover .hibi-icon i.fa{ color:<?php tally_option_color('home_infoBox_icon_hover_color'); ?>; }
