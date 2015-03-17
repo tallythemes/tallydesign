@@ -239,3 +239,33 @@ body { <?php tally_option_background('site_background'); ?> }
     border-color:<?php tally_option_color('home_infoBox_icon_border_hover_color'); ?> !important;
 }
 .home-infoBox.hpss1 .home-infobox-item:hover .hibi-icon i.fa{ color:<?php tally_option_color('home_infoBox_icon_hover_color'); ?>; }
+
+
+
+/*=================================================================================
+	Home:::: people
+==================================================================================*/
+.home-people{ 
+	<?php tally_option_background('home_people_bg'); ?>  
+    border-color:<?php tally_option_color('home_people_border_color'); ?>  !important;
+    color:<?php tally_option_color('home_people_text_color'); ?> !important;
+}
+.home-people h1,
+.home-people h2,
+.home-people h3,
+.home-people h4,
+.home-people h5,
+.home-people h6{ color:<?php tally_option_color('home_people_heading_color'); ?> !important; }
+<?php tally_option_spacing('home_people_padding', '.home-people', 'padding'); ?>
+.home-people *{ border-color:<?php tally_option_color('home_people_border_inner_color'); ?>  !important; }
+
+/*	Skin 1
+---------------------------------------------------------*/
+.home-people.hpss1 .home-people-item{ background-color:<?php tally_option_color('home_people__innerbg'); ?>; }
+.home-people.hpss1 .home-people-item .hpi-des span{ color:<?php tally_option_color('home_people_text_color', '0.6'); ?>; }
+.home-people.hpss1 .home-people-item .hpi-des a.hpi-more{ border-color:<?php tally_option_color('home_people_text_color', '0.6'); ?>  !important; }
+.home-people.hpss1 .home-people-item .hpi-des a.hpi-more:hover{ 
+	border-color:<?php tally_option_color('primary_color', '0.6'); ?> !important; 
+    color:<?php tally_option_color('primary_color'); ?>  !important;
+}
+.home-people.hpss1 .home-people-item .hpi-des .hpi-socia-icons a:hover{ color:<?php tally_option_color('primary_color'); ?>  !important; }

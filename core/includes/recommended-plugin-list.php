@@ -11,21 +11,10 @@ add_action( 'tgmpa_register', 'tally_register_required_plugins_list' );
 function tally_register_required_plugins_list() {
 	$dafults = array(
 		array(
-            'name'      => 'Option Tree',
-            'slug'      => 'option-tree',
-            'required'  => apply_filters('tally_plugin_list_optiontree_required', false),
-			'force_activation' => apply_filters('tally_plugin_list_optiontree_force_activation', false),
-		),
-		array(
             'name'      => 'Contact Form 7',
             'slug'      => 'contact-form-7',
             'required'  => apply_filters('tally_plugin_list_contactform7_required', false),
 			'force_activation'   => apply_filters('tally_plugin_list_contactform7_force_activation', false),
-		),
-		array(
-            'name'      => 'WordPress SEO by Yoast',
-            'slug'      => 'wordpress-seo',
-            'required'  => false,
 		),
 	);
 	 $plugins = apply_filters('tally_recommended_plugins', $dafults);

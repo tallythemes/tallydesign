@@ -18,12 +18,7 @@ $tally_hconfig = array(
 		'div_class' => '',
 		'div_id' => '',
 	),
-	array(
-		'id' => 'contact',
-		'biz' => false,
-		'div_class' => '',
-		'div_id' => '',
-	),
+	
 	array(
 		'id' => 'people',
 		'biz' => false,
@@ -68,6 +63,12 @@ $tally_hconfig = array(
 	),
 	array(
 		'id' => 'videoText',
+		'biz' => false,
+		'div_class' => '',
+		'div_id' => '',
+	),
+	array(
+		'id' => 'contact',
 		'biz' => false,
 		'div_class' => '',
 		'div_id' => '',

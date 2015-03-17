@@ -107,6 +107,7 @@ class tally_loader{
 		add_theme_support( 'post-formats', array( 'aside', 'gallery', 'link', 'image', 'quote', 'video', 'audio', 'chat' ) );
 		add_theme_support( 'automatic-feed-links' );
 		add_theme_support( 'post-thumbnails' );
+		add_theme_support( 'title-tag' );
 		add_filter('widget_text', 'do_shortcode');
 	}
 	
@@ -213,12 +214,16 @@ class tally_loader{
 	public function load_option_tree(){
 		/* Loading the Option Tree
 		----------------------------------*/
+		add_filter( 'ot_theme_mode', '__return_true' );
+		
 		add_filter( 'ot_show_pages', '__return_false' );
 		add_filter( 'ot_override_forced_textarea_simple', '__return_true' );
 		add_filter( 'ot_header_version_text', '__return_false' );
-		add_filter( 'ot_post_formats', '__return_true' );
+		add_filter( 'ot_post_formats', '__return_false' );
 		add_filter( 'ot_show_new_layout', '__return_false' );
 		add_filter( 'ot_meta_boxes', '__return_true' );
+		
+		include('vandors/option-tree/ot-loader.php');
 	}
 	
 	

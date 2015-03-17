@@ -32,8 +32,11 @@ body .format-setting .format-setting-inner{ float:none; width:auto; }
 body #option-tree-settings-api .format-setting-label .label, 
 body #poststuff .format-setting-label .label{ font-weight:bold; font-size:16px; }
 
-body .list-sub-setting .format-settings{ margin-bottom:10px !important; }
+body .list-list-item .format-settings,
+body .list-sub-setting .format-settings{ margin-bottom:0px !important; margin-top:10px !important; padding: 6px 0 10px 0; }
+body .list-list-item .format-settings .format-setting-label,
 body .list-sub-setting .format-settings .format-setting-label,
+body .list-list-item .format-settings .format-setting,
 body .list-sub-setting .format-settings .format-setting{ width:96%; margin-left:2% !important; }
 
 
@@ -58,3 +61,6 @@ body .ot-theme-option-tabs.ui-tabs .ot-theme-option-nav.ui-tabs-nav li.ui-state-
 }
 .ot-theme-option-tabs.ui-tabs .ot-theme-option-panels{ margin-top:0 !important; border:solid 1px #2EA2CC !important; border-top:0 !important; }
 .ot-theme-option-tabs.ui-tabs .ot-theme-option-panels .ui-tabs-panel{ padding:20px; }
+
+
+.tally-home-people{  }
