@@ -8,7 +8,7 @@ if(tally_option('home_slideshow_enable') == 'on'):
 		$image_size = array(1200, 400);
 	}
 ?>
-	<div class="tally-home-section home-slideshow">
+	<div class="tally-home-section home-slideshow tally-flexslider-skin-1">
 			<?php if(tally_option('home_slideshow_description') != ''): ?>
                 <div class="tally-home-section-des">
                     <div class="tally-home-section-des-inner">
