@@ -1057,7 +1057,7 @@
 
 .home-quoteSlider.hpss1{  }
 .home-quoteSlider.hpss1 .home-quoteSlider-item{ text-align:center; padding-bottom:50px; }
-.home-quoteSlider.hpss1 .home-quoteSlider-item .hqs-text{ font-size:26px; line-height:1.5; color:#000; font-style:italic; width:76%; margin:0 auto; margin-bottom:15px; }
+.home-quoteSlider.hpss1 .home-quoteSlider-item .hqs-text{ font-size:26px; line-height:1.5; font-style:italic; width:76%; margin:0 auto; margin-bottom:15px; }
 .home-quoteSlider.hpss1 .home-quoteSlider-item .hqs-image img{ max-width:100%; width:auto; display:inline-block; border-radius: 50%; border: solid 4px; margin-top:20px; }
 .home-quoteSlider.hpss1 .home-quoteSlider-item .hqs-name{ margin-top:15px; font-weight:bold; font-size:120%; }
 .home-quoteSlider.hpss1 .home-quoteSlider-item .hqs-pogition{ text-transform:uppercase; font-size:70%; }
@@ -1106,7 +1106,12 @@
 
 /* Home::: textBlock (1, 2, 3, 4, 5)
 ================================================== */
+.home-textBlock.htb-align-center{ text-align:center; }
+.home-textBlock.htb-align-right{ text-align:right; }
+.home-textBlock.htb-align-left{ text-align:left; }
 
+.home-textBlock.hpss1 .htb-more{ font-size: 14px; display: inline-block; border-radius: 6px; padding: 10px 25px; font-weight: bold;	margin-top:5px; }
+.home-textBlock.hpss1 .htb-more:hover{ text-decoration:none; }
 
 
 

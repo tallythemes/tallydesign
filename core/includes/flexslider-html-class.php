@@ -165,6 +165,7 @@ class tally_flexslider_html{
 						minItems: ".$this->minItems.",
 						maxItems: ".$this->maxItems.",
 						move: ".$this->move.",
+						useCSS: false,
 					});";
 			$output .= '});';
 		$output .= '</script>';

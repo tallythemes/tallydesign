@@ -37,7 +37,7 @@ jQuery(document).ready(function($) {
 	
 	$("#nav>div>ul").tinyNav({  active: 'current-menu-item' });
 	 
-	if(jQuery().fitVids) { $(".digita-video").fitVids(); }
+	if(jQuery().fitVids) { $(".tally-fitVids").fitVids(); }
 	
 	if(jQuery().prettyPhoto){ $("a[rel^='prettyPhoto']").prettyPhoto({ deeplinking: false,  social_tools : false }); }
 	

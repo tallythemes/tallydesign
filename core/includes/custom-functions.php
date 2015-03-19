@@ -176,7 +176,7 @@ function tally_header_element_search($args = array()){
 /* Resize image
 -------------------------------------------------*/
 if(!function_exists('tally_image_size')):
-function tally_image_size($url, $width = '', $height = '', $crop = true, $align = '', $retina = TALLY_IMAGE_RETINA_SUPPORT){
+function tally_image_size($url, $width = '', $height = '', $crop = true, $placeholder = true, $align = '', $retina = TALLY_IMAGE_RETINA_SUPPORT){
 	global $wpdb, $blog_id;
 	
     $query = "SELECT ID FROM {$wpdb->posts} WHERE guid='$url'";
@@ -185,6 +185,10 @@ function tally_image_size($url, $width = '', $height = '', $crop = true, $align 
 	if($url == NULL){ 
 		$url = 'http://placehold.it/'.$width.'x'.$height; 
 		return $url;
+	}
+	
+	if(($placeholder == true) && ($id == false)){ 
+		$url = 'http://placehold.it/'.$width.'x'.$height; 
 	}
 	
 	if(function_exists('mr_image_resize')){
@@ -369,6 +373,66 @@ function tally_option_std($name, $default_data = NULL){
 	$output = $default_data;
 	if(isset($all_default_filter_data[$name]) && ($all_default_filter_data[$name] != NULL)){ $output = $all_default_filter_data[$name]; }
 	return $output;
+}
+endif;
+
+
+
+/* Option of the theme (HP)
+-------------------------------------------------*/
+if(!function_exists('tally_hp_option')):
+function tally_hp_option($opt_id, $default_data = NULL){
+	
+	$options = get_option( 'tally_home' );
+	$default_options = tally_hp_get_default_options();
+	
+	if ( isset( $default_options[$opt_id] ) && '' != $default_options[$opt_id] ) {
+		$default = $default_options[$opt_id]; 
+	}else{ 
+		$default = $default_data; 
+	}
+	
+	if ( isset( $options[$opt_id] ) && '' != $options[$opt_id] ) {
+		$output = $options[$opt_id];
+	}
+	
+	if( $output == NULL ){ $output = $default; }
+	
+	return $output;
+}
+endif;
+
+if(!function_exists('tally_hp_option_std')):
+function tally_hp_option_std($name, $default_data = NULL){
+	
+	$default_options = tally_hp_get_default_options();
+	$output = $default_data;
+	if(isset($default_options[$name]) && ($default_options[$name] != NULL)){ $output = $default_options[$name]; }
+	return $output;
+	
+}
+endif;
+
+if(!function_exists('tally_hp_get_default_options')):
+function tally_hp_get_default_options(){
+	
+	if(file_exists(TALLY_CHILD_DRI . '/demo/tconfig.php')){
+		$dri = TALLY_CHILD_DRI . '/demo/tconfig.php';
+	}elseif(file_exists(TALLY_DRI . '/demo/tconfig.php')){
+		$dri = TALLY_DRI . '/demo/tconfig.php';
+	}
+	
+	if(file_exists($dri)){
+		include($dri);
+		$default_options = $tally_hpsettings;
+		
+		if(is_array($default_options)){
+			$option = $default_options;
+		}
+	}
+		
+	return $option;
+	
 }
 endif;
 
@@ -788,8 +852,8 @@ function tally_css_rule($selector, $style, $value, $display = true){
 
 /* Create Config Array
 -------------------------------------------------*/
-function tally_creat_config_array(){
-	$options = get_option( 'option_tree' );
+function tally_creat_config_array($option = 'option_tree'){
+	$options = get_option( $option );
 	//$options = apply_filters('tally_option_std', array());
 	$output = '';
 	if(is_array($options )){

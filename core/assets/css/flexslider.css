@@ -31,7 +31,7 @@
 /* FlexSlider Necessary Styles
 *********************************/
 .tally-flexslider {margin: 0; padding: 0; position:relative;}
-.tally-flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;}
+.tally-flexslider .slides > li {display: none; }
 .tally-flexslider .slides img {width: 100%; display: block;}
 .wfs-pauseplay span {text-transform: capitalize;}
 

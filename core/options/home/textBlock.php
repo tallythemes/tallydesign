@@ -41,6 +41,24 @@ $custom_settings['settings'][] = array(
 	'condition'   => $home_textBlock_prefix.'enable:is(on)',
 );
 $custom_settings['settings'][] = array(
+	'id'          => $home_textBlock_prefix.'align',
+	'label'       => __('Text Align', 'tally_taxdomain'),
+	'desc'        => '',
+	'std'         => tally_option_std($home_textBlock_prefix.'align'),
+	'type'        => 'select',
+	'section'     => 'home',
+	'rows'        => '5',
+	'post_type'   => '',
+	'taxonomy'    => '',
+	'class'       => '',
+	'choices'     => array( 
+						array('value' => 'left','label' => 'left','src' => ''),
+						array('value' => 'right','label' => 'right','src' => ''),
+						array('value' => 'center','label' => 'center','src' => '')
+					),
+	'condition'   => $home_textBlock_prefix.'enable:is(on)',
+);
+$custom_settings['settings'][] = array(
 	'id'          => $home_textBlock_prefix.'button_link',
 	'label'       => __('Button Link', 'tally_taxdomain'),
 	'desc'        => '',
@@ -68,7 +86,58 @@ $custom_settings['settings'][] = array(
 	'choices'     => '',
 	'condition'   => $home_textBlock_prefix.'enable:is(on)',
 );
-
+$custom_settings['settings'][] = array(
+	'id'          => $home_textBlock_prefix.'button_text_color',
+	'label'       => __('Button Text Color', 'tally_taxdomain'),
+	'desc'        => '',
+	'std'         => tally_option_std($home_textBlock_prefix.'button_text_color'),
+	'type'        => 'colorpicker',
+	'section'     => 'home',
+	'rows'        => '5',
+	'post_type'   => '',
+	'taxonomy'    => '',
+	'class'       => '',
+	'condition'   => $home_textBlock_prefix.'enable:is(on)',
+);
+$custom_settings['settings'][] = array(
+	'id'          => $home_textBlock_prefix.'button_color',
+	'label'       => __('Button Color', 'tally_taxdomain'),
+	'desc'        => '',
+	'std'         => tally_option_std($home_textBlock_prefix.'button_color'),
+	'type'        => 'colorpicker',
+	'section'     => 'home',
+	'rows'        => '5',
+	'post_type'   => '',
+	'taxonomy'    => '',
+	'class'       => '',
+	'condition'   => $home_textBlock_prefix.'enable:is(on)',
+);
+$custom_settings['settings'][] = array(
+	'id'          => $home_textBlock_prefix.'button_hover_text_color',
+	'label'       => __('Button Hover Text Color', 'tally_taxdomain'),
+	'desc'        => '',
+	'std'         => tally_option_std($home_textBlock_prefix.'button_hover_color'),
+	'type'        => 'colorpicker',
+	'section'     => 'home',
+	'rows'        => '5',
+	'post_type'   => '',
+	'taxonomy'    => '',
+	'class'       => '',
+	'condition'   => $home_textBlock_prefix.'enable:is(on)',
+);
+$custom_settings['settings'][] = array(
+	'id'          => $home_textBlock_prefix.'button_hover_color',
+	'label'       => __('Button Hover Color', 'tally_taxdomain'),
+	'desc'        => '',
+	'std'         => tally_option_std($home_textBlock_prefix.'button_hover_color'),
+	'type'        => 'colorpicker',
+	'section'     => 'home',
+	'rows'        => '5',
+	'post_type'   => '',
+	'taxonomy'    => '',
+	'class'       => '',
+	'condition'   => $home_textBlock_prefix.'enable:is(on)',
+);
 
 
 $custom_settings['settings'][] = array(
@@ -159,7 +228,7 @@ $custom_settings['settings'][] = array(
 	'id'          => $home_textBlock_prefix.'bg',
 	'label'       => __('Section Background', 'tally_taxdomain'),
 	'desc'        => __('This is Background of the Section.', 'tally_taxdomain'),
-	'std'         => tally_option_std($home_textBlock_prefix.'padding'),
+	'std'         => tally_option_std($home_textBlock_prefix.'bg'),
 	'type'        => 'background',
 	'section'     => 'home',
 	'rows'        => '5',

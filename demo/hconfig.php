@@ -13,26 +13,13 @@ $tally_hconfig = array(
 		'div_id' => '',
 	),
 	array(
-		'id' => 'blogGrid',
-		'biz' => false,
-		'div_class' => '',
-		'div_id' => '',
-	),
-	
-	array(
-		'id' => 'people',
-		'biz' => false,
-		'div_class' => '',
-		'div_id' => '',
-	),
-	array(
-		'id' => 'quoteSlider',
-		'biz' => false,
-		'div_class' => '',
-		'div_id' => '',
-	),
-	array(
 		'id' => 'textBlock',
+		'biz' => false,
+		'div_class' => '',
+		'div_id' => '',
+	),
+	array(
+		'id' => 'blogGrid',
 		'biz' => false,
 		'div_class' => '',
 		'div_id' => '',
@@ -44,7 +31,19 @@ $tally_hconfig = array(
 		'div_id' => '',
 	),
 	array(
+		'id' => 'people',
+		'biz' => false,
+		'div_class' => '',
+		'div_id' => '',
+	),
+	array(
 		'id' => 'textBlock3',
+		'biz' => false,
+		'div_class' => '',
+		'div_id' => '',
+	),
+	array(
+		'id' => 'quoteSlider',
 		'biz' => false,
 		'div_class' => '',
 		'div_id' => '',
@@ -56,13 +55,13 @@ $tally_hconfig = array(
 		'div_id' => '',
 	),
 	array(
-		'id' => 'textBlock5',
+		'id' => 'videoText',
 		'biz' => false,
 		'div_class' => '',
 		'div_id' => '',
 	),
 	array(
-		'id' => 'videoText',
+		'id' => 'textBlock5',
 		'biz' => false,
 		'div_class' => '',
 		'div_id' => '',

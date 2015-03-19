@@ -109,6 +109,7 @@ class tally_loader{
 		add_theme_support( 'post-thumbnails' );
 		add_theme_support( 'title-tag' );
 		add_filter('widget_text', 'do_shortcode');
+		add_editor_style( 'core/assets/css/editor-style.css' );
 	}
 	
 	
@@ -289,6 +290,9 @@ class tally_loader{
 		tally_file_dri('options/_o_integration.php');
 		tally_file_dri('options/_o_action.php');
 		tally_file_dri('options/_o_advance.php');
+		
+		
+		include('home-page/home-page.php');
 	}
 	
 	
