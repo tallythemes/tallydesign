@@ -416,10 +416,13 @@ endif;
 if(!function_exists('tally_hp_get_default_options')):
 function tally_hp_get_default_options(){
 	
-	if(file_exists(TALLY_CHILD_DRI . '/demo/tconfig.php')){
-		$dri = TALLY_CHILD_DRI . '/demo/tconfig.php';
-	}elseif(file_exists(TALLY_DRI . '/demo/tconfig.php')){
-		$dri = TALLY_DRI . '/demo/tconfig.php';
+	$option = array();
+	$dri = '';
+	
+	if(file_exists(TALLY_CHILD_DRI . '/demo/hpsettings.php')){
+		$dri = TALLY_CHILD_DRI . '/demo/hpsettings.php';
+	}elseif(file_exists(TALLY_DRI . '/demo/hpsettings.php')){
+		$dri = TALLY_DRI . '/demo/hpsettings.php';
 	}
 	
 	if(file_exists($dri)){

@@ -4,7 +4,7 @@
  *
  * @package   Tally Framework
  * @author    TallyThemes <http://tallythemes.com/>
- * @copyright Copyright (c) 2014, TallyThemes
+ * @copyright Copyright (c) 2015, TallyThemes
  */
 if(!class_exists('tally_loader')):
 

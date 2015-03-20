@@ -1,5 +1,5 @@
 <?php
-if($the_config['section_settings'] == true){
+if($the_config['settings'] == true){
 	$settings[] = array(
 		'id'          => $section_prefix .'tab',
 		'label'       => 'Section Settings',

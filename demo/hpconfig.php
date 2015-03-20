@@ -6,7 +6,9 @@ $tally_hconfig[] = array(
 	'label'		=> 'Slideshow',
 	'biz'		=> false,
 	'div_class' => '',
-	'section_settings' => true,
+	'settings'	=> true,
+	'columns'	=> false,
+	'inner_div'	=> false,
 	'blocks'	=> array(
 		array(
 			'id'		=> 'slideshow',
