@@ -8,7 +8,7 @@ $tally_hconfig[] = array(
 	'div_class' => '',
 	'settings'	=> true,
 	'columns'	=> false,
-	'inner_div'	=> false,
+	'inner_div'	=> true,
 	'blocks'	=> array(
 		array(
 			'id'		=> 'slideshow',

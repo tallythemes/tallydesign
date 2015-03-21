@@ -476,3 +476,5 @@ body { <?php tally_option_background('site_background'); ?> }
 	color:<?php tally_option_color('home_textBlock5_button_hover_text_color'); ?> !important; 
     background-color:<?php tally_option_color('home_textBlock5_button_hover_color'); ?>; 
 }
+
+<?php include(TALLY_DRI . '/core/home-page/section/section-css.php'); ?>

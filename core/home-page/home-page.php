@@ -45,11 +45,11 @@ function tally_regoster_ot_home_page_settings_page() {
 					foreach($the_config['blocks'] as $the_block){
 						
 						$the_prefix = $the_config['id'].'_'.$the_block['id'].'_';
-						include('blocks-options.php');
+						include('blocks/blocks-options.php');
 					}
 				}
 				
-				include('sections-options.php');
+				include('section/section-options.php');
 			}
 		}
 		

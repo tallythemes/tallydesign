@@ -979,6 +979,9 @@
 .tally-front #site-main{ padding:0; }
 .tally-home-section{ width:100%; position:relative; clear:both; }
 .tally-home-section .tally-home-section-inner{ width:90%; max-width:1100px; margin:0 auto; }
+.tally-home-section-header.text-align-left{ text-align:left; }
+.tally-home-section-header.text-align-right{ text-align:right; }
+.tally-home-section-header.text-align-center{ text-align:center; }
 
 	
 	

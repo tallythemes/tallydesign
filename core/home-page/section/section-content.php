@@ -18,7 +18,7 @@ if(is_array($tally_hconfig)){
 				
 					if($the_config['settings'] == true){
 						if((tally_hp_option($section_prefix.'title') != '') || tally_hp_option($section_prefix.'description') != ''){
-							echo '<div class="tally-home-section-header">';
+							echo '<div class="tally-home-section-header text-align-'.tally_hp_option($section_prefix.'align').'">';
 								if(tally_hp_option($section_prefix.'title') != ''){
 									echo '<h2>'.tally_hp_option($section_prefix.'title').'</h2>';
 									echo '<div class="thsh-des">'.tally_hp_option($section_prefix.'description').'</div>';
@@ -42,6 +42,7 @@ if(is_array($tally_hconfig)){
 						}
 					if($the_config['columns'] == true){ echo '</div>'; }
 				if($the_config['inner_div'] == true){ echo '</div>'; }
+				echo '<div class="clear"></div>';
 			echo '</div>';
 		}
 	}

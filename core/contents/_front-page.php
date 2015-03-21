@@ -1,2 +1,2 @@
 <?php
-include(TALLY_DRI . '/core/home-page/the_content.php');
+include(TALLY_DRI . '/core/home-page/section/section-content.php');

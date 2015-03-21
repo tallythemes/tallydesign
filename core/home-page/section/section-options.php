@@ -2,7 +2,7 @@
 if($the_config['settings'] == true){
 	$settings[] = array(
 		'id'          => $section_prefix .'tab',
-		'label'       => 'Section Settings',
+		'label'       => 'Section Header',
 		'desc'        => '',
 		'std'         => '',
 		'type'        => 'tab',
@@ -28,6 +28,79 @@ if($the_config['settings'] == true){
 		'desc'        => '',
 		'std'         => '',
 		'type'        => 'textarea',
+		'section'     => $the_section_id,
+		'class'       => '',
+		'condition'   => $section_prefix.'enable:is(on)',
+		'operator'    => 'and',
+	);
+	$settings[] = array(
+		'id'          => $section_prefix .'align',
+		'label'       => 'Text Align',
+		'desc'        => '',
+		'std'         => '',
+		'type'        => 'select',
+		'section'     => $the_section_id,
+		'class'       => '',
+		'condition'   => $section_prefix.'enable:is(on)',
+		'operator'    => 'and',
+		'choices'     => array( 
+			array('value' => 'left','label' => 'left','src' => ''),
+			array('value' => 'right','label' => 'right','src' => ''),
+			array('value' => 'center','label' => 'center','src' => '')
+		),
+	);
+	$settings[] = array(
+		'id'          => $section_prefix .'text_color',
+		'label'       => 'Text Color',
+		'desc'        => '',
+		'std'         => '',
+		'type'        => 'colorpicker',
+		'section'     => $the_section_id,
+		'class'       => '',
+		'condition'   => $section_prefix.'enable:is(on)',
+		'operator'    => 'and',
+	);
+	$settings[] = array(
+		'id'          => $section_prefix .'heading_color',
+		'label'       => 'Heading Color',
+		'desc'        => '',
+		'std'         => '',
+		'type'        => 'colorpicker',
+		'section'     => $the_section_id,
+		'class'       => '',
+		'condition'   => $section_prefix.'enable:is(on)',
+		'operator'    => 'and',
+	);
+	$settings[] = array(
+		'id'          => $section_prefix .'border_color',
+		'label'       => 'Border Color',
+		'desc'        => '',
+		'std'         => '',
+		'type'        => 'colorpicker',
+		'section'     => $the_section_id,
+		'class'       => '',
+		'condition'   => $section_prefix.'enable:is(on)',
+		'operator'    => 'and',
+	);
+	
+	
+	$settings[] = array(
+		'id'          => $section_prefix .'tab2',
+		'label'       => 'Settings',
+		'desc'        => '',
+		'std'         => '',
+		'type'        => 'tab',
+		'section'     => $the_section_id,
+		'class'       => '',
+		'condition'   => '',
+		'operator'    => 'and',
+	);
+	$settings[] = array(
+		'id'          => $section_prefix .'bg',
+		'label'       => 'Background',
+		'desc'        => '',
+		'std'         => '',
+		'type'        => 'background',
 		'section'     => $the_section_id,
 		'class'       => '',
 		'condition'   => $section_prefix.'enable:is(on)',
@@ -101,59 +174,5 @@ if($the_config['settings'] == true){
 		'condition'   => $section_prefix.'enable:is(on)',
 		'operator'    => 'and',
 	);
-	$settings[] = array(
-		'id'          => $section_prefix .'text_color',
-		'label'       => 'Text Color',
-		'desc'        => '',
-		'std'         => '',
-		'type'        => 'colorpicker',
-		'section'     => $the_section_id,
-		'class'       => '',
-		'condition'   => $section_prefix.'enable:is(on)',
-		'operator'    => 'and',
-	);
-	$settings[] = array(
-		'id'          => $section_prefix .'heading_color',
-		'label'       => 'Heading Color',
-		'desc'        => '',
-		'std'         => '',
-		'type'        => 'colorpicker',
-		'section'     => $the_section_id,
-		'class'       => '',
-		'condition'   => $section_prefix.'enable:is(on)',
-		'operator'    => 'and',
-	);
-	$settings[] = array(
-		'id'          => $section_prefix .'border_color',
-		'label'       => 'Border Color',
-		'desc'        => '',
-		'std'         => '',
-		'type'        => 'colorpicker',
-		'section'     => $the_section_id,
-		'class'       => '',
-		'condition'   => $section_prefix.'enable:is(on)',
-		'operator'    => 'and',
-	);
-	$settings[] = array(
-		'id'          => $section_prefix .'inner_bg',
-		'label'       => 'Inner Background Color',
-		'desc'        => '',
-		'std'         => '',
-		'type'        => 'colorpicker',
-		'section'     => $the_section_id,
-		'class'       => '',
-		'condition'   => $section_prefix.'enable:is(on)',
-		'operator'    => 'and',
-	);
-	$settings[] = array(
-		'id'          => $section_prefix .'bg',
-		'label'       => 'Background',
-		'desc'        => '',
-		'std'         => '',
-		'type'        => 'background',
-		'section'     => $the_section_id,
-		'class'       => '',
-		'condition'   => $section_prefix.'enable:is(on)',
-		'operator'    => 'and',
-	);
+	
 }
