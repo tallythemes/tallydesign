@@ -1,5 +1,5 @@
 <?php
-if($the_config['settings'] == true){
+if($the_config['header'] == true){
 	$settings[] = array(
 		'id'          => $section_prefix .'tab',
 		'label'       => 'Section Header',
@@ -12,6 +12,17 @@ if($the_config['settings'] == true){
 		'operator'    => 'and',
 	);
 	$settings[] = array(
+		'id'          => $section_prefix .'header_enable',
+		'label'       => 'Enable Header',
+		'desc'        => '',
+		'std'         => '',
+		'type'        => 'on_off',
+		'section'     => $the_section_id,
+		'class'       => '',
+		'condition'   => $section_prefix.'enable:is(on)',
+		'operator'    => 'and',
+	);
+	$settings[] = array(
 		'id'          => $section_prefix .'title',
 		'label'       => 'Section Title',
 		'desc'        => '',
@@ -19,7 +30,7 @@ if($the_config['settings'] == true){
 		'type'        => 'text',
 		'section'     => $the_section_id,
 		'class'       => '',
-		'condition'   => $section_prefix.'enable:is(on)',
+		'condition'   => $section_prefix.'enable:is(on),'.$section_prefix.'header_enable:is(on)',
 		'operator'    => 'and',
 	);
 	$settings[] = array(
@@ -30,7 +41,7 @@ if($the_config['settings'] == true){
 		'type'        => 'textarea',
 		'section'     => $the_section_id,
 		'class'       => '',
-		'condition'   => $section_prefix.'enable:is(on)',
+		'condition'   => $section_prefix.'enable:is(on),'.$section_prefix.'header_enable:is(on)',
 		'operator'    => 'and',
 	);
 	$settings[] = array(
@@ -41,7 +52,7 @@ if($the_config['settings'] == true){
 		'type'        => 'select',
 		'section'     => $the_section_id,
 		'class'       => '',
-		'condition'   => $section_prefix.'enable:is(on)',
+		'condition'   => $section_prefix.'enable:is(on),'.$section_prefix.'header_enable:is(on)',
 		'operator'    => 'and',
 		'choices'     => array( 
 			array('value' => 'left','label' => 'left','src' => ''),
@@ -50,40 +61,40 @@ if($the_config['settings'] == true){
 		),
 	);
 	$settings[] = array(
-		'id'          => $section_prefix .'text_color',
+		'id'          => $section_prefix .'header_text_color',
 		'label'       => 'Text Color',
 		'desc'        => '',
 		'std'         => '',
 		'type'        => 'colorpicker',
 		'section'     => $the_section_id,
 		'class'       => '',
-		'condition'   => $section_prefix.'enable:is(on)',
+		'condition'   => $section_prefix.'enable:is(on),'.$section_prefix.'header_enable:is(on)',
 		'operator'    => 'and',
 	);
 	$settings[] = array(
-		'id'          => $section_prefix .'heading_color',
+		'id'          => $section_prefix .'header_heading_color',
 		'label'       => 'Heading Color',
 		'desc'        => '',
 		'std'         => '',
 		'type'        => 'colorpicker',
 		'section'     => $the_section_id,
 		'class'       => '',
-		'condition'   => $section_prefix.'enable:is(on)',
+		'condition'   => $section_prefix.'enable:is(on),'.$section_prefix.'header_enable:is(on)',
 		'operator'    => 'and',
 	);
 	$settings[] = array(
-		'id'          => $section_prefix .'border_color',
+		'id'          => $section_prefix .'header_border_color',
 		'label'       => 'Border Color',
 		'desc'        => '',
 		'std'         => '',
 		'type'        => 'colorpicker',
 		'section'     => $the_section_id,
 		'class'       => '',
-		'condition'   => $section_prefix.'enable:is(on)',
+		'condition'   => $section_prefix.'enable:is(on),'.$section_prefix.'header_enable:is(on)',
 		'operator'    => 'and',
 	);
-	
-	
+}
+if($the_config['settings'] == true){	
 	$settings[] = array(
 		'id'          => $section_prefix .'tab2',
 		'label'       => 'Settings',

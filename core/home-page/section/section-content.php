@@ -16,14 +16,16 @@ if(is_array($tally_hconfig)){
 			echo '<div class="tally-home-section tally-hps-'.$the_config['id'].' '.$the_config['div_class'].' '.tally_hp_option($section_prefix.'css_classs').'" id="'.tally_hp_option($section_prefix.'css_id').'">';
 				if($the_config['inner_div'] == true){ echo '<div class="tally-home-section-inner">'; }
 				
-					if($the_config['settings'] == true){
-						if((tally_hp_option($section_prefix.'title') != '') || tally_hp_option($section_prefix.'description') != ''){
-							echo '<div class="tally-home-section-header text-align-'.tally_hp_option($section_prefix.'align').'">';
-								if(tally_hp_option($section_prefix.'title') != ''){
-									echo '<h2>'.tally_hp_option($section_prefix.'title').'</h2>';
-									echo '<div class="thsh-des">'.tally_hp_option($section_prefix.'description').'</div>';
-								}
-							echo '</div>';
+					if($the_config['header'] == true){
+						if( tally_hp_option($section_prefix.'header_enable') == 'on' ){
+							if((tally_hp_option($section_prefix.'title') != '') || tally_hp_option($section_prefix.'description') != ''){
+								echo '<div class="tally-home-section-header text-align-'.tally_hp_option($section_prefix.'align').'">';
+									if(tally_hp_option($section_prefix.'title') != ''){
+										echo '<h2>'.tally_hp_option($section_prefix.'title').'</h2>';
+										echo '<div class="thsh-des">'.tally_hp_option($section_prefix.'description').'</div>';
+									}
+								echo '</div>';
+							}
 						}
 					}
 				

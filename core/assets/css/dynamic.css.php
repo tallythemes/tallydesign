@@ -207,13 +207,10 @@ body { <?php tally_option_background('site_background'); ?> }
 
 
 /*=================================================================================
-	Home:::: slideshow
+	Button
 ==================================================================================*/
-.home-slideshow-caption .readmore.button-color-accent{ 
-	border-color:<?php tally_option_color('primary_color'); ?> !important; 
-    background-color:<?php tally_option_color('primary_color'); ?>; 
-}
-.home-slideshow-caption .readmore.button-color-accent:hover{ background-color:<?php tally_option_color('primary_color', '0.24'); ?>;}
+.tally-button.btn-color-accent{ border-color:<?php tally_option_color('primary_color'); ?> !important; background-color:<?php tally_option_color('primary_color'); ?>; }
+.tally-button.btn-color-accent:hover{ background-color:<?php tally_option_color('primary_color', '0.24'); ?>;}
 
 
 

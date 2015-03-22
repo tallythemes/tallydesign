@@ -23,13 +23,12 @@ if(is_array($tally_hconfig)){
 				color:<?php tally_hp_option_color($section_prefix.'text_color'); ?> !important;
 			}
 			<?php tally_hp_option_spacing($section_prefix.'padding', $section_class, 'padding'); ?>
-            <?php echo $section_class; ?> h1,
-            <?php echo $section_class; ?> h2,
-            <?php echo $section_class; ?> h3,
-            <?php echo $section_class; ?> h4,
-            <?php echo $section_class; ?> h5,
-            <?php echo $section_class; ?> h6{ color:<?php tally_hp_option_color($section_prefix.'heading_color'); ?> !important; }
-            <?php echo $section_class; ?> *{ border-color:<?php tally_hp_option_color($section_prefix.'border_inner_color'); ?> !important; }
+            <?php echo $section_class; ?> .tally-home-section-header{ color:<?php tally_hp_option_color($section_prefix.'header_text_color'); ?> !important; }
+            <?php echo $section_class; ?> .tally-home-section-header h1,
+            <?php echo $section_class; ?> .tally-home-section-header h2,
+            <?php echo $section_class; ?> .tally-home-section-header h3{ color:<?php tally_hp_option_color($section_prefix.'header_heading_color'); ?> !important; }
+            <?php echo $section_class; ?> .tally-home-section-header *,
+            <?php echo $section_class; ?> .tally-home-section-header{ border-color:<?php tally_hp_option_color($section_prefix.'header_border_color'); ?> !important; }
             
             <?php if(tally_hp_option($section_prefix.'content_width') > 499): ?>
             	<?php echo $section_class; ?> .tally-home-section-inner{ max-width:<?php echo tally_hp_option($section_prefix.'content_width'); ?>px; }

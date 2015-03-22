@@ -911,7 +911,25 @@
 	/*	Layout 1
 	----------------------------------------------*/
 	.tally-footer-1{ padding:20px 0 15px 0; background:#f1f1f1; border-top:solid 1px; }
-	
+
+
+/* Button
+================================================== */
+.tally-button{
+	font-size: 14px;
+	display: inline-block;
+	border-radius: 6px;
+	padding: 10px 25px;
+	font-weight: bold;
+	margin-top:5px;
+}
+.tally-button:hover{ text-decoration:none; }
+.tally-button.btn-color-accent{ border: 3px solid #F00 !important; background-color:#F00; color: #FFF !important; }
+.tally-button.btn-color-accent:hover{ background-color:rgba(255, 0, 0, 0.24); color:#FFF !important;}
+.tally-button.btn-color-light{ border: 3px solid #fff !important; color: #fff !important; }
+.tally-button.btn-color-light:hover{ background:#FFF; color:#000 !important;  }
+.tally-button.btn-color-dark{ border: 3px solid #000 !important; color: #000 !important; }
+.tally-button.btn-color-dark:hover{ background:#000; color:#fff !important;  }	
 	
 
 /* FlexSlider Skins
