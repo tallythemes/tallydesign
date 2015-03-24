@@ -66,7 +66,7 @@
 
 /* OTHER
 ================================================== */
-	.clear{ height:1px; width:100%; margin:0; padding:0; clear:both; }
+	.clear{ height:0px; width:100%; margin:0; padding:0; clear:both; }
 	
 	.responsive-table{
 		height: auto;
@@ -86,6 +86,10 @@
 	
 	.align-left{ display:inline-block; float:left; }
 	.align-right{ display:inline-block; float:right; }
+	.align-center{ display:inline-block; text-align:center; }
+	.text-align-center{ text-align:center; }
+	.text-align-left{ text-align:left; }
+	.text-align-right{ text-align:right; }
 	
 	
 	
@@ -1127,12 +1131,18 @@
 
 /* Home::: textBlock (1, 2, 3, 4, 5)
 ================================================== */
-.home-textBlock.htb-align-center{ text-align:center; }
-.home-textBlock.htb-align-right{ text-align:right; }
-.home-textBlock.htb-align-left{ text-align:left; }
+/* Skin 1
+--------------------------------------------*/
+.tally-hpb-text.hpbs1 .hpb-title{ font-weight:bold; font-size:40px; line-height:1.5; margin-bottom:15px; }
+.tally-hpb-text.hpbs1 .hpb-content{ }
+.tally-hpb-text.hpbs1 .hpb-buttons{ margin-top:20px; }
+.tally-hpb-text.hpbs1 .hpb-buttons a{ margin-left:2px; margin-right:2px; }
 
-.home-textBlock.hpss1 .htb-more{ font-size: 14px; display: inline-block; border-radius: 6px; padding: 10px 25px; font-weight: bold;	margin-top:5px; }
-.home-textBlock.hpss1 .htb-more:hover{ text-decoration:none; }
+/* Skin 2
+--------------------------------------------*/
+.tally-hpb-text.hpbs2 .hpb-title{ font-weight:bold; font-size:22px; line-height:1.5; margin-bottom:15px; }
+.tally-hpb-text.hpbs2 .hpb-buttons{ margin-top:20px; }
+.tally-hpb-text.hpbs2 .hpb-buttons .tally-button{ border-width: 2px !important; padding: 5px 12px; font-size: 13px; }
 
 
 

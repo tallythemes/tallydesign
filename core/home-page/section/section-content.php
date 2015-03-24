@@ -34,12 +34,9 @@ if(is_array($tally_hconfig)){
 							foreach($the_config['blocks'] as $the_block){
 								
 								$the_prefix = $the_config['id'].'_'.$the_block['id'].'_';
+								$block_class = 'tally-hpb-'.$the_config['id'].'_'.$the_block['id'];
 								
-								if($the_config['columns'] == true){ echo '<div class="col col_'.$the_block['column'].'">'; }
-									if(file_exists(TALLY_DRI . '/core/home-page/blocks/'.$the_block['name'].'/'.$the_block['name'].'-content.php')){
-										include(TALLY_DRI . '/core/home-page/blocks/'.$the_block['name'].'/'.$the_block['name'].'-content.php');
-									}
-								if($the_config['columns'] == true){ echo '</div>'; }
+								include(TALLY_DRI . '/core/home-page/blocks/blocks-content.php');
 							}
 						}
 					if($the_config['columns'] == true){ echo '</div>'; }

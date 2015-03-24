@@ -13,7 +13,7 @@ if(is_array($tally_hconfig)){
 		$the_section_id = $the_config['id'];
 		$section_prefix = $the_config['id'].'_';
 		
-		if(tally_hp_option($section_prefix.'enable') == 'on'){
+		if((tally_hp_option($section_prefix.'enable') == 'on') && ($the_config['settings'] == true)){
 			$section_class = '.tally-hps-'.$the_section_id;
 		?>
 			<?php echo $section_class; ?>{
