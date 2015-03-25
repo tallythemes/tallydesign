@@ -88,4 +88,37 @@ $tally_hconfig[] = array(
 	)
 );
 
+$tally_hconfig[] = array(
+	'id'		=> 'section4',
+	'label'		=> 'Blog & Sidebar',
+	'biz'		=> false,
+	'div_class' => '',
+	'settings'	=> true,
+	'columns'	=> true,
+	'inner_div'	=> true,
+	'header'	=> false,
+	'blocks'	=> array(
+		array(
+			'id'		=> 'content',
+			'label'		=> 'Content',
+			'div_class' => '',
+			'name'		=> 'text',
+			'column'	=> '8',
+			'skin'		=> 'hpbs1',
+			'layout'	=> '',
+			'biz'		=> false,
+		),
+		array(
+			'id'		=> 'sidebar',
+			'label'		=> 'Widgets',
+			'div_class' => '',
+			'name'		=> 'widget',
+			'column'	=> '4',
+			'skin'		=> 'hpbs1',
+			'layout'	=> '',
+			'biz'		=> false,
+		),
+	)
+);
+
 return $tally_hconfig;

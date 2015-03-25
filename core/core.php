@@ -153,15 +153,6 @@ class tally_loader{
 			'after_title' => '</h4>',
 		));
 		register_sidebar( array(
-			'name' => __('Sidebar Alt', 'tally_taxdomain'),
-			'id' => 'sidebar-alt',
-			'description' => __('Sidebar Widgets', 'tally_taxdomain'),
-			'before_widget' => '<div id="%1$s" class="widget %2$s">',
-			'after_widget' => "</div><div class='clear' style='height:30px;'></div>",
-			'before_title' => '<h4 class="heading">',
-			'after_title' => '</h4>',
-		));
-		register_sidebar( array(
 			'name' => __('Footer Widget #1', 'tally_taxdomain'),
 			'id' => 'footer_widget_1',
 			'description' => __('Footer Widget #1', 'tally_taxdomain'),
@@ -201,6 +192,8 @@ class tally_loader{
 			'before_title' => '<h4 class="heading">',
 			'after_title' => '</h4>',
 		));
+		
+		tally_file_dri('home-page/blocks/widget/widget-functions.php');
 	}
 	
 	
