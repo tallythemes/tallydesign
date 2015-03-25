@@ -49,4 +49,6 @@ jQuery(document).ready(function($) {
 	
 	if(jQuery().leanModal){ $(".leanModal").leanModal({ top : 200, overlay : 0.94, closeButton: ".leanModal_close" }); }
 	
+	$( ".tally-hpb-tabs .hpb-tabs" ).tabs();
+	
 });

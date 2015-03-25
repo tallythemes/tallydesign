@@ -90,7 +90,7 @@ $tally_hconfig[] = array(
 
 $tally_hconfig[] = array(
 	'id'		=> 'section4',
-	'label'		=> 'Blog & Sidebar',
+	'label'		=> 'Content, Tabs & Sidebar',
 	'biz'		=> false,
 	'div_class' => '',
 	'settings'	=> true,
@@ -103,7 +103,17 @@ $tally_hconfig[] = array(
 			'label'		=> 'Content',
 			'div_class' => '',
 			'name'		=> 'text',
-			'column'	=> '8',
+			'column'	=> '4',
+			'skin'		=> 'hpbs2',
+			'layout'	=> '',
+			'biz'		=> false,
+		),
+		array(
+			'id'		=> 'tab',
+			'label'		=> 'Tabs',
+			'div_class' => '',
+			'name'		=> 'tabs',
+			'column'	=> '4',
 			'skin'		=> 'hpbs1',
 			'layout'	=> '',
 			'biz'		=> false,

@@ -1009,7 +1009,7 @@
 	
 
 
-/* Home::: blogGrid
+/* Home::: blogGrid ##############################
 ================================================== */
 .home-blogGrid{ border-top:1px solid; border-bottom:1px solid; }
 .home-blogGrid-item{ background:#FFF; border:solid 1px; }
@@ -1021,15 +1021,7 @@
 
 
 
-/* Home::: contact
-================================================== */
-
-
-
-
-
-
-/* Home::: infoBox
+/* Home::: infoBox ##############################
 ================================================== */
 .home-infoBox.hpss1 .home-infobox-item{ text-align:center; padding: 20px 20px; border-radius: 6px; }
 .home-infoBox.hpss1 .home-infobox-item .hibi-icon{
@@ -1056,7 +1048,7 @@
 
 
 
-/* Home::: people
+/* Home::: people ##############################
 ================================================== */
 .home-people.hpss1{  }
 .home-people.hpss1 .home-people-items{  }
@@ -1075,7 +1067,7 @@
 
 
 
-/* Home::: quoteSlider
+/* Home::: quoteSlider ##############################
 ================================================== */
 .home-quoteSlider{  }
 .home-quoteSlider-item{  }
@@ -1143,3 +1135,18 @@
 .tally-hpb-text.hpbs2 .hpb-title{ font-weight:bold; font-size:22px; line-height:1.5; margin-bottom:15px; }
 .tally-hpb-text.hpbs2 .hpb-buttons{ margin-top:20px; }
 .tally-hpb-text.hpbs2 .hpb-buttons .tally-button{ border-width: 2px !important; padding: 5px 12px; font-size: 13px; }
+
+
+
+
+/* Home::: Tabs
+================================================== */
+/* Skin 1
+--------------------------------------------*/
+.tally-hpb-tabs.hpbs1{  } 
+.tally-hpb-tabs.hpbs1 .hpb-nav{ margin:0; padding:0; list-style-type:none; border-bottom:1px solid; height:44px; line-height:44px; }
+.tally-hpb-tabs.hpbs1 .hpb-nav li{ margin:0; padding:0; list-style-type:none; display:inline-block; margin-top:-1px; border-radius: 4px 4px 0 0; }
+.tally-hpb-tabs.hpbs1 .hpb-nav li a{ padding:0 24px; border:solid 1px; border-bottom:0; display:block; font-size:16px; font-weight:bold; border-radius: 4px 4px 0 0; }
+.tally-hpb-tabs.hpbs1 .hpb-nav li a:hover{ text-decoration:none; }
+.tally-hpb-tabs.hpbs1 .hpb-nav li.ui-state-active{ height:46px; background:#FFF; }
+.tally-hpb-tabs.hpbs1 .hpb-box{ padding:20px 20px 5px 20px; border:solid 1px; border-top:0; }

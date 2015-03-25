@@ -382,7 +382,7 @@ endif;
 -------------------------------------------------*/
 if(!function_exists('tally_hp_option')):
 function tally_hp_option($opt_id, $default_data = NULL){
-	$output = '';
+	$output = NULL;
 	$options = get_option( 'tally_home' );
 	$default_options = tally_hp_get_default_options();
 	
@@ -427,13 +427,13 @@ function tally_hp_get_default_options(){
 	
 	if(file_exists($dri)){
 		include($dri);
-		$default_options = $tally_hpsettings;
+		$default_options = $tally_config;
 		
 		if(is_array($default_options)){
 			$option = $default_options;
 		}
 	}
-		
+	
 	return $option;
 	
 }

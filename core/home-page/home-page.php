@@ -35,7 +35,7 @@ function tally_regoster_ot_home_page_settings_page() {
 					'id'          => $section_prefix .'enable',
 					'label'       => 'Enable This Section',
 					'desc'        => 'Using this setting you can enable or disable this section of the home page. <br>All option of the section will be show when you will select <strong>ON</strong>.',
-					'std'         => '',
+					'std'         => tally_hp_option_std($section_prefix .'enable'),
 					'type'        => 'on_off',
 					'section'     => $the_section_id,
 					'class'       => ''
@@ -52,6 +52,24 @@ function tally_regoster_ot_home_page_settings_page() {
 				include('section/section-options.php');
 			}
 		}
+		
+		if( defined('TALLY_THEME_DEV_SETTINGS') ):
+			$sections[] = array(
+				'id'          => 'export',
+				'title'       => 'Export'
+			);
+			$settings[] = array(
+				'id'          => 'export_textblock',
+				'label'       => 'Exportcode',
+				'desc'        => '<textarea style="height:400px; width: 100%;">'.tally_creat_config_array('tally_home').'</textarea>',
+				'std'         => '',
+				'type'        => 'textblock',
+				'section'     => 'export',
+				'class'       => '',
+				'condition'   => '',
+				'operator'    => 'and',
+			);
+		endif;
 		
 		$config = array(
 			array( 
