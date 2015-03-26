@@ -1048,37 +1048,34 @@
 
 
 
-/* Home::: people ##############################
+/* Home::: people
 ================================================== */
-.home-people.hpss1{  }
-.home-people.hpss1 .home-people-items{  }
-.home-people.hpss1 .home-people-item { border:solid 1px; padding:20px; }
-.home-people.hpss1 .home-people-item img{ float: left; width: 30%; margin-right: 20px; border-radius: 50%; }
-.home-people.hpss1 .home-people-item .hpi-des{ overflow:hidden; }
-.home-people.hpss1 .home-people-item .hpi-des h4{ margin-bottom:0px; }
-.home-people.hpss1 .home-people-item .hpi-des span{ font-style:italic; color:#999; }
-.home-people.hpss1 .home-people-item .hpi-des a.hpi-more{ display:inline-block; border:solid 1px; font-size:12px; line-height:12px; border-radius: 4px; padding: 3px 8px; color:#8E8787 !important; }
-.home-people.hpss1 .home-people-item .hpi-des a.hpi-more:hover{ text-decoration:none; }
-.home-people.hpss1 .home-people-item .hpi-des p{ margin-top:10px; margin-bottom:10px; }
-.home-people.hpss1 .home-people-item .hpi-des .hpi-socia-icons a{ display: inline-block; margin-right: 8px; margin-bottom: 11px; color: #8E8787 !important; }
+.thpb-people.hpbs1{  }
+.thpb-people.hpbs1 .hpb-people-items{  }
+.thpb-people.hpbs1 .hpb-people-item { border:solid 1px; padding:20px; }
+.thpb-people.hpbs1 .hpb-people-item img{ float: left; width: 30%; margin-right: 20px; border-radius: 50%; }
+.thpb-people.hpbs1 .hpb-people-item .hpb-des{ overflow:hidden; }
+.thpb-people.hpbs1 .hpb-people-item .hpb-des h4{ margin-bottom:0px; }
+.thpb-people.hpbs1 .hpb-people-item .hpb-des span{ font-style:italic; color:#999; }
+.thpb-people.hpbs1 .hpb-people-item .hpb-des a.hpb-more{ display:inline-block; border:solid 1px; font-size:12px; line-height:12px; border-radius:4px; padding:3px 8px; color:#8E8787 !important; }
+.thpb-people.hpbs1 .hpb-people-item .hpb-des a.hpb-more:hover{ text-decoration:none; }
+.thpb-people.hpbs1 .hpb-people-item .hpb-des p{ margin-top:10px; margin-bottom:10px; }
+.thpb-people.hpbs1 .hpb-people-item .hpb-des .hpb-icons a{ display: inline-block; margin-right: 8px; margin-bottom: 11px; color: #8E8787 !important; }
 
 
 
 
 
 
-/* Home::: quoteSlider ##############################
+/* Home::: quoteSlider
 ================================================== */
-.home-quoteSlider{  }
-.home-quoteSlider-item{  }
-
-.home-quoteSlider.hpss1{  }
-.home-quoteSlider.hpss1 .home-quoteSlider-item{ text-align:center; padding-bottom:50px; }
-.home-quoteSlider.hpss1 .home-quoteSlider-item .hqs-text{ font-size:26px; line-height:1.5; font-style:italic; width:76%; margin:0 auto; margin-bottom:15px; }
-.home-quoteSlider.hpss1 .home-quoteSlider-item .hqs-image img{ max-width:100%; width:auto; display:inline-block; border-radius: 50%; border: solid 4px; margin-top:20px; }
-.home-quoteSlider.hpss1 .home-quoteSlider-item .hqs-name{ margin-top:15px; font-weight:bold; font-size:120%; }
-.home-quoteSlider.hpss1 .home-quoteSlider-item .hqs-pogition{ text-transform:uppercase; font-size:70%; }
-.home-quoteSlider.hpss1.tally-flexslider-skin-1 .wfs-control-nav{ bottom:0px; }
+.thpb-quoteSlider.hpbs1{  }
+.thpb-quoteSlider.hpbs1 .hpb-slider-item{ text-align:center; padding-bottom:50px; }
+.thpb-quoteSlider.hpbs1 .hpb-slider-item .hpb-text{ font-size:26px; line-height:1.5; font-style:italic; width:76%; margin:0 auto; margin-bottom:15px; }
+.thpb-quoteSlider.hpbs1 .hpb-slider-item .hpb-image img{ max-width:100%; width:auto; display:inline-block; border-radius: 50%; border: solid 4px; margin-top:20px; }
+.thpb-quoteSlider.hpbs1 .hpb-slider-item .hpb-name{ margin-top:15px; font-weight:bold; font-size:120%; }
+.thpb-quoteSlider.hpbs1 .hpb-slider-item .hpb-pogition{ text-transform:uppercase; font-size:70%; }
+.thpb-quoteSlider.hpbs1.tally-flexslider-skin-1 .wfs-control-nav{ bottom:0px; }
 
 
 

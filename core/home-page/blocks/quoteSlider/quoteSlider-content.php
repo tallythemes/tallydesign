@@ -11,34 +11,33 @@ if(tally_hp_option($the_prefix.'enable') == 'on'):
 	}else{
 		$image_size = array(1200, 400);
 	}
-	$slider_items = tally_hp_option($the_prefix.'items');
+	$quoteSlider_items = tally_hp_option($the_prefix.'items');
 	if(is_array($slider_items)): ?>
-		<div class="home-slideshow tally-flexslider-skin-1">
+		<div class="<?php echo $block_class; ?> thpb-quoteSlider tally-flexslider-skin-1 <?php echo $the_block['skin']; ?>">
 			<?php  $flexslider->start(); ?>
-				<?php foreach($slider_items as $slider_item): ?>
+				<?php foreach($quoteSlider_items as $quoteSlider_item): ?>
 					<?php $flexslider->in_loop_start(); ?>
-						<div class="home-slideshow-item">
-							<div class="home-slidesho-image">
-								<img src="<?php echo tally_image_size($slider_item['image'], $image_size[0], $image_size[1]); ?>" alt="<?php echo $slider_item['title'] ?>" height="<?php echo $image_size[1]; ?>" width="<?php echo $image_size[0]; ?>"/>
-							</div>
-							<div class="home-slideshow-caption text-align-<?php echo $slider_item['text_align']; ?>">
-								<div class="home-slideshow-caption-inner">
-									<?php if($slider_item['title'] != ''): ?>
-										<h4 style="color: <?php echo $slider_item['heading_color']; ?>!important;">
-											<?php echo $slider_item['title']; ?>
-										</h4>
-									<?php endif; ?>
-									<?php if($slider_item['des'] != ''): ?>
-										<p style="color: <?php echo $slider_item['text_color']; ?>;"><?php echo $slider_item['des']; ?></p>
-									<?php endif; ?>
-									<?php if(($slider_item['link'] != '') && ($slider_item['button_text'] != '')): ?>
-										<a href="<?php echo $slider_item['link']; ?>" class="tally-button btn-color-<?php echo $slider_item['button_color']; ?>">
-											<?php echo $slider_item['button_text']; ?>
-										</a>
-									<?php endif; ?>
-									<div class="clear" style="height:0;"></div>&nbsp;
-								</div>
-							</div>
+						<div class="hpb-slider-item">
+							<div class="hpb-text">"<?php echo $quoteSlider_item['des']; ?>"</div>
+                            <?php if(!empty($quoteSlider_item['image'])): ?>
+                                <div class="hpb-image">
+                                	<?php if(!empty($quoteSlider_item['link'])): ?><a href="<?php echo $quoteSlider_item['link']; ?>" target="_blank"><?php endif; ?>
+                                    	<img src="<?php echo tally_image_size($quoteSlider_item['image'], $image_size[0], $image_size[1]); ?>" alt="<?php echo $quoteSlider_item['title'] ?>" height="<?php echo $image_size[1]; ?>" width="<?php echo $image_size[0]; ?>"/>
+                                    <?php if(!empty($quoteSlider_item['link'])): ?></a><?php endif; ?>
+                                </div>
+                            <?php endif; ?>
+                            <?php if(!empty($quoteSlider_item['title'])): ?>
+                                <div class="hpb-name">
+                                    <?php if(!empty($quoteSlider_item['link'])): ?><a href="<?php echo $quoteSlider_item['link']; ?>" target="_blank"><?php endif; ?>
+                                        <?php echo $quoteSlider_item['title']; ?>
+                                    <?php if(!empty($quoteSlider_item['link'])): ?></a><?php endif; ?>
+                                </div>
+                            <?php endif; ?>
+                            <?php if(!empty($quoteSlider_item['position'])): ?>
+								<div class="hpb-pogition">
+									<?php echo $quoteSlider_item['position']; ?>
+                                </div>
+                            <?php endif; ?>
 						</div>
 					<?php $flexslider->in_loop_end(); ?>
 				<?php endforeach; ?>

@@ -131,4 +131,51 @@ $tally_hconfig[] = array(
 	)
 );
 
+
+$tally_hconfig[] = array(
+	'id'		=> 'section5',
+	'label'		=> 'Testimonial',
+	'biz'		=> false,
+	'div_class' => '',
+	'settings'	=> true,
+	'columns'	=> false,
+	'inner_div'	=> true,
+	'header'	=> false,
+	'blocks'	=> array(
+		array(
+			'id'		=> 'quoteSlider',
+			'label'		=> 'Quote Slider',
+			'div_class' => '',
+			'name'		=> 'quoteSlider',
+			'column'	=> '',
+			'skin'		=> 'hpbs1',
+			'layout'	=> '',
+			'biz'		=> false,
+		),
+	)
+);
+
+
+$tally_hconfig[] = array(
+	'id'		=> 'section6',
+	'label'		=> 'Team Members',
+	'biz'		=> false,
+	'div_class' => '',
+	'settings'	=> true,
+	'columns'	=> false,
+	'inner_div'	=> true,
+	'header'	=> true,
+	'blocks'	=> array(
+		array(
+			'id'		=> 'people',
+			'label'		=> 'Team Members',
+			'div_class' => '',
+			'name'		=> 'people',
+			'column'	=> '',
+			'skin'		=> 'hpbs1',
+			'layout'	=> '',
+			'biz'		=> false,
+		),
+	)
+);
 return $tally_hconfig;
