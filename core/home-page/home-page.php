@@ -35,7 +35,7 @@ function tally_regoster_ot_home_page_settings_page() {
 					'id'          => $section_prefix .'enable',
 					'label'       => 'Enable This Section',
 					'desc'        => 'Using this setting you can enable or disable this section of the home page. <br>All option of the section will be show when you will select <strong>ON</strong>.',
-					'std'         => tally_hp_option_std($section_prefix .'enable'),
+					'std'         => tally_hp_option_std($section_prefix .'enable', 'off'),
 					'type'        => 'on_off',
 					'section'     => $the_section_id,
 					'class'       => ''

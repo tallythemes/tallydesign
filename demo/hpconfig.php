@@ -178,4 +178,75 @@ $tally_hconfig[] = array(
 		),
 	)
 );
+
+
+$tally_hconfig[] = array(
+	'id'		=> 'section7',
+	'label'		=> 'Newsletter',
+	'biz'		=> false,
+	'div_class' => '',
+	'settings'	=> true,
+	'columns'	=> false,
+	'inner_div'	=> true,
+	'header'	=> false,
+	'blocks'	=> array(
+		array(
+			'id'		=> 'newsletter1',
+			'label'		=> 'Newsletter',
+			'div_class' => '',
+			'name'		=> 'newsletter',
+			'column'	=> '',
+			'skin'		=> 'hpbs1',
+			'layout'	=> '',
+			'biz'		=> false,
+		),
+	)
+);
+
+
+$tally_hconfig[] = array(
+	'id'		=> 'section8',
+	'label'		=> 'InfBoxes',
+	'biz'		=> false,
+	'div_class' => '',
+	'settings'	=> true,
+	'columns'	=> false,
+	'inner_div'	=> true,
+	'header'	=> true,
+	'blocks'	=> array(
+		array(
+			'id'		=> 'infobox',
+			'label'		=> 'InfoBox',
+			'div_class' => '',
+			'name'		=> 'infoBox',
+			'column'	=> '',
+			'skin'		=> 'hpbs1',
+			'layout'	=> '',
+			'biz'		=> false,
+		),
+	)
+);
+$tally_hconfig[] = array(
+	'id'		=> 'section9',
+	'label'		=> 'image Gallery',
+	'biz'		=> false,
+	'div_class' => '',
+	'settings'	=> false,
+	'columns'	=> false,
+	'inner_div'	=> false,
+	'header'	=> false,
+	'blocks'	=> array(
+		array(
+			'id'		=> 'gallery1',
+			'label'		=> 'imageGallery',
+			'div_class' => '',
+			'name'		=> 'imageGallery',
+			'column'	=> '',
+			'skin'		=> 'hpbs1',
+			'layout'	=> '',
+			'biz'		=> false,
+		),
+	)
+);
+
 return $tally_hconfig;

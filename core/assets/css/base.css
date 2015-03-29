@@ -19,6 +19,7 @@
 	blockquote, q{ quotes: none; } 
 	article, aside, details, figcaption, figure, footer, 
 	header, hgroup, menu, nav, section{ display: block; }
+	figure{ margin:0; }
 
 
 
@@ -1021,10 +1022,10 @@
 
 
 
-/* Home::: infoBox ##############################
+/* Home::: infoBox
 ================================================== */
-.home-infoBox.hpss1 .home-infobox-item{ text-align:center; padding: 20px 20px; border-radius: 6px; }
-.home-infoBox.hpss1 .home-infobox-item .hibi-icon{
+.thpb-infobox.hpbs1 .thpb-infobox-item{ text-align:center; padding: 20px 20px; border-radius: 6px; }
+.thpb-infobox.hpbs1 .thpb-infobox-item .hibi-icon{
 	border: 2px solid;
 	border-color: transparent;
 	border-color: rgba(0,0,0,.08);
@@ -1038,11 +1039,11 @@
 	display:inline-block;
 	margin-bottom: 2em;
 }
-.home-infoBox.hpss1 .home-infobox-item .hibi-icon i.fa{ font-size: 48px;	vertical-align: middle; }
-.home-infoBox.hpss1 .home-infobox-item .hibi-description{ }
-.home-infoBox.hpss1 .home-infobox-item .hibi-description h4{  }
-.home-infoBox.hpss1 .home-infobox-item .hibi-description p{  }
-.home-infoBox.hpss1 .home-infobox-item a:hover{ text-decoration:none; }
+.thpb-infobox.hpbs1 .thpb-infobox-item .hibi-icon i.fa{ font-size: 48px;	vertical-align: middle; }
+.thpb-infobox.hpbs1 .thpb-infobox-item .hibi-description{ }
+.thpb-infobox.hpbs1 .thpb-infobox-item .hibi-description h4{  }
+.thpb-infobox.hpbs1 .thpb-infobox-item .hibi-description p{  }
+.thpb-infobox.hpbs1 .thpb-infobox-item a:hover{ text-decoration:none; }
 
 
 
@@ -1147,3 +1148,32 @@
 .tally-hpb-tabs.hpbs1 .hpb-nav li a:hover{ text-decoration:none; }
 .tally-hpb-tabs.hpbs1 .hpb-nav li.ui-state-active{ height:46px; background:#FFF; }
 .tally-hpb-tabs.hpbs1 .hpb-box{ padding:20px 20px 5px 20px; border:solid 1px; border-top:0; }
+
+
+
+/* Home::: Newsletter
+================================================== */
+/* Skin 1
+--------------------------------------------*/
+.thpb-newsletter.hpbs1{  }
+.thpb-newsletter.hpbs1 .hpb-des{ width:27%; float:left; }
+.thpb-newsletter.hpbs1 .hpb-html{ float:left; display:inline-block; width: 71%; margin-left: 2%; }
+.thpb-newsletter.hpbs1 .hpb-des h4{ margin-bottom: 5px; font-weight: bold; font-size: 22px; }
+.thpb-newsletter.hpbs1 .hpb-des p{ font-size: 14px; }
+.thpb-newsletter.hpbs1 .hpb-html form{ width:100%; }
+.thpb-newsletter.hpbs1 .hpb-html input[type="text"]{ float: left; width: 41%; margin-right: 1%;	padding-top: 7px; padding-bottom: 7px; padding: 15px 10px; }
+.thpb-newsletter.hpbs1 .hpb-html input[type="submit"]{ width: 16%; margin-bottom: 0px; padding: 16px 10px; }
+
+
+
+/* Home::: Gallery
+================================================== */
+/* Skin 1
+--------------------------------------------*/
+.thpb-imageGallery.hpbs1{  }
+.thpb-imageGallery.hpbs1 a{ position:relative; display:block; }
+.thpb-imageGallery.hpbs1 a img{ font-size:0; line-height:0; margin:0; padding:0; }
+.thpb-imageGallery.hpbs1 a span{ position:absolute; width:100%; height:100%; display:block; left:0; top:0; background:rgba(0, 0, 0, 0.6); opacity: 0; overflow:hidden; }
+.thpb-imageGallery.hpbs1 a span i.fa{ color:#FFF !important; font-size:30px; font-weight:normal; position:absolute;	top:50%; left:50%; margin-top:-15px; margin-left:-5px;}
+.thpb-imageGallery.hpbs1 a:hover span{ opacity: 1; -webkit-animation: zoomIn 0.5s;   animation: zoomIn 0.5s; }
+.thpb-imageGallery.hpbs1 a:hover span  i.fa{-webkit-animation: rotateIn 1s; animation: rotateIn 1s; }
