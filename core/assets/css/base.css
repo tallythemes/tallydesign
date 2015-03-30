@@ -1179,3 +1179,10 @@
 .thpb-imageGallery.hpbs1 a span i.fa{ color:#FFF !important; font-size:30px; font-weight:normal; position:absolute;	top:50%; left:50%; margin-top:-15px; margin-left:-5px;}
 .thpb-imageGallery.hpbs1 a:hover span{ opacity: 1; -webkit-animation: zoomIn 0.5s;   animation: zoomIn 0.5s; }
 .thpb-imageGallery.hpbs1 a:hover span  i.fa{-webkit-animation: rotateIn 1s; animation: rotateIn 1s; }
+
+
+
+
+/* Home::: Google Map
+================================================== */
+.thpb-googleMap img{ max-width:inherit; }
