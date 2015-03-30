@@ -13,6 +13,8 @@ function tally_script_loader(){
 	
 	wp_enqueue_script('jquery-leanModal', tally_assets_file('js/jquery.leanModal.min.js'), array('jquery'), '', true);
 	wp_enqueue_script('jquery-magnific-popup', tally_assets_file('js/jquery.magnific-popup.min.js'), array('jquery'), '', true);
+	wp_register_script( 'google-map', 'http://maps.google.com/maps/api/js?sensor=true', array(), '', true);
+	wp_enqueue_script('jquery-gomap', tally_assets_file('js/jquery.gomap-1.3.2.min.js'), array('jquery', 'google-map'), '', true);
 	
 	//Custom Script
 	wp_enqueue_script('theme', tally_assets_file('js/theme.js'), array('jquery', 'masonry', 'jquery-ui-core', 'jquery-ui-widget', 'jquery-ui-accordion', 'jquery-ui-tabs'), '', true);

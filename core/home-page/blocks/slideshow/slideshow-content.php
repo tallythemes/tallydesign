@@ -21,22 +21,22 @@ if(tally_hp_option($the_prefix.'enable') == 'on'):
 							<div class="home-slidesho-image">
 								<img src="<?php echo tally_image_size($slider_item['image'], $image_size[0], $image_size[1]); ?>" alt="<?php echo $slider_item['title'] ?>" height="<?php echo $image_size[1]; ?>" width="<?php echo $image_size[0]; ?>"/>
 							</div>
-							<div class="home-slideshow-caption text-align-<?php echo $slider_item['text_align']; ?>">
+							<div class="home-slideshow-caption text-align-<?php echo $slider_item['text_align']; ?> vAlign-center">
 								<div class="home-slideshow-caption-inner">
-									<?php if($slider_item['title'] != ''): ?>
-										<h4 style="color: <?php echo $slider_item['heading_color']; ?>!important;">
-											<?php echo $slider_item['title']; ?>
-										</h4>
-									<?php endif; ?>
-									<?php if($slider_item['des'] != ''): ?>
-										<p style="color: <?php echo $slider_item['text_color']; ?>;"><?php echo $slider_item['des']; ?></p>
-									<?php endif; ?>
-									<?php if(($slider_item['link'] != '') && ($slider_item['button_text'] != '')): ?>
-										<a href="<?php echo $slider_item['link']; ?>" class="tally-button btn-color-<?php echo $slider_item['button_color']; ?>">
-											<?php echo $slider_item['button_text']; ?>
-										</a>
-									<?php endif; ?>
-									<div class="clear" style="height:0;"></div>&nbsp;
+                                	<div class="home-slideshow-caption-inner-inner">
+										<?php if($slider_item['title'] != ''): ?>
+                                            <h4 style="color: <?php echo $slider_item['heading_color']; ?>!important;"><?php echo $slider_item['title']; ?></h4>
+                                        <?php endif; ?>
+                                        <?php if($slider_item['des'] != ''): ?>
+                                            <p style="color: <?php echo $slider_item['text_color']; ?>;"><?php echo $slider_item['des']; ?></p>
+                                        <?php endif; ?>
+                                        <?php if(($slider_item['link'] != '') && ($slider_item['button_text'] != '')): ?>
+                                            <a href="<?php echo $slider_item['link']; ?>" class="tally-button btn-color-<?php echo $slider_item['button_color']; ?>">
+                                                <?php echo $slider_item['button_text']; ?>
+                                            </a>
+                                        <?php endif; ?>
+                                        <div class="clear" style="height:0;"></div>&nbsp;
+                                    </div>
 								</div>
 							</div>
 						</div>
