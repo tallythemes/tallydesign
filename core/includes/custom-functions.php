@@ -868,7 +868,17 @@ function tally_creat_config_array($option = 'option_tree'){
 						if(is_array($option_1)){
 							$output .= "\t" . "array(" . "\n";
 								foreach($option_1 as $key_2 => $option_2){
-									$output .= "\t" . "\t" . "'".$key_2."' => '".str_replace("'","\'",$option_2)."'," . "\n";	
+									
+									if(is_array($option_2)){
+										$output .= "\t" . "\t" . "array(" . "\n";
+											foreach($option_2 as $key_3 => $option_3){
+												$output .= "\t" . "\t" . "\t" . "'".$key_3."' => '".str_replace("'","\'",$option_3)."'," . "\n";
+											}
+										$output .= "\t" . "\t" . ")," . "\n";
+									}else{
+										$output .= "\t" . "\t" . "'".$key_2."' => '".str_replace("'","\'",$option_2)."'," . "\n";
+									}
+										
 								}
 							$output .= "\t" . ")," . "\n";
 						}else{
@@ -915,6 +925,20 @@ function tally_hp_option_color($option_name, $rgba = '', $echo = true){
 function tally_option_background($option_name, $echo = true){
 	
 	$option = tally_option($option_name);
+	$bg = '';
+	
+	if(is_array($option)){
+		if(isset($option['background-color']) && !empty($option['background-color'])){ $bg .= 'background-color:'.$option['background-color'].';'; }
+		if(isset($option['background-repeat']) && !empty($option['background-repeat'])){ $bg .= 'background-repeat:'.$option['background-repeat'].';'; }
+		if(isset($option['background-attachment']) && !empty($option['background-attachment'])){ $bg .= 'background-attachment:'.$option['background-attachment'].';'; }
+		if(isset($option['background-position']) && !empty($option['background-position'])){ $bg .= 'background-position:'.$option['background-position'].';'; }
+		if(isset($option['background-size']) && !empty($option['background-size'])){ $bg .= 'background-size:'.$option['background-size'].';'; }
+		if(isset($option['background-image']) && !empty($option['background-image'])){ $bg .= 'background-image:url('.$option['background-image'].');'; }
+	}
+	
+	if($echo == true){ echo $bg; }else{ return $bg; }
+}
+function tally_option_background2($option, $echo = true){
 	$bg = '';
 	
 	if(is_array($option)){

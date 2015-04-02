@@ -273,4 +273,28 @@ $tally_hconfig[] = array(
 );
 
 
+$tally_hconfig[] = array(
+	'id'		=> 'section11',
+	'label'		=> 'Content Box',
+	'biz'		=> false,
+	'div_class' => '',
+	'settings'	=> true,
+	'columns'	=> false,
+	'inner_div'	=> true,
+	'header'	=> true,
+	'blocks'	=> array(
+		array(
+			'id'		=> 'contentbox',
+			'label'		=> 'Content Boxes',
+			'div_class' => '',
+			'name'		=> 'contentBox',
+			'column'	=> '',
+			'skin'		=> 'hpbs1',
+			'layout'	=> '',
+			'biz'		=> false,
+		),
+	)
+);
+
+
 return $tally_hconfig;

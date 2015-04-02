@@ -70,7 +70,6 @@ function tally_regoster_ot_home_page_settings_page() {
 				'operator'    => 'and',
 			);
 		endif;
-		
 		$config = array(
 			array( 
 			  'id'              => 'tally_home',

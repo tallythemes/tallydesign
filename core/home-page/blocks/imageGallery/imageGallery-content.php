@@ -9,29 +9,20 @@ if(tally_hp_option($the_prefix.'enable') == 'on'):
 		$image_size = array(1200, 400);
 	}
 	
-	$attachments = explode( ',', tally_hp_option($the_prefix.'gallery') );
+	$gallery_attachments = explode( ',', tally_hp_option($the_prefix.'gallery') );
 	
-	if(is_array($attachments) && !empty($attachments)): ?>
+	if(is_array($gallery_attachments) && !empty($gallery_attachments)): ?>
 		<div class="<?php echo $block_class; ?> thpb-imageGallery <?php echo $the_block['skin']; ?>">
 			<?php $masonry->start(); ?>
-				<?php foreach($attachments as $attachment): ?>
+				<?php foreach($gallery_attachments as $gallery_attachment): ?>
 					<?php $masonry->in_loop_start(); ?>
                     	<?php
 							$link_class = 'magnificPopup-child';
 							$link_icon_class = 'fa-search-plus';
-							$link = NULL;
-							$image_url = '';
 							$image_caption = NULL;
-							
-							$attachment_query = new WP_Query(array('post_type'=>'attachment', 'posts_per_page'=>1, 'p'=>$attachment));
-							if ( $attachment_query->have_posts() ) {
-								while ( $attachment_query->have_posts() ) { $attachment_query->the_post();
-									$link = $attachment_query->post->guid;
-									$image_url = $attachment_query->post->guid;
-									$image_caption = $attachment_query->post->post_excerpt;
-								}
-							}
-							
+							$the_image_url =  wp_get_attachment_image_src( $gallery_attachment, 'full' );
+							$image_url = $the_image_url[0];
+							$link = $the_image_url[0];
 						?>
                         <a href="<?php echo $link; ?>" title="<?php echo $image_caption; ?>" class="<?php echo $link_class; ?>">
                             <img src="<?php echo tally_image_size($image_url, $image_size[0], $image_size[1], true); ?>" width="<?php echo $image_size[0]; ?>" height="<?php echo $image_size[1]; ?>" alt="<?php echo $image_caption; ?>"  />

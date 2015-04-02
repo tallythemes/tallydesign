@@ -1186,3 +1186,26 @@
 /* Home::: Google Map
 ================================================== */
 .thpb-googleMap img{ max-width:inherit; }
+
+
+
+/* Home::: ContentBox
+================================================== */
+/* Skin 1
+--------------------------------------------*/
+.thpb-contentBox.hpbs1{  }
+.thpb-contentBox.hpbs1 .hpb-contentBox-item{ background-color:#FFF; }
+.thpb-contentBox.hpbs1 .hpb-contentBox-item .hpb-content{ padding:20px 20px 0 20px; }
+.thpb-contentBox.hpbs1 .hpb-contentBox-item .hpb-title{ margin-bottom:10px; }
+.thpb-contentBox.hpbs1 .hpb-contentBox-item .hpb-des{ padding-bottom:20px; }
+.thpb-contentBox.hpbs1 .hpb-contentBox-item .hpb-more{ 
+	display:block; 
+	height:40px; 
+	text-align:center; 
+	background:#066; 
+	color:#FFF !important; 
+	text-decoration:none; 
+	line-height:40px;
+	margin-left:-20px;
+	margin-right:-20px;
+}
