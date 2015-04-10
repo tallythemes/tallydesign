@@ -182,13 +182,16 @@ function tally_image_size($url, $width = '', $height = '', $crop = true, $placeh
     $query = "SELECT ID FROM {$wpdb->posts} WHERE guid='$url'";
     $id = $wpdb->get_var($query);
 	
+	$place_holder = 'http://placehold.it/'.$width.'x'.$height;
+	if(tally_option('placeholder_image', 'lorempixel') == 'lorempixel'){ $place_holder = 'http://lorempixel.com/'.$width.'/'.$height.'/fashion/'; }
+	
 	if($url == NULL){ 
-		$url = 'http://placehold.it/'.$width.'x'.$height; 
+		$url = $place_holder; 
 		return $url;
 	}
 	
 	if(($placeholder == true) && ($id == false)){ 
-		$url = 'http://placehold.it/'.$width.'x'.$height; 
+		$url = $place_holder; 
 	}
 	
 	if(function_exists('mr_image_resize')){

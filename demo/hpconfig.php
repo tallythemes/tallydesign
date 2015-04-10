@@ -249,6 +249,30 @@ $tally_hconfig[] = array(
 	)
 );
 
+
+$tally_hconfig[] = array(
+	'id'		=> 'section12',
+	'label'		=> 'Contact',
+	'biz'		=> false,
+	'div_class' => '',
+	'settings'	=> true,
+	'columns'	=> true,
+	'inner_div'	=> true,
+	'header'	=> true,
+	'blocks'	=> array(
+		array(
+			'id'		=> 'contactInfo',
+			'label'		=> 'Contact Info',
+			'div_class' => '',
+			'name'		=> 'contactInfo',
+			'column'	=> '12',
+			'skin'		=> 'hpbs1',
+			'layout'	=> '',
+			'biz'		=> false,
+		),
+	)
+);
+
 $tally_hconfig[] = array(
 	'id'		=> 'section10',
 	'label'		=> 'Google Map',

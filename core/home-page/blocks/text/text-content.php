@@ -1,6 +1,6 @@
 <div class="<?php echo $block_class; ?> text-align-<?php echo tally_hp_option($the_prefix.'align'); ?> tally-hpb-text <?php echo $the_block['skin']; ?>">
 	<?php if(tally_hp_option($the_prefix.'title') != ''): ?><h2 class="hpb-title"><?php echo tally_hp_option($the_prefix.'title'); ?></h2><?php endif; ?>
-	<?php if(tally_hp_option($the_prefix.'content') != ''): ?><div class="hpb-content"><?php echo tally_hp_option($the_prefix.'content'); ?></div><?php endif; ?>
+	<?php if(tally_hp_option($the_prefix.'content') != ''): ?><div class="hpb-content"><?php echo do_shortcode(tally_hp_option($the_prefix.'content')); ?></div><?php endif; ?>
     
     <?php if(is_array(tally_hp_option($the_prefix.'buttons'))): ?>
         <div class="hpb-buttons">

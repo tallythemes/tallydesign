@@ -1209,3 +1209,13 @@
 	margin-left:-20px;
 	margin-right:-20px;
 }
+
+
+/* Home::: contactInfo
+================================================== */
+/* Skin 1
+--------------------------------------------*/
+.thpb-contactInfo.hpbs1 .hpb-items{ margin:0; padding:0; list-style-type:none; }
+.thpb-contactInfo.hpbs1 .hpb-items li{ margin:0; padding:0; list-style-type:none; font-size:16px; display:inline-block; margin:10px; }
+.thpb-contactInfo.hpbs1 .hpb-items li i.fa{ height:30px; width:30px; line-height:30px; text-align:center; border:solid 2px; border-radius: 50%; margin-right:8px;}
+.thpb-contactInfo.hpbs1 .hpb-items li a{ color:inherit !important; }
