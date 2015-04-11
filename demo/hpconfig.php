@@ -270,6 +270,16 @@ $tally_hconfig[] = array(
 			'layout'	=> '',
 			'biz'		=> false,
 		),
+		array(
+			'id'		=> 'contactform',
+			'label'		=> 'Contact Form',
+			'div_class' => '',
+			'name'		=> 'contactForm',
+			'column'	=> '12',
+			'skin'		=> 'hpbs1',
+			'layout'	=> '',
+			'biz'		=> false,
+		),
 	)
 );
 

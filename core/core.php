@@ -236,6 +236,7 @@ class tally_loader{
 		if(!function_exists('mr_image_resize')){ include('vandors/mr-image-resize.php'); }
 		if(!function_exists('aq_resize')){ include('vandors/aq_resizer.php'); }
 		if(!class_exists( 'TGM_Plugin_Activation')){ include('vandors/class-tgm-plugin-activation.php'); }
+		if(!class_exists( 'sacf_simple_ajax_contact_form')){ include('vandors/simple-contact-form/simple-contact-form.php'); }
 		
 		
 		
