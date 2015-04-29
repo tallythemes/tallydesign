@@ -422,10 +422,10 @@ function tally_hp_get_default_options(){
 	$option = array();
 	$dri = '';
 	
-	if(file_exists(TALLY_CHILD_DRI . '/demo/hpsettings.php')){
-		$dri = TALLY_CHILD_DRI . '/demo/hpsettings.php';
-	}elseif(file_exists(TALLY_DRI . '/demo/hpsettings.php')){
-		$dri = TALLY_DRI . '/demo/hpsettings.php';
+	if(file_exists(TALLY_CHILD_DRI . '/demo/hp-settings.php')){
+		$dri = TALLY_CHILD_DRI . '/demo/hp-settings.php';
+	}elseif(file_exists(TALLY_DRI . '/demo/hp-settings.php')){
+		$dri = TALLY_DRI . '/demo/hp-settings.php';
 	}
 	
 	if(file_exists($dri)){

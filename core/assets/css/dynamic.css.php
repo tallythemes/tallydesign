@@ -179,33 +179,6 @@ body { <?php tally_option_background('site_background'); ?> }
 
 
 
-
-
-
-/*=================================================================================
-	Home:::: blogGrid
-==================================================================================*/
-.home-blogGrid{ 
-	<?php tally_option_background('home_blogGrid_bg'); ?>  
-    border-color:<?php tally_option_color('home_blogGrid_border_color'); ?>  !important;
-    color:<?php tally_option_color('home_blogGrid_text_color'); ?> !important;
-}
-.home-blogGrid h1,
-.home-blogGrid h2,
-.home-blogGrid h3,
-.home-blogGrid h4,
-.home-blogGrid h5,
-.home-blogGrid h6{ color:<?php tally_option_color('home_blogGrid_heading_color'); ?> !important; }
-<?php tally_option_spacing('home_blogGrid_padding', '.home-blogGrid', 'padding'); ?>
-.home-blogGrid *{ border-color:<?php tally_option_color('home_blogGrid_border_inner_color'); ?> !important; }
-.home-blogGrid .post-title a{ color:<?php tally_option_color('home_blogGrid_heading_color'); ?> !important; }
-.home-blogGrid .home-blogGrid-item{ background-color:<?php tally_option_color('home_blogGrid__innerbg'); ?>; }
-.home-blogGrid .home-blogGrid-item .post-meta{ background-color:<?php tally_option_color('home_blogGrid_border_inner_color', '0.5'); ?>; }
-.home-blogGrid .home-blogGrid-item .post-meta a,
-.home-blogGrid .home-blogGrid-item .post-meta{  color:<?php tally_option_color('home_blogGrid_text_color', '0.8'); ?> !important; }
-
-
-
 /*=================================================================================
 	Button
 ==================================================================================*/
@@ -214,39 +187,9 @@ body { <?php tally_option_background('site_background'); ?> }
 
 
 
+
 /*=================================================================================
-	Home:::: infoBox
+	Home Page
 ==================================================================================*/
-.home-infoBox{ 
-	<?php tally_option_background('home_infoBox_bg'); ?>  
-    border-color:<?php tally_option_color('home_infoBox_border_color'); ?>  !important;
-    color:<?php tally_option_color('home_infoBox_text_color'); ?> !important;
-}
-.home-infoBox h1,
-.home-infoBox h2,
-.home-infoBox h3,
-.home-infoBox h4,
-.home-infoBox h5,
-.home-infoBox h6{ color:<?php tally_option_color('home_infoBox_heading_color'); ?> !important; }
-<?php tally_option_spacing('home_infoBox_padding', '.home-infoBox', 'padding'); ?>
-.home-infoBox *{ border-color:<?php tally_option_color('home_infoBox_border_inner_color'); ?>  !important; }
-
-/*	Skin 1
----------------------------------------------------------*/
-.home-infoBox.hpss1 .home-infobox-item a .hibi-description h4{ color:<?php tally_option_color('home_infoBox_heading_color'); ?> !important; }
-.home-infoBox.hpss1 .home-infobox-item a .hibi-description p{ color:<?php tally_option_color('home_infoBox_text_color'); ?>; }
-.home-infoBox.hpss1 .home-infobox-item{  background-color:<?php tally_option_color('home_infoBox__innerbg'); ?>; }
-.home-infoBox.hpss1 .home-infobox-item .hibi-icon{ 
-	background-color:<?php tally_option_color('home_infoBox_icon_bg_color'); ?>; 
-    border-color:<?php tally_option_color('home_infoBox_icon_border_color'); ?> !important;
-}
-.home-infoBox.hpss1 .home-infobox-item .hibi-icon i.fa{ color:<?php tally_option_color('home_infoBox_icon_color'); ?>; }
-.home-infoBox.hpss1 .home-infobox-item:hover .hibi-icon{ 
-	background-color:<?php tally_option_color('home_infoBox_icon_bg_hover_color'); ?>; 
-    border-color:<?php tally_option_color('home_infoBox_icon_border_hover_color'); ?> !important;
-}
-.home-infoBox.hpss1 .home-infobox-item:hover .hibi-icon i.fa{ color:<?php tally_option_color('home_infoBox_icon_hover_color'); ?>; }
-
-
 <?php include(TALLY_DRI . '/core/home-page/section/section-css.php'); ?>
 <?php include(TALLY_DRI . '/core/home-page/blocks/blocks-css.php'); ?>

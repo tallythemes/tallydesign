@@ -15,10 +15,10 @@ function tally_regoster_ot_home_page_settings_page() {
 		$sections = array();
 		$settings = array();
 		
-		if(file_exists(TALLY_CHILD_DRI . '/demo/hpconfig.php')){
-			$dri = TALLY_CHILD_DRI . '/demo/hpconfig.php';
-		}elseif(file_exists(TALLY_DRI . '/demo/hpconfig.php')){
-			$dri = TALLY_DRI . '/demo/hpconfig.php';
+		if(file_exists(TALLY_CHILD_DRI . '/demo/hp-config.php')){
+			$dri = TALLY_CHILD_DRI . '/demo/hp-config.php';
+		}elseif(file_exists(TALLY_DRI . '/demo/hp-config.php')){
+			$dri = TALLY_DRI . '/demo/hp-config.php';
 		}
 		include($dri);
 		if(is_array($tally_hconfig)){

@@ -37,6 +37,10 @@ if($the_block['column'] != ''){
 	);
 }
 						
-if(file_exists(TALLY_DRI . '/core/home-page/blocks/'.$the_block['name'].'/'.$the_block['name'].'-options.php')){
+if(file_exists(TALLY_CHILD_DRI . '/home-page/blocks/'.$the_block['name'].'/'.$the_block['name'].'-options.php')){
+	include(TALLY_CHILD_DRI . '/home-page/blocks/'.$the_block['name'].'/'.$the_block['name'].'-options.php');
+}elseif(file_exists(TALLY_DRI . '/home-page/blocks/'.$the_block['name'].'/'.$the_block['name'].'-options.php')){
+	include(TALLY_DRI . '/home-page/blocks/'.$the_block['name'].'/'.$the_block['name'].'-options.php');
+}elseif(file_exists(TALLY_DRI . '/core/home-page/blocks/'.$the_block['name'].'/'.$the_block['name'].'-options.php')){
 	include(TALLY_DRI . '/core/home-page/blocks/'.$the_block['name'].'/'.$the_block['name'].'-options.php');
 }

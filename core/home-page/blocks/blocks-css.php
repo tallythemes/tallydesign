@@ -20,7 +20,18 @@ if(is_array($tally_hconfig)){
 					$block_class = '.tally-hpb-'.$the_config['id'].'_'.$the_block['id'];
 						
 					if(tally_hp_option($the_prefix.'enable') == 'on'){		
-						if(file_exists(TALLY_DRI . '/core/home-page/blocks/'.$the_block['name'].'/'.$the_block['name'].'-css.php')){
+						if(file_exists(TALLY_CHILD_DRI . '/home-page/blocks/'.$the_block['name'].'/'.$the_block['name'].'-css-'.$the_block['skin'].'.php')){
+							include(TALLY_CHILD_DRI . '/home-page/blocks/'.$the_block['name'].'/'.$the_block['name'].'-css-'.$the_block['skin'].'.php');
+						}elseif(file_exists(TALLY_DRI . '/home-page/blocks/'.$the_block['name'].'/'.$the_block['name'].'-css-'.$the_block['skin'].'.php')){
+							include(TALLY_DRI . '/home-page/blocks/'.$the_block['name'].'/'.$the_block['name'].'-css-'.$the_block['skin'].'.php');
+						}elseif(file_exists(TALLY_DRI . '/core/home-page/blocks/'.$the_block['name'].'/'.$the_block['name'].'-css-'.$the_block['skin'].'.php')){
+							include(TALLY_DRI . '/core/home-page/blocks/'.$the_block['name'].'/'.$the_block['name'].'-css-'.$the_block['skin'].'.php');
+						}
+						elseif(file_exists(TALLY_CHILD_DRI . '/home-page/blocks/'.$the_block['name'].'/'.$the_block['name'].'-css.php')){
+							include(TALLY_CHILD_DRI . '/home-page/blocks/'.$the_block['name'].'/'.$the_block['name'].'-css.php');
+						}elseif(file_exists(TALLY_DRI . '/home-page/blocks/'.$the_block['name'].'/'.$the_block['name'].'-css.php')){
+							include(TALLY_DRI . '/home-page/blocks/'.$the_block['name'].'/'.$the_block['name'].'-css.php');
+						}elseif(file_exists(TALLY_DRI . '/core/home-page/blocks/'.$the_block['name'].'/'.$the_block['name'].'-css.php')){
 							include(TALLY_DRI . '/core/home-page/blocks/'.$the_block['name'].'/'.$the_block['name'].'-css.php');
 						}
 					}
