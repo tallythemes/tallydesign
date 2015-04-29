@@ -64,3 +64,18 @@ body .ot-theme-option-tabs.ui-tabs .ot-theme-option-nav.ui-tabs-nav li.ui-state-
 
 
 .tally-home-people{  }
+
+
+.tally-dis-wrap{ position:relative; border-color:#093 !important; border-style:solid !important; }
+.tally-dis-wrap,
+.tally-dis-wrap h3.label{
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
+.tally-dis-inner{ position: absolute;top:0;left:0;width: 100%;height:100%;z-index:3;opacity:0.6;filter: alpha(opacity = 50); background:#FFF; }
+.tally-dis-inner-span{ background:#093; padding:5px 10px; position:absolute; right:-1px; top:-1px; z-index:4; border-radius: 0px 0px 0px 5px; }
+.tally-dis-inner-span a{ text-decoration:none; color:#FFF; font-size:18px; line-height:24px; font-weight:bold; }

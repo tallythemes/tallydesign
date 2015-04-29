@@ -14,7 +14,7 @@ function tally_404_page_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
 		);
 		$custom_settings['settings']['page_404_description'] = array(
@@ -27,7 +27,7 @@ function tally_404_page_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
 		);
 		$custom_settings['settings']['page_404_search'] = array(
@@ -40,7 +40,7 @@ function tally_404_page_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
 		);
 	elseif( (tally_check() != true ) && ( TALLY_THEME_STORE_URL != '') ):
