@@ -325,8 +325,13 @@ endif;
 -------------------------------------------------*/
 if(!function_exists('tally_assets_file2')):
 	function tally_assets_file2($folder, $file){
-
-		if(file_exists(get_stylesheet_directory().'/'.$folder.'/'.$file)){
+		if(file_exists(get_stylesheet_directory().'/'.$file)){
+			return get_stylesheet_directory_uri().'/'.$file;
+		}
+		elseif(file_exists(get_template_directory().'/'.$file)){
+			return get_template_directory_uri().'/'.$file;
+		}
+		elseif(file_exists(get_stylesheet_directory().'/'.$folder.'/'.$file)){
 			return get_stylesheet_directory_uri().'/'.$folder.'/'.$file;
 		}
 		elseif(file_exists(get_stylesheet_directory().'/assets/'.$folder.'/'.$file)){

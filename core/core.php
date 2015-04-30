@@ -47,6 +47,8 @@ class tally_loader{
 		$this->theme_menu();
 		add_action('widgets_init', array($this, 'register_sidebar'));
 		$this->inludes();
+		
+		add_action('admin_footer', array($this, 'admin_footer'));
 	}
 	
 	
@@ -332,6 +334,21 @@ class tally_loader{
 		$html = '<div class="rve" data-content-width="' . $content_width . '">' . $html . '</div>';
 	
 		return $html;
+	}
+	
+	
+	function admin_footer(){
+		if(tally_check() == false):
+		?>
+        <script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".tally-dis-wrap").append('<div class="tally-dis-inner-span"><a href="http://tallythemes.com/product-category/wordpress-themes/" target="_blank">Available on Premium Version</a></div>');
+				$(".tally-dis-wrap").append('<div class="tally-dis-inner"></div>');
+				$(".tally-dis-wrap .format-setting-wrap").find("*").prop("disabled", true);
+			});
+		</script>
+        <?php	
+		endif;
 	}
 }
 

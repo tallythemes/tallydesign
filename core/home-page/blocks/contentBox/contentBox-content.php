@@ -20,7 +20,7 @@ if(tally_hp_option($the_prefix.'enable') == 'on'):
                         
                         	<?php if($contentBox_item['link'] != ''): ?><a href="<?php echo $contentBox_item['link']; ?>"><?php endif; ?>
 								<?php if($contentBox_item['image'] != ''): ?>
-                                	<img src="<?php echo tally_image_size($contentBox_item['image'],$image_size[0],$image_size[1]); ?>" alt="<?php echo $people_item['title'];?>"/>
+                                	<img src="<?php echo tally_image_size($contentBox_item['image'],$image_size[0],$image_size[1]); ?>" alt="<?php echo $contentBox_item['title'];?>"/>
                                 <?php endif; ?>
                             <?php if($contentBox_item['link'] != ''): ?></a><?php endif; ?>
                             

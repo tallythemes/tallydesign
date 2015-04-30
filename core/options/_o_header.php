@@ -2,7 +2,6 @@
 add_filter('option_tree_settings_args', 'tally_header_ot_options');
 function tally_header_ot_options($custom_settings){
 	
-	if(tally_check() == true):
 		$custom_settings['sections'][] = array( 'id' => 'header','title' => 'Header');
 		
 		$custom_settings['settings'][] = array(
@@ -239,7 +238,7 @@ function tally_header_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
 		);
 		$custom_settings['settings']['header_menu_top_margin'] = array(
@@ -252,7 +251,7 @@ function tally_header_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
 		);
 		$custom_settings['settings']['header_logo_top_margin'] = array(
@@ -265,7 +264,7 @@ function tally_header_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
 		);
 		
@@ -279,7 +278,7 @@ function tally_header_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 		);
 		
 		$custom_settings['settings'][] = array(
@@ -292,7 +291,7 @@ function tally_header_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 		);
 		
 		$custom_settings['settings']['header_text_color'] = array(
@@ -305,7 +304,7 @@ function tally_header_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
 		);
 		$custom_settings['settings']['header_link_color'] = array(
@@ -318,7 +317,7 @@ function tally_header_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
 		);
 		$custom_settings['settings']['header_border_color'] = array(
@@ -331,7 +330,7 @@ function tally_header_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
 		);
 		$custom_settings['settings']['header_bg'] = array(
@@ -344,7 +343,7 @@ function tally_header_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
 		);
 		
@@ -358,7 +357,7 @@ function tally_header_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
 		);
 		$custom_settings['settings']['header_topbar_link_color'] = array(
@@ -371,7 +370,7 @@ function tally_header_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
 		);
 		$custom_settings['settings']['header_topbar_border_color'] = array(
@@ -384,7 +383,7 @@ function tally_header_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
 		);
 		$custom_settings['settings']['header_topbar_bg'] = array(
@@ -397,7 +396,7 @@ function tally_header_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
 		);
 		
@@ -423,7 +422,7 @@ function tally_header_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
 		);
 		$custom_settings['settings']['nav_border_color'] = array(
@@ -436,7 +435,7 @@ function tally_header_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
 		);
 		$custom_settings['settings']['nav_bg_color'] = array(
@@ -449,7 +448,7 @@ function tally_header_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
 		);
 		
@@ -463,7 +462,7 @@ function tally_header_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
 		);
 		$custom_settings['settings']['nav_border_hover_color'] = array(
@@ -476,7 +475,7 @@ function tally_header_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
 		);
 		$custom_settings['settings']['nav_bg_hover_color'] = array(
@@ -489,7 +488,7 @@ function tally_header_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
 		);
 		
@@ -504,7 +503,7 @@ function tally_header_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
 		);
 		$custom_settings['settings']['nav_sub_border_color'] = array(
@@ -517,7 +516,7 @@ function tally_header_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
 		);
 		$custom_settings['settings']['nav_sub_bg_color'] = array(
@@ -530,7 +529,7 @@ function tally_header_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
 		);
 		
@@ -544,7 +543,7 @@ function tally_header_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
 		);
 		$custom_settings['settings']['nav_sub_border_hover_color'] = array(
@@ -557,7 +556,7 @@ function tally_header_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
 		);
 		$custom_settings['settings']['nav_sub_bg_hover_color'] = array(
@@ -570,27 +569,9 @@ function tally_header_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
-		);
-		
-		
-	elseif( (tally_check() != true ) && ( TALLY_THEME_STORE_URL != '') ):
-		$custom_settings['sections'][] = array( 'id' => 'header','title' => 'Header');
-		$custom_settings['settings']['option_header_image_'] = array(
-			'id'          => 'option_header_image_',
-			'label'       => '',
-			'desc'        => '<a href="'.TALLY_THEME_STORE_URL.'" target="_blank"><img src="'.TALLY_URL.'/core/assets/images/admin/option-header.png" /></a>',
-			'std'         => '',
-			'type'        => 'textblock',
-			'section'     => 'header',
-			'rows'        => '',
-			'post_type'   => '',
-			'taxonomy'    => '',
-			'class'       => '',
-		);
-	endif;
-	
+		);	
 	
 	return $custom_settings;
 }

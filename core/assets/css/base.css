@@ -1098,7 +1098,7 @@
 .home-slideshow-caption-inner{  }
 .home-slideshow-caption-inner-inner{  }
 .home-slideshow-caption.text-align-left .home-slideshow-caption-inner-inner{ width: 60%; padding-left:10%; text-align:left; }
-.home-slideshow-caption.text-align-right .home-slideshow-caption-inner-inner{ width: 60%; padding-right:10%; text-align:right;  }
+.home-slideshow-caption.text-align-right .home-slideshow-caption-inner-inner{ width: 60%; padding-right:10%; text-align:right; float:right;  }
 .home-slideshow-caption.text-align-center .home-slideshow-caption-inner-inner{ width: 60%; padding-left:20%; text-align:center;  }
 .home-slideshow-caption-inner{  }
 .home-slideshow-caption h4{ font-size: 3em; line-height: 1.2em; margin-bottom: .5em; text-transform: capitalize; color:#FFF !important;  }

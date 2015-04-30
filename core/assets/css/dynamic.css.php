@@ -125,7 +125,20 @@ body { <?php tally_option_background('site_background'); ?> }
 
 
 
-
+/* FORM
+================================================== */
+    #site-main input, #site-main select, #site-main textarea{
+       border-color:<?php tally_option_color('color_border'); ?>;
+       background-color:<?php tally_option_color('color_inner_bg'); ?>;
+       color:<?php tally_option_color('color_text'); ?>;
+    }
+	
+	#site-main input[type="submit"],
+	#site-main button[type="submit"],
+	#site-main input[type="button"]{
+		background-color:<?php tally_option_color('primary_color'); ?>;
+        color:#fff;
+	}
 
 
 
@@ -186,6 +199,18 @@ body { <?php tally_option_background('site_background'); ?> }
 .tally-button.btn-color-accent:hover{ background-color:<?php tally_option_color('primary_color', '0.24'); ?>;}
 
 
+/*=================================================================================
+	Font Style
+==================================================================================*/
+h1, h2, h3, h4, h5, h6{ <?php echo tally_option('headings_google_font_family'); ?>; }
+body{ <?php echo tally_option('body_google_font_family'); ?>; }
+h1{ font-size:<?php echo tally_option('h1_font_size'); ?>; }
+h2{ font-size:<?php echo tally_option('h2_font_size'); ?>; }
+h3{ font-size:<?php echo tally_option('h3_font_size'); ?>; }
+h4{ font-size:<?php echo tally_option('h4_font_size'); ?>; }
+h5{ font-size:<?php echo tally_option('h5_font_size'); ?>; }
+h6{ font-size:<?php echo tally_option('h6_font_size'); ?>; }
+body{ font-size:<?php echo tally_option('body_font_size'); ?>; }
 
 
 /*=================================================================================

@@ -24,62 +24,42 @@ $tally_hconfig[] = array(
 	)
 );
 $tally_hconfig[] = array(
-	'id'		=> 'three_column_text',
-	'label'		=> 'Three Columns Text',
+	'id'		=> 'services',
+	'label'		=> 'Services',
 	'biz'		=> false,
 	'div_class' => '',
 	'settings'	=> true,
-	'columns'	=> true,
+	'columns'	=> false,
 	'inner_div'	=> true,
-	'header'	=> false,
+	'header'	=> true,
 	'blocks'	=> array(
 		array(
-			'id'		=> 'col1',
-			'label'		=> 'First Column',
+			'id'		=> 'contentBox',
+			'label'		=> 'Services',
 			'div_class' => '',
-			'name'		=> 'text',
-			'column'	=> '4',
-			'skin'		=> 'hpbs2',
-			'layout'	=> '',
-			'biz'		=> false,
-		),
-		array(
-			'id'		=> 'col2',
-			'label'		=> 'Secend Column',
-			'div_class' => '',
-			'name'		=> 'text',
-			'column'	=> '4',
-			'skin'		=> 'hpbs2',
-			'layout'	=> '',
-			'biz'		=> false,
-		),
-		array(
-			'id'		=> 'col3',
-			'label'		=> 'Third Column',
-			'div_class' => '',
-			'name'		=> 'text',
-			'column'	=> '4',
-			'skin'		=> 'hpbs2',
+			'name'		=> 'contentBox',
+			'column'	=> '12',
+			'skin'		=> 'hpbs1',
 			'layout'	=> '',
 			'biz'		=> false,
 		),
 	)
 );
 $tally_hconfig[] = array(
-	'id'		=> 'text1',
-	'label'		=> 'Textarea',
+	'id'		=> 'our_work',
+	'label'		=> 'Our Work',
 	'biz'		=> false,
 	'div_class' => '',
 	'settings'	=> true,
 	'columns'	=> false,
 	'inner_div'	=> true,
-	'header'	=> false,
+	'header'	=> true,
 	'blocks'	=> array(
 		array(
-			'id'		=> 'text1',
-			'label'		=> 'Textarea',
+			'id'		=> 'imageGallery',
+			'label'		=> 'Our Work',
 			'div_class' => '',
-			'name'		=> 'text',
+			'name'		=> 'imageGallery',
 			'column'	=> '',
 			'skin'		=> 'hpbs1',
 			'layout'	=> '',
@@ -89,12 +69,12 @@ $tally_hconfig[] = array(
 );
 
 $tally_hconfig[] = array(
-	'id'		=> 'section4',
-	'label'		=> 'Content, Tabs & Sidebar',
+	'id'		=> 'parallax',
+	'label'		=> 'Parallax One',
 	'biz'		=> false,
 	'div_class' => '',
 	'settings'	=> true,
-	'columns'	=> true,
+	'columns'	=> false,
 	'inner_div'	=> true,
 	'header'	=> false,
 	'blocks'	=> array(
@@ -104,26 +84,6 @@ $tally_hconfig[] = array(
 			'div_class' => '',
 			'name'		=> 'text',
 			'column'	=> '4',
-			'skin'		=> 'hpbs2',
-			'layout'	=> '',
-			'biz'		=> false,
-		),
-		array(
-			'id'		=> 'tab',
-			'label'		=> 'Tabs',
-			'div_class' => '',
-			'name'		=> 'tabs',
-			'column'	=> '4',
-			'skin'		=> 'hpbs1',
-			'layout'	=> '',
-			'biz'		=> false,
-		),
-		array(
-			'id'		=> 'sidebar',
-			'label'		=> 'Widgets',
-			'div_class' => '',
-			'name'		=> 'widget',
-			'column'	=> '4',
 			'skin'		=> 'hpbs1',
 			'layout'	=> '',
 			'biz'		=> false,
@@ -133,32 +93,8 @@ $tally_hconfig[] = array(
 
 
 $tally_hconfig[] = array(
-	'id'		=> 'section5',
-	'label'		=> 'Testimonial',
-	'biz'		=> false,
-	'div_class' => '',
-	'settings'	=> true,
-	'columns'	=> false,
-	'inner_div'	=> true,
-	'header'	=> false,
-	'blocks'	=> array(
-		array(
-			'id'		=> 'quoteSlider',
-			'label'		=> 'Quote Slider',
-			'div_class' => '',
-			'name'		=> 'quoteSlider',
-			'column'	=> '',
-			'skin'		=> 'hpbs1',
-			'layout'	=> '',
-			'biz'		=> false,
-		),
-	)
-);
-
-
-$tally_hconfig[] = array(
-	'id'		=> 'section6',
-	'label'		=> 'Team Members',
+	'id'		=> 'artists',
+	'label'		=> 'Artists',
 	'biz'		=> false,
 	'div_class' => '',
 	'settings'	=> true,
@@ -168,7 +104,7 @@ $tally_hconfig[] = array(
 	'blocks'	=> array(
 		array(
 			'id'		=> 'people',
-			'label'		=> 'Team Members',
+			'label'		=> 'Artists',
 			'div_class' => '',
 			'name'		=> 'people',
 			'column'	=> '',
@@ -181,20 +117,20 @@ $tally_hconfig[] = array(
 
 
 $tally_hconfig[] = array(
-	'id'		=> 'section7',
-	'label'		=> 'Newsletter',
+	'id'		=> 'testimonials',
+	'label'		=> 'Testimonials',
 	'biz'		=> false,
 	'div_class' => '',
 	'settings'	=> true,
 	'columns'	=> false,
 	'inner_div'	=> true,
-	'header'	=> false,
+	'header'	=> true,
 	'blocks'	=> array(
 		array(
-			'id'		=> 'newsletter1',
-			'label'		=> 'Newsletter',
+			'id'		=> 'quoteSlider',
+			'label'		=> 'Testimonials',
 			'div_class' => '',
-			'name'		=> 'newsletter',
+			'name'		=> 'quoteSlider',
 			'column'	=> '',
 			'skin'		=> 'hpbs1',
 			'layout'	=> '',
@@ -205,18 +141,18 @@ $tally_hconfig[] = array(
 
 
 $tally_hconfig[] = array(
-	'id'		=> 'section8',
-	'label'		=> 'InfBoxes',
+	'id'		=> 'what_we_offer',
+	'label'		=> 'What We Offer',
 	'biz'		=> false,
 	'div_class' => '',
 	'settings'	=> true,
 	'columns'	=> false,
 	'inner_div'	=> true,
-	'header'	=> true,
+	'header'	=> false,
 	'blocks'	=> array(
 		array(
-			'id'		=> 'infobox',
-			'label'		=> 'InfoBox',
+			'id'		=> 'infoBox',
+			'label'		=> 'infoBoxs',
 			'div_class' => '',
 			'name'		=> 'infoBox',
 			'column'	=> '',
@@ -226,22 +162,24 @@ $tally_hconfig[] = array(
 		),
 	)
 );
+
+
 $tally_hconfig[] = array(
-	'id'		=> 'section9',
-	'label'		=> 'image Gallery',
+	'id'		=> 'parallax2',
+	'label'		=> 'Parallax Two',
 	'biz'		=> false,
 	'div_class' => '',
-	'settings'	=> false,
+	'settings'	=> true,
 	'columns'	=> false,
-	'inner_div'	=> false,
+	'inner_div'	=> true,
 	'header'	=> false,
 	'blocks'	=> array(
 		array(
-			'id'		=> 'gallery1',
-			'label'		=> 'imageGallery',
+			'id'		=> 'content',
+			'label'		=> 'Content',
 			'div_class' => '',
-			'name'		=> 'imageGallery',
-			'column'	=> '',
+			'name'		=> 'text',
+			'column'	=> '4',
 			'skin'		=> 'hpbs1',
 			'layout'	=> '',
 			'biz'		=> false,
@@ -251,78 +189,41 @@ $tally_hconfig[] = array(
 
 
 $tally_hconfig[] = array(
-	'id'		=> 'section12',
+	'id'		=> 'contact',
 	'label'		=> 'Contact',
 	'biz'		=> false,
-	'div_class' => '',
+	'div_class' => 'home_contact_section',
 	'settings'	=> true,
 	'columns'	=> true,
-	'inner_div'	=> true,
-	'header'	=> true,
+	'inner_div'	=> false,
+	'header'	=> false,
 	'blocks'	=> array(
+		array(
+			'id'		=> 'googleMap',
+			'label'		=> 'Map',
+			'div_class' => '',
+			'name'		=> 'googleMap',
+			'column'	=> '6',
+			'skin'		=> 'hpbs1',
+			'layout'	=> '',
+			'biz'		=> false,
+		),
+		array(
+			'id'		=> 'contactForm',
+			'label'		=> 'Contact Form',
+			'div_class' => '',
+			'name'		=> 'contactForm',
+			'column'	=> '4',
+			'skin'		=> 'hpbs1',
+			'layout'	=> '',
+			'biz'		=> false,
+		),
 		array(
 			'id'		=> 'contactInfo',
 			'label'		=> 'Contact Info',
 			'div_class' => '',
 			'name'		=> 'contactInfo',
-			'column'	=> '12',
-			'skin'		=> 'hpbs1',
-			'layout'	=> '',
-			'biz'		=> false,
-		),
-		array(
-			'id'		=> 'contactform',
-			'label'		=> 'Contact Form',
-			'div_class' => '',
-			'name'		=> 'contactForm',
-			'column'	=> '12',
-			'skin'		=> 'hpbs1',
-			'layout'	=> '',
-			'biz'		=> false,
-		),
-	)
-);
-
-$tally_hconfig[] = array(
-	'id'		=> 'section10',
-	'label'		=> 'Google Map',
-	'biz'		=> false,
-	'div_class' => '',
-	'settings'	=> false,
-	'columns'	=> false,
-	'inner_div'	=> false,
-	'header'	=> false,
-	'blocks'	=> array(
-		array(
-			'id'		=> 'googlemap',
-			'label'		=> 'Google Map',
-			'div_class' => '',
-			'name'		=> 'googleMap',
-			'column'	=> '',
-			'skin'		=> 'hpbs1',
-			'layout'	=> '',
-			'biz'		=> false,
-		),
-	)
-);
-
-
-$tally_hconfig[] = array(
-	'id'		=> 'section11',
-	'label'		=> 'Content Box',
-	'biz'		=> false,
-	'div_class' => '',
-	'settings'	=> true,
-	'columns'	=> false,
-	'inner_div'	=> true,
-	'header'	=> true,
-	'blocks'	=> array(
-		array(
-			'id'		=> 'contentbox',
-			'label'		=> 'Content Boxes',
-			'div_class' => '',
-			'name'		=> 'contentBox',
-			'column'	=> '',
+			'column'	=> '2',
 			'skin'		=> 'hpbs1',
 			'layout'	=> '',
 			'biz'		=> false,

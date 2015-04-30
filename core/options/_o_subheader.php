@@ -2,7 +2,6 @@
 add_filter('option_tree_settings_args', 'tally_subheader_ot_options');
 function tally_subheader_ot_options($custom_settings){
 	
-	if(tally_check() == true):
 		$custom_settings['sections'][] = array( 'id' => 'subheader','title' => 'Sub-Header');
 		
 		$custom_settings['settings'][] = array(
@@ -27,7 +26,7 @@ function tally_subheader_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
 		);
 		$custom_settings['settings']['subheader_enable_subtitle'] = array(
@@ -40,7 +39,7 @@ function tally_subheader_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
 		);
 		$custom_settings['settings']['subheader_top_padding'] = array(
@@ -53,7 +52,7 @@ function tally_subheader_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
 		);
 		$custom_settings['settings']['subheader_bottom_padding'] = array(
@@ -66,7 +65,7 @@ function tally_subheader_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
 		);
 		$custom_settings['settings']['subheader_html'] = array(
@@ -79,7 +78,7 @@ function tally_subheader_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
 		);
 		$custom_settings['settings'][] = array(
@@ -104,7 +103,7 @@ function tally_subheader_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
 		);
 		$custom_settings['settings']['subheader_subtitle_color'] = array(
@@ -117,7 +116,7 @@ function tally_subheader_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
 		);
 		$custom_settings['settings']['subheader_breadcrumbs_color'] = array(
@@ -130,7 +129,7 @@ function tally_subheader_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
 		);
 		$custom_settings['settings']['subheader_breadcrumbs_active_color'] = array(
@@ -143,7 +142,7 @@ function tally_subheader_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
 		);
 		$custom_settings['settings']['subheader_breadcrumbs_divider_color'] = array(
@@ -156,7 +155,7 @@ function tally_subheader_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
 		);
 		$custom_settings['settings']['subheader_border_color'] = array(
@@ -169,7 +168,7 @@ function tally_subheader_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
 		);
 		$custom_settings['settings']['subheader_bg'] = array(
@@ -182,25 +181,10 @@ function tally_subheader_ot_options($custom_settings){
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 			'choices'     => '',
 		);
 		
-	elseif( (tally_check() != true ) && ( TALLY_THEME_STORE_URL != '') ):
-		$custom_settings['sections'][] = array( 'id' => 'header','title' => 'Header');
-		$custom_settings['settings']['option_header_image_'] = array(
-			'id'          => 'option_header_image_',
-			'label'       => '',
-			'desc'        => '<a href="'.TALLY_THEME_STORE_URL.'" target="_blank"><img src="'.TALLY_URL.'/core/assets/images/admin/option-header.png" /></a>',
-			'std'         => '',
-			'type'        => 'textblock',
-			'section'     => 'header',
-			'rows'        => '',
-			'post_type'   => '',
-			'taxonomy'    => '',
-			'class'       => '',
-		);
-	endif;
 	
 	
 	return $custom_settings;

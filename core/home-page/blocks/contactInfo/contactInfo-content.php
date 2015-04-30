@@ -5,17 +5,17 @@
     <ul class="hpb-items">
     	<?php if(tally_hp_option($the_prefix.'address') != ''): ?>
             <li class="hpb-address">
-            	<i class="fa fa-map-marker"></i><?php echo tally_hp_option($the_prefix.'address'); ?>
+            	<i class="fa fa-map-marker"></i><span><?php echo tally_hp_option($the_prefix.'address'); ?></span>
             </li>
         <?php endif; ?>
 		<?php if(tally_hp_option($the_prefix.'email') != ''): ?>
             <li class="hpb-email">
-            	<i class="fa fa-envelope-o"></i><a href="mailto:<?php echo tally_hp_option($the_prefix.'email'); ?>"><?php echo tally_hp_option($the_prefix.'email'); ?></a>
+            	<i class="fa fa-envelope-o"></i><span><a href="mailto:<?php echo tally_hp_option($the_prefix.'email'); ?>"><?php echo tally_hp_option($the_prefix.'email'); ?></a></span>
             </li>
         <?php endif; ?>
         <?php if(tally_hp_option($the_prefix.'phone') != ''): ?>
             <li class="hpb-phone">
-            	<i class="fa fa-phone"></i><a href="tel:<?php echo tally_hp_option($the_prefix.'phone'); ?>"><?php echo tally_hp_option($the_prefix.'phone'); ?></a>
+            	<i class="fa fa-phone"></i><span><a href="tel:<?php echo tally_hp_option($the_prefix.'phone'); ?>"><?php echo tally_hp_option($the_prefix.'phone'); ?></a></span>
             </li>
         <?php endif; ?>        
     </ul>

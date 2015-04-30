@@ -103,8 +103,4 @@ jQuery(document).ready(function($) {
 	$('#post-format-aside').click(function(){$(postformat_all_metabox_ids).hide();});
 	$('#post-format-chat').click(function(){$(postformat_all_metabox_ids).hide();});
 	$('#post-format-0').click(function(){$(postformat_all_metabox_ids).hide();});
-	
-	$(".tally-dis-wrap").append('<div class="tally-dis-inner-span"><a href="http://tallythemes.com/product-category/wordpress-themes/" target="_blank">Available on Premium Version</a></div>');
-	$(".tally-dis-wrap").append('<div class="tally-dis-inner"></div>');
-	$(".tally-dis-wrap .format-setting-wrap").find("*").prop("disabled", true);
 });

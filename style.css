@@ -14,3 +14,14 @@ Text Domain: tallydesign
 Tally Framework WordPress theme, Copyright (C) 2015 TallyThemes
 Tally Framework WordPress theme is licensed under the GPL.
 */
+
+.home_contact_section .col-holder .col.col_4{ width:18%; margin-top:80px; }
+.home_contact_section .col-holder .col.col_3{ margin-top:120px; }
+.thpb-contactInfo .hpb-items{  }
+.thpb-contactInfo .hpb-items li{ width:100%; margin:0 !important; margin-bottom:20px !important; }
+.thpb-contactInfo .hpb-items li i.fa{ float:left; width:30%; }
+.thpb-contactInfo .hpb-items li span{ float:left; width:70%; margin-top: 6px; }
+
+.tally-home-section-header{ margin-bottom:50px; }
+.tally-home-section-header h2{ font-size: 40px;  font-weight: bold; margin-bottom:15px;  }
+.tally-home-section-header h4{   font-size: 15px; text-transform: uppercase; letter-spacing: 10px; }

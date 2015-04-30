@@ -28,7 +28,7 @@ function tally_page_metabox_register() {
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 		);
 		$settings[] = array(
 			'id'          => $prefix.'sub_title',
@@ -65,7 +65,7 @@ function tally_page_metabox_register() {
 				'rows'        => '',
 				'post_type'   => '',
 				'taxonomy'    => '',
-				'class'       => '',
+				'class'       => 'tally-dis',
 			);
 		
 		$settings[] = array(
@@ -78,7 +78,7 @@ function tally_page_metabox_register() {
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 		);
 		$settings[] = array(
 			'id'          => $prefix.'subheader_breadcrumbs',
@@ -90,7 +90,7 @@ function tally_page_metabox_register() {
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 		);
 		$settings[] = array(
 			'id'          => $prefix.'subheader_bg',
@@ -102,7 +102,7 @@ function tally_page_metabox_register() {
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 		);
 		$settings[] = array(
 			'id'          => $prefix.'subheader_custom',
@@ -114,7 +114,7 @@ function tally_page_metabox_register() {
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 		);		
 		$settings[] = array(
 			'id'          => 'tally_page_tab4',
@@ -138,7 +138,7 @@ function tally_page_metabox_register() {
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
-			'class'       => '',
+			'class'       => 'tally-dis',
 		);
 		
 		
