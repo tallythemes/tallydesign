@@ -6,7 +6,7 @@ $tally_config = array(
 	array(
 		'title' => 'Creative ideas for Tattoo',
 		'des' => 'Ut telloribus eget elemetum vel curleif end elit. Aean auctoetnaliir pis nteerutru. Nulla fn nec ero ane ipsummis fauulet utricosere cubtsed leo pharetu nec augue. Aean auctoetnaliir pis nteerutru.',
-		'image' => 'http://localhost/tallydesign/wp-content/uploads/2015/04/tattoo-349891_1280-2.jpg',
+		'image' => 'http://localhost/tallydesign/wp-content/uploads/2015/04/tattoos-743313_1280-1.jpg',
 		'text_align' => 'center',
 		'link' => '#',
 		'button_text' => 'Read More',
@@ -17,7 +17,7 @@ $tally_config = array(
 	array(
 		'title' => 'Laser Tattoo Removal',
 		'des' => 'Ut telloribus eget elemetum vel curleif end elit. Aean auctoetnaliir pis nteerutru. Nulla fn nec ero ane ipsummis fauulet utricosere cubtsed leo pharetu nec augue. Aean auctoetnaliir pis nteerutru.',
-		'image' => 'http://localhost/tallydesign/wp-content/uploads/2015/04/tattoo-476096_1280-2.jpg',
+		'image' => 'http://localhost/tallydesign/wp-content/uploads/2015/04/tattoos-421711_1280-1.jpg',
 		'text_align' => 'right',
 		'link' => '#',
 		'button_text' => 'Read More',
@@ -28,7 +28,7 @@ $tally_config = array(
 	array(
 		'title' => 'Realizing Your Dreams',
 		'des' => 'Ut telloribus eget elemetum vel curleif end elit. Aean auctoetnaliir pis nteerutru. Nulla fn nec ero ane ipsummis fauulet utricosere cubtsed leo pharetu nec augue. Aean auctoetnaliir pis nteerutru.',
-		'image' => 'http://localhost/tallydesign/wp-content/uploads/2015/04/tattoos-743313_12802.jpg',
+		'image' => 'http://localhost/tallydesign/wp-content/uploads/2015/04/woman-314142_1280-1.jpg',
 		'text_align' => 'left',
 		'link' => '',
 		'button_text' => '',
@@ -163,7 +163,7 @@ $tally_config = array(
 'parallax_content_enable' => 'on',
 'parallax_content_column' => '4',
 'parallax_content_title' => 'SO YOU WANT A TATTOO?',
-'parallax_content_content' => '<h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h4>',
+'parallax_content_content' => '<h5>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h5>',
 'parallax_content_align' => 'center',
 'parallax_content_buttons' => array(
 	array(
@@ -250,7 +250,7 @@ $tally_config = array(
 		'instagram' => '',
 	),
 ),
-'artists_people_image_size' => '400x420',
+'artists_people_image_size' => '400x400',
 'artists_people_columns' => '2',
 'artists_people_column_margin' => '1',
 'artists_people_heading_color' => '',
@@ -385,7 +385,8 @@ $tally_config = array(
 'parallax2_content_enable' => 'on',
 'parallax2_content_column' => '4',
 'parallax2_content_title' => 'Be Our Happy Customer',
-'parallax2_content_content' => '<h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h4>',
+'parallax2_content_content' => '<h5>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</h5>
+<h5>tincidunt ut laoreet dolore magna aliquam erat volutpat.</h5>',
 'parallax2_content_align' => 'left',
 'parallax2_content_buttons' => array(
 	array(

@@ -980,7 +980,7 @@ function tally_hp_option_background($option_name, $echo = true){
 
 
 /*
-	Theme Option Background 
+	Theme Option Link 
 ---------------------------------------------------*/
 function tally_option_link($option_name, $selector, $property='color', $echo = true){
 	
@@ -1077,6 +1077,44 @@ function tally_option_border($option, $property = 'top', $echo = true){
 	if( $property == 'top' ){ $output = 'border-top:'.$width.$unit.' '.$style.' '.$color.' !important;'; }
 	elseif( $property == 'bottom' ){ $output = 'border-bottom:'.$width.$unit.' '.$style.' '.$color.' !important;'; }
 	else{ $output = 'border:'.$width.$unit.' '.$style.' '.$color.' !important;'; }
+	
+	if($echo == true){ echo $output; }else{ return $output; }
+}
+
+
+
+/*
+	Theme Option typography 
+---------------------------------------------------*/
+function tally_option_typography($option, $echo = true){
+	
+	$font_color = '';
+	$font_family = '';
+	$font_size = '';
+	$font_style = '';
+	$font_variant = '';
+	$font_weight = '';
+	$letter_spacing = '';
+	$line_height = '';
+	$text_decoration = '';
+	$text_transform = '';
+	
+	if(is_array($option)){
+		if(isset($option['font-color'])			&& !empty($option['font-color']))		{ $font_color		= 'font-color:'.$option['font-color']."; \n"; }
+		if(isset($option['font-size'])			&& !empty($option['font-size']))		{ $font_size		= 'font-size:'.$option['font-size']."; \n"; }
+		if(isset($option['font-style'])			&& !empty($option['font-style']))		{ $font_style		= 'font-style:'.$option['font-style']."; \n"; }
+		if(isset($option['font-variant'])		&& !empty($option['font-variant']))		{ $font_variant		= 'font-variant:'.$option['font-variant']."; \n"; }
+		if(isset($option['font-weight'])		&& !empty($option['font-weight']))		{ $font_weight		= 'font-weight:'.$option['font-weight']."; \n"; }
+		if(isset($option['letter-spacing'])		&& !empty($option['letter-spacing']))	{ $letter_spacing	= 'letter-spacing:'.$option['letter-spacing']."; \n"; }
+		if(isset($option['line-height'])		&& !empty($option['line-height']))		{ $line_height		= 'line-height:'.$option['line-height']."; \n"; }
+		if(isset($option['text-decoration'])	&& !empty($option['text-decoration']))	{ $text_decoration	= 'text-decoration:'.$option['text-decoration']."; \n"; }
+		if(isset($option['text-transform'])		&& !empty($option['text-transform']))	{ $font_weight		= 'text-transform:'.$option['text-transform']."; \n"; }
+		
+		$font_family_orgnal = ot_recognized_font_families();
+		if(isset($option['font-family'])		&& !empty($option['font-family']))		{ $font_family		= 'font-family:'.$font_family_orgnal[$option['font-family']]."; \n"; }
+	}
+	
+	$output = $font_color . $font_family . $font_size . $font_style . $font_variant . $font_weight . $letter_spacing . $line_height . $text_decoration . $text_transform;
 	
 	if($echo == true){ echo $output; }else{ return $output; }
 }

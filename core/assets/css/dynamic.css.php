@@ -202,15 +202,13 @@ body { <?php tally_option_background('site_background'); ?> }
 /*=================================================================================
 	Font Style
 ==================================================================================*/
-h1, h2, h3, h4, h5, h6{ <?php echo tally_option('headings_google_font_family'); ?>; }
-body{ <?php echo tally_option('body_google_font_family'); ?>; }
-h1{ font-size:<?php echo tally_option('h1_font_size'); ?>; }
-h2{ font-size:<?php echo tally_option('h2_font_size'); ?>; }
-h3{ font-size:<?php echo tally_option('h3_font_size'); ?>; }
-h4{ font-size:<?php echo tally_option('h4_font_size'); ?>; }
-h5{ font-size:<?php echo tally_option('h5_font_size'); ?>; }
-h6{ font-size:<?php echo tally_option('h6_font_size'); ?>; }
-body{ font-size:<?php echo tally_option('body_font_size'); ?>; }
+body{ <?php tally_option_typography( tally_option('font_body')); ?> }
+h1{ <?php tally_option_typography( tally_option('font_h1')); ?> }
+h2{ <?php tally_option_typography( tally_option('font_h2')); ?> }
+h3{ <?php tally_option_typography( tally_option('font_h3')); ?> }
+h4{ <?php tally_option_typography( tally_option('font_h4')); ?>; }
+h5{ <?php tally_option_typography( tally_option('font_h5')); ?>; }
+h6{ <?php tally_option_typography( tally_option('font_h6')); ?>; }
 
 
 /*=================================================================================

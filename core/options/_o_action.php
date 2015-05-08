@@ -1,15 +1,7 @@
 <?php
 add_action('wp_head', 'tally_op_option_action', 1);
 function tally_op_option_action(){
-	if(tally_option('favicon')){echo '<link rel="shortcut icon" href="'.tally_option('favicon').'" type="image/x-icon">';}
-	if(tally_option('enable_google_fonts') == 'yes'){
-		echo tally_option('headings_google_font_link');
-		echo tally_option('body_google_font_link');
-		
-		
-	}
-	echo 'sssssssssssssssssssssss';
-	
+	if(tally_option('favicon')){echo '<link rel="shortcut icon" href="'.tally_option('favicon').'" type="image/x-icon">';}	
 }
 
 add_action('wp_head', 'tally_op_option_action_google_analytics');
