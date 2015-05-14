@@ -64,6 +64,21 @@
 	#subheader .breadcrumbs{ float:none; width:100%; text-align:center; }
 	
 	
+	/* Header::: 1
+	================================================== */
+	#tally-header-1 #topbar{ text-align:center; }
+	.tally-social-icons.he-skin1 a{ border-top:1px solid; margin-top:20px; }
+	#tally-header-1 #topbar .tally-header-phone,
+	#tally-header-1 #topbar .tally-header-email,
+	#tally-header-1 #topbar .tally-social-icons{ float:none; }
+	
+	#tally-header-1 #header{ height:auto; }
+	#tally-header-1 #header #logo{ display:block; width:100%; text-align:center; }
+	#tally-header-1 #header .tally-header-loginBox{ float:none }
+	#tally-header-1 #header #tally-header-search{ float:none; }
+	#tally-header-1 #header #primary-menu{ float:none; clear:both; }
+	
+	
 	/*--Footer--*/
 	#footer{ text-align:center; }
 	#footer .copy_text{ width:100%; float:none; }
@@ -81,6 +96,19 @@
 	.home-slideshow-caption h4{ font-size: 1.5em; line-height: 1em; margin-bottom: .5em; }
 	.home-slideshow-caption p{ font-size: 16px; line-height: 1em; margin-top: .6em; }
 	.home-slideshow-caption .readmore{ font-size: 12px;	padding: 3px 10px;	}
+	
+	
+	/* masonry
+	================================================== */
+	body .tally_masonry_html.tmh-margin-0 .masonry-wp-child-item{ }
+	body .tally_masonry_html.tmh-margin-1 .masonry-wp-child-item{  margin-left: 1% !important;  margin-bottom: 1% !important; }
+	body .tally_masonry_html.tmh-margin-2 .masonry-wp-child-item{  margin-left: 2% !important;  margin-bottom: 2% !important; }
+	body .tally_masonry_html.tmh-margin-3 .masonry-wp-child-item{  margin-left: 3% !important;  margin-bottom: 3% !important; }
+	
+	body .tally_masonry_html.tmh-column-0 .masonry-wp-child-item{ width: 47% !important; }
+	body .tally_masonry_html.tmh-column-1 .masonry-wp-child-item{ width: 47% !important; }
+	body .tally_masonry_html.tmh-column-2 .masonry-wp-child-item{ width: 47% !important;  }
+	body .tally_masonry_html.tmh-column-3 .masonry-wp-child-item{ width: 47% !important;  }
 }
 
 
@@ -97,4 +125,11 @@
 	/* Home::: slideshow
 	================================================== */
 	.home-slideshow-caption{ display:none; }
+	
+	/* masonry
+	================================================== */
+	body .tally_masonry_html.tmh-margin-0 .masonry-wp-child-item{ width:100% !important; }
+	body .tally_masonry_html.tmh-margin-1 .masonry-wp-child-item{ width: 100% !important;  margin-left: 0 !important;  margin-bottom: 1% !important; }
+	body .tally_masonry_html.tmh-margin-2 .masonry-wp-child-item{ width: 100% !important;  margin-left: 0 !important;  margin-bottom: 2% !important; }
+	body .tally_masonry_html.tmh-margin-3 .masonry-wp-child-item{ width: 100% !important;  margin-left: 0 !important;  margin-bottom: 3% !important; }
 }

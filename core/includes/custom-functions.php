@@ -182,26 +182,32 @@ function tally_image_size($url, $width = '', $height = '', $crop = true, $placeh
     $query = "SELECT ID FROM {$wpdb->posts} WHERE guid='$url'";
     $id = $wpdb->get_var($query);
 	
-	$place_holder = 'http://placehold.it/'.$width.'x'.$height;
-	if(tally_option('placeholder_image', 'lorempixel') == 'lorempixel'){ $place_holder = 'http://lorempixel.com/'.$width.'/'.$height.'/fashion/'; }
+	$the_image_name = basename($url);
 	
-	if($url == NULL){ 
-		$url = $place_holder; 
-		return $url;
+	if(($id == true) && function_exists('mr_image_resize') && ($url != NULL)){
+		return mr_image_resize($url, $width, $height, $crop, $align, $retina);
 	}
-	
-	if(($placeholder == true) && ($id == false)){ 
-		$url = $place_holder; 
-	}
-	
-	if(function_exists('mr_image_resize')){
-		if($id == false){
-			return $url;
+	elseif((file_exists(get_stylesheet_directory().'/demo/images/'.$the_image_name)) && function_exists('mr_image_resize') && ($url != NULL)){
+		
+		list($or_width, $or_height) = getimagesize(get_template_directory().'/demo/images/'.$the_image_name);
+		if( ($or_width == $width) && ($or_height == $height) ){
+			return get_template_directory_uri().'/demo/images/'.$the_image_name;
 		}else{
-			return mr_image_resize($url, $width, $height, $crop, $align, $retina);
+			return mr_image_resize(get_template_directory_uri().'/demo/images/'.$the_image_name, $width, $height, $crop, $align, $retina);
 		}
-	}else{
-		return $url;
+	}
+	elseif((file_exists(get_template_directory().'/demo/images/'.$the_image_name)) && function_exists('mr_image_resize') && ($url != NULL)){
+		
+		list($or_width, $or_height) = getimagesize(get_template_directory().'/demo/images/'.$the_image_name);
+		if( ($or_width == $width) && ($or_height == $height) ){
+			return get_template_directory_uri().'/demo/images/'.$the_image_name;
+		}else{
+			return mr_image_resize(get_template_directory_uri().'/demo/images/'.$the_image_name, $width, $height, $crop, $align, $retina);
+		}
+
+	}
+	else{
+		return 'http://placehold.it/'.$width.'x'.$height;
 	}
 }
 endif;

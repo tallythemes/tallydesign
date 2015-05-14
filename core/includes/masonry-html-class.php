@@ -32,7 +32,7 @@ class tally_masonry_html{
 		$this->column_width = $column_width;
 		$css_style = 'width: '.$width.'%; margin-left:-'.$this->margin.'%;';
 		
-		$output .= '<div id="'.$this->uid.'" style="'.$css_style.'" class="tally_masonry_html">';
+		$output .= '<div id="'.$this->uid.'" style="'.$css_style.'" class="tally_masonry_html tmh-column-'.$this->column.' tmh-margin-'.$this->margin.'">';
 		if($this->display == false){ return $output; }else{  echo $output; }
 	}
 	

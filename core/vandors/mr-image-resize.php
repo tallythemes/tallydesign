@@ -41,6 +41,12 @@ function mr_image_resize($url, $width=null, $height=null, $crop=true, $align='c'
     // We only want to resize Media Library images, so we can be sure they get deleted correctly when appropriate.
     $query = $wpdb->prepare("SELECT * FROM $wpdb->posts WHERE guid='%s'", $url);
     $get_attachment = $wpdb->get_results($query);
+	
+	if($get_attachment == NULL){
+		$the_image_name = basename($url);
+		if(file_exists(get_stylesheet_directory().'/demo/images/'.$the_image_name)){ $get_attachment = get_stylesheet_directory_uri().'/demo/images/'.$the_image_name; }
+		elseif(file_exists(get_template_directory().'/demo/images/'.$the_image_name)){ $get_attachment = get_template_directory_uri().'/demo/images/'.$the_image_name; }
+	}
 
     // Load WordPress Image Editor
     $editor = wp_get_image_editor($file_path);
