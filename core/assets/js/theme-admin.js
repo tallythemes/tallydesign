@@ -50,7 +50,7 @@ jQuery(document).ready(function($) {
 	
 	
 	
-	/* Show hive metabox by changing post formats
+	/* Show hide metabox by changing post formats
 	---------------------------------------------------*/
 	var postformat_all_metabox_ids = '#tally_ot_postFormat_audio_metabox, #tally_ot_postFormat_video_metabox, #tally_ot_postFormat_quote_metabox, #tally_ot_postFormat_link_metabox, #tally_ot_postFormat_gallery_metabox, #tally_ot_postFormat_image_metabox, #tally_ot_postFormat_status_metabox';
 	var selectedElt = $("input[name='post_format']:checked").attr("id");

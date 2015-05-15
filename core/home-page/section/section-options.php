@@ -18,7 +18,7 @@ if($the_config['header'] == true){
 		'std'         => tally_hp_option_std($section_prefix .'header_enable'),
 		'type'        => 'on_off',
 		'section'     => $the_section_id,
-		'class'       => '',
+		'class'       => 'tally-dis',
 		'condition'   => $section_prefix.'enable:is(on)',
 		'operator'    => 'and',
 	);
@@ -51,7 +51,7 @@ if($the_config['header'] == true){
 		'std'         => tally_hp_option_std($section_prefix .'align'),
 		'type'        => 'select',
 		'section'     => $the_section_id,
-		'class'       => '',
+		'class'       => 'tally-dis',
 		'condition'   => $section_prefix.'enable:is(on),'.$section_prefix.'header_enable:is(on)',
 		'operator'    => 'and',
 		'choices'     => array( 
@@ -67,7 +67,7 @@ if($the_config['header'] == true){
 		'std'         => tally_hp_option_std($section_prefix .'header_text_color'),
 		'type'        => 'colorpicker',
 		'section'     => $the_section_id,
-		'class'       => '',
+		'class'       => 'tally-dis',
 		'condition'   => $section_prefix.'enable:is(on),'.$section_prefix.'header_enable:is(on)',
 		'operator'    => 'and',
 	);
@@ -78,7 +78,7 @@ if($the_config['header'] == true){
 		'std'         => tally_hp_option_std($section_prefix .'header_heading_color'),
 		'type'        => 'colorpicker',
 		'section'     => $the_section_id,
-		'class'       => '',
+		'class'       => 'tally-dis',
 		'condition'   => $section_prefix.'enable:is(on),'.$section_prefix.'header_enable:is(on)',
 		'operator'    => 'and',
 	);
@@ -89,7 +89,7 @@ if($the_config['header'] == true){
 		'std'         => tally_hp_option_std($section_prefix .'header_border_color'),
 		'type'        => 'colorpicker',
 		'section'     => $the_section_id,
-		'class'       => '',
+		'class'       => 'tally-dis',
 		'condition'   => $section_prefix.'enable:is(on),'.$section_prefix.'header_enable:is(on)',
 		'operator'    => 'and',
 	);
@@ -124,7 +124,7 @@ if($the_config['settings'] == true){
 		'std'         => tally_hp_option_std($section_prefix .'css_class'),
 		'type'        => 'text',
 		'section'     => $the_section_id,
-		'class'       => '',
+		'class'       => 'tally-dis',
 		'condition'   => $section_prefix.'enable:is(on)',
 		'operator'    => 'and',
 	);
@@ -135,7 +135,7 @@ if($the_config['settings'] == true){
 		'std'         => tally_hp_option_std($section_prefix .'css_id'),
 		'type'        => 'text',
 		'section'     => $the_section_id,
-		'class'       => '',
+		'class'       => 'tally-dis',
 		'condition'   => $section_prefix.'enable:is(on)',
 		'ope
 		rator'    => 'and',
@@ -147,7 +147,7 @@ if($the_config['settings'] == true){
 		'std'         => tally_hp_option_std($section_prefix .'content_width'),
 		'type'        => 'numeric-slider',
 		'section'     => $the_section_id,
-		'class'       => '',
+		'class'       => 'tally-dis',
 		'condition'   => $section_prefix.'enable:is(on)',
 		'operator'    => 'and',
 		'min_max_step'=> '499,1400,1',
@@ -159,7 +159,7 @@ if($the_config['settings'] == true){
 		'std'         => tally_hp_option_std($section_prefix .'padding'),
 		'type'        => 'spacing',
 		'section'     => $the_section_id,
-		'class'       => '',
+		'class'       => 'tally-dis',
 		'condition'   => $section_prefix.'enable:is(on)',
 		'operator'    => 'and',
 	);
@@ -170,7 +170,7 @@ if($the_config['settings'] == true){
 		'std'         => tally_hp_option_std($section_prefix .'border_top'),
 		'type'        => 'border',
 		'section'     => $the_section_id,
-		'class'       => '',
+		'class'       => 'tally-dis',
 		'condition'   => $section_prefix.'enable:is(on)',
 		'operator'    => 'and',
 	);
@@ -181,7 +181,7 @@ if($the_config['settings'] == true){
 		'std'         => tally_hp_option_std($section_prefix .'border_bottom'),
 		'type'        => 'border',
 		'section'     => $the_section_id,
-		'class'       => '',
+		'class'       => 'tally-dis',
 		'condition'   => $section_prefix.'enable:is(on)',
 		'operator'    => 'and',
 	);

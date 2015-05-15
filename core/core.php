@@ -345,6 +345,9 @@ class tally_loader{
 				$(".tally-dis-wrap").append('<div class="tally-dis-inner-span"><a href="http://tallythemes.com/product-category/wordpress-themes/" target="_blank">Available on Premium Version</a></div>');
 				$(".tally-dis-wrap").append('<div class="tally-dis-inner"></div>');
 				$(".tally-dis-wrap .format-setting-wrap").find("*").prop("disabled", true);
+				
+				$(".tally-list-dis-wrap").addClass('tally-list-dis-active');
+				$(".tally-list-dis-wrap .list-item-description").text('If you want to add new Item or delete an existing item you need to buy the PRO Version of the theme.');
 			});
 		</script>
         <?php	

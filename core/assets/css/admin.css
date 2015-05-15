@@ -76,6 +76,12 @@ body .ot-theme-option-tabs.ui-tabs .ot-theme-option-nav.ui-tabs-nav li.ui-state-
     -ms-user-select: none;
     user-select: none; 
 }
-.tally-dis-inner{ position: absolute;top:0;left:0;width: 100%;height:100%;z-index:3;opacity:0.6;filter: alpha(opacity = 50); background:#FFF; }
-.tally-dis-inner-span{ background:#093; padding:5px 10px; position:absolute; right:-1px; top:-1px; z-index:4; border-radius: 0px 0px 0px 5px; }
+.tally-dis-inner{ position: absolute;top:0;left:0;width: 100%;height:100%;z-index:30;opacity:0.6;filter: alpha(opacity = 50); background:#FFF; }
+.tally-dis-inner-span{ background:#093; padding:5px 10px; position:absolute; right:-1px; top:-1px; z-index:31; border-radius: 0px 0px 0px 5px; }
 .tally-dis-inner-span a{ text-decoration:none; color:#FFF; font-size:18px; line-height:24px; font-weight:bold; }
+
+
+.tally-list-dis-wrap.tally-list-dis-active .option-tree-setting-remove.option-tree-ui-button.right-item{ display:none; }
+.tally-list-dis-wrap.tally-list-dis-active .option-tree-setting-edit.option-tree-ui-button.left-item{ margin-right:6px; }
+.tally-list-dis-wrap.tally-list-dis-active .option-tree-list-item-add.option-tree-ui-button.hug-right{ display:none; }
+.tally-list-dis-wrap .list-item-description{ font-size:120%; font-weight:bold; color:#060; }
